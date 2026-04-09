@@ -840,12 +840,12 @@ const CAT_Q=[
 ];
 
 // ── AFFILIATE CONFIG ──
-const AFF_DATA={bitget:{url:'https://www.bitgetapps.com/ja/referral/register?clacCode=HE4WTZBM&from=%2Fja%2Fevents%2Freferral-all-program&source=events&utmSource=PremierInviter',icon:'📊',badge:'PR — 暗号資産取引所',title:'チャートを実践で試そう！Bitgetで口座開設',sub:'コピートレード機能搭載 | 初心者でも安心 | 手数料業界最低水準',cta:'無料で始める →'}};
+const AFF_DATA={bitget:{url:'https://www.bitgetapps.com/ja/referral/register?clacCode=HE4WTZBM&from=%2Fja%2Fevents%2Freferral-all-program&source=events&utmSource=PremierInviter',icon:'📊',badge:'PR — 暗号資産取引所',title:'チャートを実践で試そう！Bitgetで口座開設',sub:'コピートレード機能搭載 | 初心者でも安心 | 手数料業界最低水準',cta:'無料で始める →'},mexc:{url:'https://www.mexc.com/ja-JP/acquisition/custom-sign-up?shareCode=mexc-chapi',icon:'🚀',badge:'PR — 暗号資産取引所',title:'MEXCに登録すると取引手数料が20%割引！',sub:'紹介リンクから登録するだけでキャッシュバック20% | チャートで学んだら実践へ',cta:'20%割引で始める →'}};
 
-const INLINE_AFF=[{text_jp:'📈 実践練習には<strong>Bitget</strong>！コピートレードでプロの手法を学べる！',text_en:'📈 Practice with <strong>Bitget</strong>! Copy pro traders.',url:'https://www.bitgetapps.com/ja/referral/register?clacCode=HE4WTZBM&from=%2Fja%2Fevents%2Freferral-all-program&source=events&utmSource=PremierInviter',btn_jp:'無料登録 →',btn_en:'Register →'}];
+const INLINE_AFF=[{text_jp:'📈 実践練習には<strong>Bitget</strong>！コピートレードでプロの手法を学べる！',text_en:'📈 Practice with <strong>Bitget</strong>! Copy pro traders.',url:'https://www.bitgetapps.com/ja/referral/register?clacCode=HE4WTZBM&from=%2Fja%2Fevents%2Freferral-all-program&source=events&utmSource=PremierInviter',btn_jp:'無料登録 →',btn_en:'Register →'},{text_jp:'🎯 <strong>MEXC</strong>に紹介リンクから登録すると取引手数料が<strong style="color:var(--accent)">20%割引</strong>！学んだチャートを実践で試そう！',text_en:'🎯 Register <strong>MEXC</strong> via referral — enjoy <strong>20% fee discount</strong>!',url:'https://www.mexc.com/ja-JP/acquisition/custom-sign-up?shareCode=mexc-chapi',btn_jp:'20%割引で始める →',btn_en:'Start with 20% off →'}];
 let affIdx=0;
 function rotCC(){}
-function rotAff(){const d=AFF_DATA.bitget;document.getElementById('affIcon').textContent=d.icon;document.getElementById('affBadge').textContent=d.badge;document.getElementById('affTitle').textContent=d.title;document.getElementById('affSub').textContent=d.sub;document.getElementById('affCta').textContent=d.cta;document.getElementById('affCta').href=d.url;}
+function rotAff(){const keys=Object.keys(AFF_DATA);const d=AFF_DATA[keys[affIdx++%keys.length]];document.getElementById('affIcon').textContent=d.icon;document.getElementById('affBadge').textContent=d.badge;document.getElementById('affTitle').textContent=d.title;document.getElementById('affSub').textContent=d.sub;document.getElementById('affCta').textContent=d.cta;document.getElementById('affCta').href=d.url;}
 
 function trackAff(src){console.log('[AFF]',src,Date.now());}
 function showInlineAff(){const a=INLINE_AFF[Math.floor(Math.random()*INLINE_AFF.length)];document.getElementById('affInlineText').innerHTML=lang==='ja'?a.text_jp:a.text_en;document.getElementById('affInlineBtn').textContent=lang==='ja'?a.btn_jp:a.btn_en;document.getElementById('affInlineBtn').href=a.url;document.getElementById('affInlineBtn').onclick=()=>trackAff('inline');document.getElementById('affInline').style.display='flex';}
@@ -1063,7 +1063,7 @@ function showResults(){
   document.getElementById('resTime').textContent=`${m}:${s.toString().padStart(2,'0')}`;
   document.getElementById('progFill').style.width='100%';
   if(bestStreak>lsData.bs){lsData.bs=bestStreak;saveLS(lsData);}
-  if(pct>=70&&!lsData.sp){lsData.sp=true;saveLS(lsData);setTimeout(showModal,1800);}
+  if(pct>=60&&!lsData.sp){lsData.sp=true;saveLS(lsData);setTimeout(showModal,1800);}
 }
 
 function restartQuiz(){buildQ();}
@@ -1108,7 +1108,7 @@ function closeModal(){document.getElementById('premModal').classList.remove('sho
 // ── AI CHAT (Anthropic API) ──
 let aiHistory=[];
 let aiUsageCount=parseInt(localStorage.getItem('chartpi_ai_count')||'0');
-const AI_FREE_LIMIT=20;
+const AI_FREE_LIMIT=10;
 
 async function sendAI(){
   const inp=document.getElementById('aiInput');
@@ -1122,7 +1122,7 @@ function sendQ(q){
   if(aiUsageCount>=AI_FREE_LIMIT){
     document.getElementById('aiResult').innerHTML=`<div style="text-align:center;padding:16px;">
       <div style="font-size:28px;margin-bottom:8px;">⭐</div>
-      <div style="font-weight:700;margin-bottom:6px;">無料利用回数(${AI_FREE_LIMIT}回)を使い切りました</div>
+      <div style="font-weight:700;margin-bottom:6px;">AI診断の無料枠(${AI_FREE_LIMIT}回)を使い切りました</div>
       <div style="font-size:12px;color:var(--muted);margin-bottom:14px;">プレミアムで無制限に使えます！</div>
       <button onclick="showModal()" style="background:linear-gradient(135deg,var(--accent),var(--pink));color:#fff;border:none;border-radius:12px;padding:10px 20px;font-family:'Plus Jakarta Sans',sans-serif;font-size:13px;font-weight:800;cursor:pointer;">プレミアムを見る →</button>
     </div>`;
@@ -1286,8 +1286,8 @@ buildQ();
 
 <!-- STICKY AD -->
 <div id="stickyAd" style="position:fixed;bottom:0;left:0;right:0;z-index:50;background:var(--s1);border-top:1px solid var(--border2);padding:10px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 -6px 24px rgba(0,0,0,.4);">
-  <div style="flex:1;font-size:11px;color:var(--muted);line-height:1.4;"><strong style="color:var(--text);font-size:12px;">🚀 MEXC</strong> で口座開設 — 新規登録で限定ボーナスGET！</div>
-  <a href="https://www.mexc.co/ja-JP/acquisition/custom-sign-up?shareCode=mexc-3H832" target="_blank" rel="nofollow sponsored noopener" onclick="trackAff('sticky')" style="background:linear-gradient(135deg,var(--accent),#7de82a);color:#0d0e14;border:none;border-radius:8px;font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;font-weight:800;padding:9px 14px;cursor:pointer;white-space:nowrap;text-decoration:none;display:inline-block;">無料開設</a>
+  <div style="flex:1;font-size:11px;color:var(--muted);line-height:1.4;"><strong style="color:var(--text);font-size:12px;">🚀 MEXC</strong> で口座開設 — 紹介リンクから登録で<span style="color:#b8ff47;font-weight:700;">手数料20%割引</span>！</div>
+  <a href="https://www.mexc.com/ja-JP/acquisition/custom-sign-up?shareCode=mexc-chapi" target="_blank" rel="nofollow sponsored noopener" onclick="trackAff('sticky')" style="background:linear-gradient(135deg,var(--accent),#7de82a);color:#0d0e14;border:none;border-radius:8px;font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;font-weight:800;padding:9px 14px;cursor:pointer;white-space:nowrap;text-decoration:none;display:inline-block;">無料開設</a>
   <button onclick="document.getElementById('stickyAd').style.display='none'" style="background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;padding:0 4px;line-height:1;flex-shrink:0;">×</button>
 </div>
 </body>
