@@ -690,6 +690,29 @@ header{
       <span style="font-size:10px;color:var(--accent);">🟣マスター</span>
     </div>
   </div>
+
+  <!-- REFERRAL -->
+  <div style="background:linear-gradient(135deg,var(--s1),#0d1220);border:2px solid rgba(200,245,66,0.2);border-radius:var(--rl);padding:20px;margin-bottom:12px;position:relative;overflow:hidden;">
+    <div style="position:absolute;top:-20px;right:-20px;width:100px;height:100px;border-radius:50%;background:radial-gradient(circle,rgba(200,245,66,0.15),transparent 70%);pointer-events:none;"></div>
+    <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:800;margin-bottom:4px;">👥 友達を招待して特典をもらおう！</div>
+    <div style="font-size:12px;color:var(--muted);margin-bottom:14px;line-height:1.7;">友達があなたのコードでプレミアム登録すると、<strong style="color:var(--accent)">あなたのプランが1ヶ月50%OFF</strong>に！友達には初月<strong style="color:var(--accent)">30%OFF</strong>をプレゼント。</div>
+    <div style="background:var(--s2);border:1px solid var(--border2);border-radius:10px;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px;">
+      <span style="font-family:'Space Mono',monospace;font-size:16px;font-weight:700;color:var(--accent);letter-spacing:2px;" id="refCode">CHAPI-XXXX</span>
+      <button id="refCopyBtn" onclick="copyRef()" style="background:rgba(200,245,66,0.15);border:1px solid rgba(200,245,66,0.3);color:var(--accent);border-radius:8px;font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;font-weight:700;padding:7px 14px;cursor:pointer;transition:all .15s;">コピー</button>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+      <div style="background:var(--s2);border:1px solid var(--border);border-radius:10px;padding:12px;text-align:center;">
+        <div style="font-size:22px;margin-bottom:4px;">🎁</div>
+        <div style="font-size:12px;font-weight:700;margin-bottom:2px;">あなたへ</div>
+        <div style="font-size:10px;color:var(--muted);">プレミアム<br>月額50%OFF</div>
+      </div>
+      <div style="background:var(--s2);border:1px solid var(--border);border-radius:10px;padding:12px;text-align:center;">
+        <div style="font-size:22px;margin-bottom:4px;">💌</div>
+        <div style="font-size:12px;font-weight:700;margin-bottom:2px;">友達へ</div>
+        <div style="font-size:10px;color:var(--muted);">初月<br>30%OFF</div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- RESULTS -->
@@ -1364,31 +1387,6 @@ initReferral();
 buildHM();
 buildQ();
 </script>
-
-<!-- STICKY AD -->
-<!-- 友達招待セクション（最下部） -->
-<!-- REFERRAL -->
-  <div style="background:linear-gradient(135deg,var(--s1),#0d1220);border:2px solid rgba(200,245,66,0.2);border-radius:var(--rl);padding:20px;margin-bottom:12px;position:relative;overflow:hidden;">
-    <div style="position:absolute;top:-20px;right:-20px;width:100px;height:100px;border-radius:50%;background:radial-gradient(circle,rgba(200,245,66,0.15),transparent 70%);pointer-events:none;"></div>
-    <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:800;margin-bottom:4px;">👥 友達を招待して特典をもらおう！</div>
-    <div style="font-size:12px;color:var(--muted);margin-bottom:14px;line-height:1.7;">友達があなたのコードでプレミアム登録すると、<strong style="color:var(--accent)">あなたのプランが1ヶ月50%OFF</strong>に！友達には初月<strong style="color:var(--accent)">30%OFF</strong>をプレゼント。</div>
-    <div style="background:var(--s2);border:1px solid var(--border2);border-radius:10px;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px;">
-      <span style="font-family:'Space Mono',monospace;font-size:16px;font-weight:700;color:var(--accent);letter-spacing:2px;" id="refCode">CHAPI-XXXX</span>
-      <button id="refCopyBtn" onclick="copyRef()" style="background:rgba(200,245,66,0.15);border:1px solid rgba(200,245,66,0.3);color:var(--accent);border-radius:8px;font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;font-weight:700;padding:7px 14px;cursor:pointer;transition:all .15s;">コピー</button>
-    </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
-      <div style="background:var(--s2);border:1px solid var(--border);border-radius:10px;padding:12px;text-align:center;">
-        <div style="font-size:22px;margin-bottom:4px;">🎁</div>
-        <div style="font-size:12px;font-weight:700;margin-bottom:2px;">あなたへ</div>
-        <div style="font-size:10px;color:var(--muted);">プレミアム<br>月額50%OFF</div>
-      </div>
-      <div style="background:var(--s2);border:1px solid var(--border);border-radius:10px;padding:12px;text-align:center;">
-        <div style="font-size:22px;margin-bottom:4px;">💌</div>
-        <div style="font-size:12px;font-weight:700;margin-bottom:2px;">友達へ</div>
-        <div style="font-size:10px;color:var(--muted);">初月<br>30%OFF</div>
-      </div>
-    </div>
-  </div>
 
 <div id="stickyAd" style="position:fixed;bottom:0;left:0;right:0;z-index:50;background:var(--s1);border-top:1px solid var(--border2);padding:10px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 -6px 24px rgba(0,0,0,.4);">
   <div style="flex:1;font-size:11px;color:var(--muted);line-height:1.4;"><strong style="color:var(--text);font-size:12px;">🚀 MEXC</strong> で口座開設 — ウェルカムボーナス最大$30,000！</div>
