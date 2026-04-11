@@ -6,11 +6,67 @@
 <title>Chapi（チャピ） — チャートパターン習得クイズ｜株・FX・仮想通貨 テクニカル分析 完全攻略</title>
 <meta name="description" content="Chapi（チャピ）はチャートパターンをゲーム感覚で楽しく学べる無料クイズアプリ。ダブルボトム、ヘッドアンドショルダーズ、フラッグなど35種を完全網羅。株・FX・仮想通貨のテクニカル分析を初心者にもわかりやすく解説。AI診断機能搭載。">
 <meta name="keywords" content="チャートパターン,テクニカル分析,クイズ,ダブルボトム,ヘッドアンドショルダーズ,フラッグ,株,FX,仮想通貨,投資初心者,チャート勉強,Chapi,チャピ,chart pattern quiz">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0c0d16">
+<link rel="canonical" href="https://chapi.app/">
+
+<!-- ── OGP / SNS ── -->
+<meta property="og:type" content="website">
 <meta property="og:title" content="Chapi — チャートパターン習得クイズ | テクニカル分析を楽しく学ぼう">
 <meta property="og:description" content="35種のチャートパターンをクイズ形式で完全マスター。AI診断・進捗管理・友達紹介特典あり！無料で始めよう。">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://chapi.app/">
+<meta property="og:url" content="https://chapi.app/">
+<meta property="og:image" content="https://chapi.app/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Chapi — チャートパターン習得クイズ">
+<meta property="og:site_name" content="Chapi（チャピ）">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Chapi — チャートパターン習得クイズ">
+<meta name="twitter:description" content="35種のチャートパターンをクイズ形式で完全マスター。AI診断・進捗管理・友達紹介特典あり！無料で始めよう。">
+<meta name="twitter:image" content="https://chapi.app/ogp.png">
+
+<!-- ── Favicon ── -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230c0d16'/><text y='.9em' font-size='80' x='10'>📈</text></svg>">
+<link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230c0d16'/><text y='.9em' font-size='80' x='10'>📈</text></svg>">
+
+<!-- ── Structured Data (JSON-LD) ── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Chapi（チャピ）",
+  "description": "チャートパターンをゲーム感覚で楽しく学べる無料クイズアプリ。35種のパターンをAI診断付きで完全網羅。",
+  "url": "https://chapi.app/",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "JPY"
+  },
+  "image": "https://chapi.app/ogp.png",
+  "inLanguage": "ja",
+  "keywords": "チャートパターン,テクニカル分析,クイズ,株,FX,仮想通貨"
+}
+</script>
+
+<!-- ── Google Analytics (GA4) ── -->
+<!-- 【要設定】G-XXXXXXXXXX をご自身のGA4測定IDに置き換えてください -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+-->
+
+<!-- ── Performance: Font preload ── -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -527,15 +583,16 @@ header{
 <!-- HEADER -->
 <header>
   <div class="logo">
-    <div class="logo-icon">🐣</div>
+    <div class="logo-icon">📈</div>
     <div><div class="logo-text">Cha<em>pi</em></div><div style="font-size:9px;color:var(--muted);letter-spacing:1.5px;font-family:Space Mono,monospace;margin-top:1px;">CHART PATTERN MASTER</div></div>
   </div>
   <div class="header-right">
     <div class="streak-pill" id="streakChip">🔥 <span id="streakNum">0</span></div>
     <button style="background:linear-gradient(135deg,var(--accent),var(--pink));color:#fff;border:none;border-radius:12px;padding:8px 14px;font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;font-weight:800;cursor:pointer;" onclick="showModal()">⭐ プレミアム</button>
     <div class="lang-sw">
-      <button class="on" onclick="setLang('ja',this)">JP</button>
-      <button onclick="setLang('en',this)">EN</button>
+      <button class="on" onclick="setLang('en',this)">EN</button>
+      <button onclick="setLang('zh',this)">CN</button>
+      <button onclick="setLang('ja',this)">JP</button>
     </div>
   </div>
 </header>
@@ -556,26 +613,26 @@ header{
 
 <!-- STATS -->
 <div class="stats-bar">
-  <div class="sc"><div class="sc-icon">✅</div><div class="sc-v g" id="stC">0</div><div class="sc-l" data-jp="正解" data-en="Correct">正解</div></div>
-  <div class="sc"><div class="sc-icon">❌</div><div class="sc-v r" id="stW">0</div><div class="sc-l" data-jp="不正解" data-en="Wrong">不正解</div></div>
-  <div class="sc"><div class="sc-icon">📊</div><div class="sc-v b" id="stA">—</div><div class="sc-l" data-jp="正解率" data-en="Accuracy">正解率</div></div>
-  <div class="sc"><div class="sc-icon">⚡</div><div class="sc-v y" id="stT">0</div><div class="sc-l" data-jp="総問題" data-en="Total">総問題</div></div>
+  <div class="sc"><div class="sc-icon">✅</div><div class="sc-v g" id="stC">0</div><div class="sc-l" data-jp="正解" data-en="Correct" data-zh="正确">正解</div></div>
+  <div class="sc"><div class="sc-icon">❌</div><div class="sc-v r" id="stW">0</div><div class="sc-l" data-jp="不正解" data-en="Wrong" data-zh="错误">不正解</div></div>
+  <div class="sc"><div class="sc-icon">📊</div><div class="sc-v b" id="stA">—</div><div class="sc-l" data-jp="正解率" data-en="Accuracy" data-zh="正确率">正解率</div></div>
+  <div class="sc"><div class="sc-icon">⚡</div><div class="sc-v y" id="stT">0</div><div class="sc-l" data-jp="総問題" data-en="Total" data-zh="总题数">総問題</div></div>
 </div>
 
 <!-- TABS -->
 <div class="tabs">
-  <div class="tab on" onclick="setMode('name',this)"><span class="tab-icon">🏷️</span><span data-jp="名前当て" data-en="Name Quiz">名前当て</span></div>
-  <div class="tab" onclick="setMode('direction',this)"><span class="tab-icon">📈</span><span data-jp="方向予測" data-en="Direction">方向予測</span></div>
-  <div class="tab" onclick="setMode('category',this)"><span class="tab-icon">📚</span><span data-jp="分類" data-en="Category">分類</span></div>
-  <div class="tab" onclick="setMode('signal',this)"><span class="tab-icon">⚡</span><span data-jp="実戦" data-en="Signal">実戦</span></div>
-  <div class="tab" onclick="setMode('candle',this)"><span class="tab-icon"><svg viewBox="0 0 24 24" style="width:22px;height:22px;display:block;margin:0 auto;" fill="none"><line x1="7" y1="2" x2="7" y2="5" stroke="#b8ff47" stroke-width="1.8" stroke-linecap="round"/><rect x="4" y="5" width="6" height="9" rx="1" fill="#b8ff47"/><line x1="7" y1="14" x2="7" y2="17" stroke="#b8ff47" stroke-width="1.8" stroke-linecap="round"/><line x1="17" y1="4" x2="17" y2="7" stroke="#b8ff47" stroke-width="1.8" stroke-linecap="round"/><rect x="14" y="7" width="6" height="11" rx="1" fill="none" stroke="#b8ff47" stroke-width="1.8"/><line x1="17" y1="18" x2="17" y2="22" stroke="#b8ff47" stroke-width="1.8" stroke-linecap="round"/></svg></span><span data-jp="ローソク足" data-en="Candle">ローソク足</span></div>
-  <div class="tab tab-ai" onclick="setMode('ai',this)"><span class="tab-icon">🤖</span><span data-jp="AI診断" data-en="AI Chat">AI診断</span></div>
+  <div class="tab on" onclick="setMode('name',this)"><span class="tab-icon">🏷️</span><span data-jp="名前当て" data-en="Name Quiz" data-zh="名称测验">名前当て</span></div>
+  <div class="tab" onclick="setMode('direction',this)"><span class="tab-icon">📈</span><span data-jp="方向予測" data-en="Direction" data-zh="方向预测">方向予測</span></div>
+  <div class="tab" onclick="setMode('category',this)"><span class="tab-icon">📚</span><span data-jp="分類" data-en="Category" data-zh="分类">分類</span></div>
+  <div class="tab" onclick="setMode('signal',this)"><span class="tab-icon">⚡</span><span data-jp="実戦" data-en="Signal" data-zh="实战">実戦</span></div>
+  <div class="tab" onclick="setMode('candle',this)"><span class="tab-icon"><svg viewBox="0 0 24 24" style="width:22px;height:22px;display:block;margin:0 auto;" fill="none"><line x1="7" y1="2" x2="7" y2="5" stroke="#b8ff47" stroke-width="1.8" stroke-linecap="round"/><rect x="4" y="5" width="6" height="9" rx="1" fill="#b8ff47"/><line x1="7" y1="14" x2="7" y2="17" stroke="#b8ff47" stroke-width="1.8" stroke-linecap="round"/><line x1="17" y1="4" x2="17" y2="7" stroke="#b8ff47" stroke-width="1.8" stroke-linecap="round"/><rect x="14" y="7" width="6" height="11" rx="1" fill="none" stroke="#b8ff47" stroke-width="1.8"/><line x1="17" y1="18" x2="17" y2="22" stroke="#b8ff47" stroke-width="1.8" stroke-linecap="round"/></svg></span><span data-jp="ローソク足" data-en="Candle" data-zh="蜡烛图">ローソク足</span></div>
+  <div class="tab tab-ai" onclick="setMode('ai',this)"><span class="tab-icon">🤖</span><span data-jp="AI診断" data-en="AI Chat" data-zh="AI分析">AI診断</span></div>
 </div>
 
 <!-- PROGRESS -->
 <div class="prog-wrap" id="progWrap">
   <div class="prog-label">
-    <span id="progLabel" data-jp="進捗" data-en="Progress">進捗</span>
+    <span id="progLabel" data-jp="進捗" data-en="Progress" data-zh="进度">進捗</span>
     <span id="qProg">1 / 10</span>
   </div>
   <div class="prog-bg"><div class="prog-fill" id="progFill" style="width:0%"></div></div>
@@ -586,8 +643,8 @@ header{
   <div class="ai-header">
     <div class="ai-badge">✨ AI</div>
     <div class="ai-header-text">
-      <h3 data-jp="チャピAI — パターン診断＆質問" data-en="ChartPi AI — Pattern Analysis & Q&A">チャピAI — パターン診断＆質問</h3>
-      <p data-jp="チャートについて何でも聞いてね！" data-en="Ask anything about chart patterns!">チャートについて何でも聞いてね！</p>
+      <h3 data-jp="チャピAI — パターン診断＆質問" data-en="ChartPi AI — Pattern Analysis & Q&A" data-zh="Chapi AI — 形态分析&提问">チャピAI — パターン診断＆質問</h3>
+      <p data-jp="チャートについて何でも聞いてね！" data-en="Ask anything about chart patterns!" data-zh="随时提问关于图表形态的问题！">チャートについて何でも聞いてね！</p>
     </div>
   </div>
   <div class="quick-qs" id="quickQs">
@@ -632,7 +689,7 @@ header{
     </div>
 
     <div class="chart-wrap" id="chartWrap">
-      <div class="chart-cap" data-jp="チャートを識別しよう🔍" data-en="Identify the pattern 🔍">チャートを識別しよう🔍</div>
+      <div class="chart-cap" data-jp="チャートを識別しよう🔍" data-en="Identify the pattern 🔍" data-zh="识别图表形态🔍">チャートを識別しよう🔍</div>
       <svg class="csvg" id="cSvg" viewBox="0 0 520 180" preserveAspectRatio="xMidYMid meet"></svg>
     </div>
 
@@ -674,13 +731,13 @@ header{
     <a class="aff-cta" href="https://www.bitgetapps.com/ja/referral/register?clacCode=HE4WTZBM&from=%2Fja%2Fevents%2Freferral-all-program&source=events&utmSource=PremierInviter" id="affCta" target="_blank" rel="nofollow sponsored noopener" onclick="trackAff('main')">無料で始める →</a>
   </div>
   <div class="weak-panel" id="weakPanel" style="display:none">
-    <div class="panel-title" data-jp="😅 苦手パターン" data-en="😅 Weak Areas">😅 苦手パターン</div>
+    <div class="panel-title" data-jp="😅 苦手パターン" data-en="😅 Weak Areas" data-zh="😅 薄弱形态">😅 苦手パターン</div>
     <div class="weak-tags" id="weakTags"></div>
   </div>
 
   <!-- Heatmap -->
   <div class="history-panel">
-    <div class="panel-title" data-jp="🗺️ 習熟度マップ (全35パターン)" data-en="🗺️ Mastery Map (all 35 patterns)">🗺️ 習熟度マップ (全35パターン)</div>
+    <div class="panel-title" data-jp="🗺️ 習熟度マップ (全35パターン)" data-en="🗺️ Mastery Map (all 35 patterns)" data-zh="🗺️ 熟练度地图（共35种形态）">🗺️ 習熟度マップ (全35パターン)</div>
     <div class="hmap" id="hmapGrid"></div>
     <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap;">
       <span style="font-size:10px;color:var(--muted);">⬜未挑戦</span>
@@ -694,8 +751,8 @@ header{
   <!-- REFERRAL -->
   <div style="background:linear-gradient(135deg,var(--s1),#0d1220);border:2px solid rgba(200,245,66,0.2);border-radius:var(--rl);padding:20px;margin-bottom:12px;position:relative;overflow:hidden;">
     <div style="position:absolute;top:-20px;right:-20px;width:100px;height:100px;border-radius:50%;background:radial-gradient(circle,rgba(200,245,66,0.15),transparent 70%);pointer-events:none;"></div>
-    <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:800;margin-bottom:4px;">👥 友達を招待して特典をもらおう！</div>
-    <div style="font-size:12px;color:var(--muted);margin-bottom:14px;line-height:1.7;">友達があなたのコードでプレミアム登録すると、<strong style="color:var(--accent)">あなたのプランが1ヶ月50%OFF</strong>に！友達には初月<strong style="color:var(--accent)">30%OFF</strong>をプレゼント。</div>
+    <div id="refSectionTitle" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:800;margin-bottom:4px;">👥 友達を招待して特典をもらおう！</div>
+    <div id="refSectionDesc" style="font-size:12px;color:var(--muted);margin-bottom:14px;line-height:1.7;">友達があなたのコードでプレミアム登録すると、<strong style="color:var(--accent)">あなたのプランが1ヶ月50%OFF</strong>に！友達には初月<strong style="color:var(--accent)">30%OFF</strong>をプレゼント。</div>
     <div style="background:var(--s2);border:1px solid var(--border2);border-radius:10px;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px;">
       <span style="font-family:'Space Mono',monospace;font-size:16px;font-weight:700;color:var(--accent);letter-spacing:2px;" id="refCode">CHAPI-XXXX</span>
       <button id="refCopyBtn" onclick="copyRef()" style="background:rgba(200,245,66,0.15);border:1px solid rgba(200,245,66,0.3);color:var(--accent);border-radius:8px;font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;font-weight:700;padding:7px 14px;cursor:pointer;transition:all .15s;">コピー</button>
@@ -703,13 +760,13 @@ header{
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
       <div style="background:var(--s2);border:1px solid var(--border);border-radius:10px;padding:12px;text-align:center;">
         <div style="font-size:22px;margin-bottom:4px;">🎁</div>
-        <div style="font-size:12px;font-weight:700;margin-bottom:2px;">あなたへ</div>
-        <div style="font-size:10px;color:var(--muted);">プレミアム<br>月額50%OFF</div>
+        <div id="refYouTitle" style="font-size:12px;font-weight:700;margin-bottom:2px;">あなたへ</div>
+        <div id="refYouSub" style="font-size:10px;color:var(--muted);">プレミアム<br>月額50%OFF</div>
       </div>
       <div style="background:var(--s2);border:1px solid var(--border);border-radius:10px;padding:12px;text-align:center;">
         <div style="font-size:22px;margin-bottom:4px;">💌</div>
-        <div style="font-size:12px;font-weight:700;margin-bottom:2px;">友達へ</div>
-        <div style="font-size:10px;color:var(--muted);">初月<br>30%OFF</div>
+        <div id="refFriendTitle" style="font-size:12px;font-weight:700;margin-bottom:2px;">友達へ</div>
+        <div id="refFriendSub" style="font-size:10px;color:var(--muted);">初月<br>30%OFF</div>
       </div>
     </div>
   </div>
@@ -722,13 +779,13 @@ header{
     <div class="res-pct" id="resPct">0%</div>
     <div class="res-sub" id="resSub"></div>
     <div class="res-grid">
-      <div class="res-stat"><div class="res-stat-n" style="color:var(--green)" id="resC">0</div><div class="res-stat-l" data-jp="✅ 正解" data-en="✅ Correct">✅ 正解</div></div>
-      <div class="res-stat"><div class="res-stat-n" style="color:var(--yellow)" id="resSt">0</div><div class="res-stat-l" data-jp="⚡ 最大連続" data-en="⚡ Best streak">⚡ 最大連続</div></div>
-      <div class="res-stat"><div class="res-stat-n" style="color:var(--blue)" id="resTime">—</div><div class="res-stat-l" data-jp="⏱️ 時間" data-en="⏱️ Time">⏱️ 時間</div></div>
+      <div class="res-stat"><div class="res-stat-n" style="color:var(--green)" id="resC">0</div><div class="res-stat-l" data-jp="✅ 正解" data-en="✅ Correct" data-zh="✅ 正确">✅ 正解</div></div>
+      <div class="res-stat"><div class="res-stat-n" style="color:var(--yellow)" id="resSt">0</div><div class="res-stat-l" data-jp="⚡ 最大連続" data-en="⚡ Best streak" data-zh="⚡ 最高连续">⚡ 最大連続</div></div>
+      <div class="res-stat"><div class="res-stat-n" style="color:var(--blue)" id="resTime">—</div><div class="res-stat-l" data-jp="⏱️ 時間" data-en="⏱️ Time" data-zh="⏱️ 时间">⏱️ 時間</div></div>
     </div>
     <div class="res-actions">
-      <button class="retry-btn" onclick="restartQuiz()" data-jp="🔁 もう一度" data-en="🔁 Retry">🔁 もう一度</button>
-      <button class="prem-btn" onclick="showModal()" data-jp="⭐ プレミアムで全機能解放" data-en="⭐ Unlock Premium">⭐ プレミアムで全機能解放</button>
+      <button class="retry-btn" onclick="restartQuiz()" data-jp="🔁 もう一度" data-en="🔁 Retry" data-zh="🔁 再试一次">🔁 もう一度</button>
+      <button class="prem-btn" onclick="showModal()" data-jp="⭐ プレミアムで全機能解放" data-en="⭐ Unlock Premium" data-zh="⭐ 解锁高级版">⭐ プレミアムで全機能解放</button>
     </div>
   </div>
   <div class="ex-section">
@@ -773,6 +830,29 @@ header{
         </div>
       </div>
 
+      <!-- Coincheck -->
+      <div class="ex-card">
+        <div class="ex-card-header">
+          <div class="ex-card-logo" style="background:linear-gradient(135deg,#1a3a5c,#00a0e922);border:1px solid rgba(0,160,233,.3);">🪙</div>
+          <div>
+            <div class="ex-card-name">Coincheck<span style="font-size:11px;font-weight:500;color:var(--muted);margin-left:6px;">（国内暗号資産取引所）</span></div>
+            <div class="ex-card-badge" style="background:rgba(52,211,153,0.1);border:1px solid rgba(52,211,153,0.3);color:#34d399;">🎁 紹介リンク限定 · 1,500円相当BTC</div>
+          </div>
+        </div>
+        <div class="ex-merits">
+          <div class="ex-merit"><div class="ex-merit-icon">🎁</div><div class="ex-merit-text"><strong>紹介リンクから登録＋条件達成で1,500円相当のBTCプレゼント！</strong>このリンク経由での口座開設が必須です</div></div>
+          <div class="ex-merit"><div class="ex-merit-icon">🏆</div><div class="ex-merit-text"><strong>取引アプリDL数 国内No.1</strong>（※対象：国内暗号資産取引所）使いやすさに定評あり</div></div>
+          <div class="ex-merit"><div class="ex-merit-icon">🇯🇵</div><div class="ex-merit-text"><strong>金融庁登録済みの国内取引所</strong>日本語サポート完備で初心者でも安心して使える</div></div>
+          <div class="ex-merit"><div class="ex-merit-icon">📱</div><div class="ex-merit-text"><strong>シンプルで見やすいUI</strong>チャート学習の実践の場として最適。ビットコインをはじめ主要コインを取引可能</div></div>
+        </div>
+        <div style="background:rgba(52,211,153,0.06);border:1px solid rgba(52,211,153,0.2);border-radius:10px;padding:10px 14px;margin:0 14px 12px;font-size:11px;color:rgba(240,238,232,0.65);line-height:1.6;">
+          ⚠️ <strong style="color:#34d399;">注意：</strong>このリンク以外から登録した場合や、クリック後に別ページへ移動した場合は特典が無効になります。
+        </div>
+        <div class="ex-cta-row">
+          <a class="ex-cta-btn" href="https://campaign.coincheck.com/invitation?code=SE5H1KI" target="_blank" rel="nofollow sponsored noopener" onclick="trackAff('result_coincheck')" style="background:linear-gradient(135deg,#00a0e9,#0070cc);">🪙 1,500円相当BTCをもらう</a>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
@@ -782,32 +862,32 @@ header{
 <!-- PREMIUM MODAL -->
 <div class="modal-overlay" id="premModal" onclick="if(event.target===this)closeModal()">
   <div class="modal">
-    <span class="modal-mascot">⭐🐣⭐</span>
-    <h2 data-jp="チャピ プレミアム" data-en="ChartPi Premium">チャピ プレミアム</h2>
-    <div class="modal-sub" data-jp="全パターン解放 · AI無制限 · 広告なし" data-en="All patterns · Unlimited AI · Ad-free">全パターン解放 · AI無制限 · 広告なし</div>
+    <span class="modal-mascot">⭐✨⭐</span>
+    <h2 data-jp="チャピ プレミアム" data-en="ChartPi Premium" data-zh="Chapi 高级版">チャピ プレミアム</h2>
+    <div class="modal-sub" data-jp="全パターン解放 · AI無制限 · 広告なし" data-en="All patterns · Unlimited AI · Ad-free" data-zh="全形态解锁 · AI无限制 · 无广告">全パターン解放 · AI無制限 · 広告なし</div>
     <div class="plan-card rec">
       <div class="rec-badge">🏆 BEST VALUE</div>
-      <div class="plan-name" data-jp="年間プラン" data-en="Annual">年間プラン</div>
-      <div class="plan-price">¥5,800<span data-jp=" / 年（月¥483〜）" data-en=" / yr (¥483/mo)"> / 年（月¥483〜）</span></div>
+      <div class="plan-name" data-jp="年間プラン" data-en="Annual" data-zh="年度计划">年間プラン</div>
+      <div class="plan-price">¥5,800<span data-jp=" / 年（月¥483〜）" data-en=" / yr (¥483/mo)" data-zh=" / 年（¥483/月起）"> / 年（月¥483〜）</span></div>
       <ul class="plan-features">
-        <li data-jp="全35種チャートパターン解放" data-en="All 35 chart patterns">全35種チャートパターン解放</li>
-        <li data-jp="AI診断 無制限（月100回→無制限）" data-en="Unlimited AI diagnosis">AI診断 無制限（月100回→無制限）</li>
-        <li data-jp="広告完全非表示" data-en="Ad-free experience">広告完全非表示</li>
-        <li data-jp="苦手パターン集中訓練モード" data-en="Weak-area drill mode">苦手パターン集中訓練モード</li>
-        <li data-jp="詳細成績ダッシュボード" data-en="Full analytics dashboard">詳細成績ダッシュボード</li>
-        <li data-jp="リアルチャート画像クイズ（β）" data-en="Real chart quiz (β)">リアルチャート画像クイズ（β）</li>
+        <li data-jp="全35種チャートパターン解放" data-en="All 35 chart patterns" data-zh="解锁全部35种图表形态">全35種チャートパターン解放</li>
+        <li data-jp="AI診断 無制限（月100回→無制限）" data-en="Unlimited AI diagnosis" data-zh="AI分析无限制（月100次→无限制）">AI診断 無制限（月100回→無制限）</li>
+        <li data-jp="広告完全非表示" data-en="Ad-free experience" data-zh="完全无广告">広告完全非表示</li>
+        <li data-jp="苦手パターン集中訓練モード" data-en="Weak-area drill mode" data-zh="薄弱形态专项训练模式">苦手パターン集中訓練モード</li>
+        <li data-jp="詳細成績ダッシュボード" data-en="Full analytics dashboard" data-zh="详细成绩仪表盘">詳細成績ダッシュボード</li>
+        <li data-jp="リアルチャート画像クイズ（β）" data-en="Real chart quiz (β)" data-zh="真实图表图片测验（β）">リアルチャート画像クイズ（β）</li>
       </ul>
     </div>
     <div class="plan-card">
-      <div class="plan-name" data-jp="月間プラン" data-en="Monthly">月間プラン</div>
-      <div class="plan-price">¥980<span data-jp=" / 月" data-en=" / mo"> / 月</span></div>
+      <div class="plan-name" data-jp="月間プラン" data-en="Monthly" data-zh="月度计划">月間プラン</div>
+      <div class="plan-price">¥980<span data-jp=" / 月" data-en=" / mo" data-zh=" / 月"> / 月</span></div>
       <ul class="plan-features">
-        <li data-jp="全35種チャートパターン" data-en="All 35 patterns">全35種チャートパターン</li>
-        <li data-jp="AI診断 月30回" data-en="30 AI diagnoses/mo">AI診断 月30回</li>
-        <li data-jp="広告非表示" data-en="No ads">広告非表示</li>
+        <li data-jp="全35種チャートパターン" data-en="All 35 patterns" data-zh="全35种图表形态">全35種チャートパターン</li>
+        <li data-jp="AI診断 月30回" data-en="30 AI diagnoses/mo" data-zh="AI分析每月30次">AI診断 月30回</li>
+        <li data-jp="広告非表示" data-en="No ads" data-zh="隐藏广告">広告非表示</li>
       </ul>
     </div>
-    <button class="modal-close" onclick="closeModal()" data-jp="無料版を続ける" data-en="Continue free">無料版を続ける</button>
+    <button class="modal-close" onclick="closeModal()" data-jp="無料版を続ける" data-en="Continue free" data-zh="继续免费版">無料版を続ける</button>
   </div>
 </div>
 
@@ -865,123 +945,152 @@ function drawMeasuredMoveDown(s){G(s);yAx(s);ln(s,[[28,25],[120,110]],CBEAR,2.5)
 function drawThrowback(s){G(s);yAx(s);hl(s,70,28,490,CRES,'旧R→新S');ln(s,[[28,145],[100,70]],CBULL,2);ln(s,[[100,70],[160,35]],CBULL,2.5);ln(s,[[160,35],[220,68]],CMUTED,1.8);dot(s,220,68,CBULL,4);ln(s,[[220,68],[380,12],[450,4]],CBULL,2.5);lbl(s,190,50,'Throwback',CMUTED,9);arrowU(s,450,10);}
 
 const DB=[
-  {id:'double_bottom',cat:'reversal',dir:'bullish',jp:'ダブルボトム（W底）',en:'Double Bottom',tag_jp:'転換型・上昇',tag_en:'Reversal · Bullish',draw:drawDoubleBottom,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',exp_jp:'<strong>ダブルボトム</strong>は同じ安値で2回反発後、ネックライン上抜けで完成する上昇転換パターン🚀',exp_en:'<strong>Double Bottom</strong> bounces twice at same support, then breaks neckline bullishly.',tip_jp:'💡 2回目の底の出来高が1回目より少ないと信頼度UP！',tip_en:'💡 Lower volume on 2nd bottom = more reliable!',opts:['ダブルトップ / Double Top','ダブルボトム / Double Bottom','トリプルボトム / Triple Bottom','ソーサーボトム / Saucer Bottom'],correct:1},
-  {id:'double_top',cat:'reversal',dir:'bearish',jp:'ダブルトップ（M天井）',en:'Double Top',tag_jp:'転換型・下降',tag_en:'Reversal · Bearish',draw:drawDoubleTop,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',exp_jp:'<strong>ダブルトップ</strong>は同じ高値で2回反落後、ネックライン割れで完成する下降転換パターン📉',exp_en:'<strong>Double Top</strong> fails at same resistance twice, then breaks neckline bearishly.',tip_jp:'💡 2回目の天井で出来高が少ないほど下落が強くなる傾向！',tip_en:'💡 Lower volume at 2nd top = stronger decline ahead.',opts:['ダブルトップ / Double Top','ダブルボトム / Double Bottom','トリプルトップ / Triple Top','ソーサートップ / Saucer Top'],correct:0},
-  {id:'triple_bottom',cat:'reversal',dir:'bullish',jp:'トリプルボトム',en:'Triple Bottom',tag_jp:'転換型・上昇',tag_en:'Reversal · Bullish',draw:drawTripleBottom,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',exp_jp:'<strong>トリプルボトム</strong>は3回同じ安値で反発！ダブルボトムよりサポートが強く、ネックライン抜けは強力なシグナル🎯',exp_en:'<strong>Triple Bottom</strong>: 3 bounces at same support. Stronger than Double Bottom.',tip_jp:'💡 3回目の反発で出来高が増えると最高！',tip_en:'💡 Volume increase on 3rd bounce = strongest signal!',opts:['ダブルボトム / Double Bottom','トリプルボトム / Triple Bottom','H&Sボトム / H&S Bottom','ソーサーボトム / Saucer Bottom'],correct:1},
-  {id:'triple_top',cat:'reversal',dir:'bearish',jp:'トリプルトップ',en:'Triple Top',tag_jp:'転換型・下降',tag_en:'Reversal · Bearish',draw:drawTripleTop,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',exp_jp:'<strong>トリプルトップ</strong>は3度高値を試して失敗！ネックライン割れで強い下落が始まる📉',exp_en:'<strong>Triple Top</strong>: 3 failed attempts at resistance. Neckline break = strong decline.',tip_jp:'💡 各ピークで出来高が減るのが理想的！',tip_en:'💡 Declining volume at each peak = ideal pattern.',opts:['トリプルトップ / Triple Top','ダブルトップ / Double Top','H&Sトップ / H&S Top','ソーサートップ / Saucer Top'],correct:0},
-  {id:'hs_top',cat:'reversal',dir:'bearish',jp:'ヘッドアンドショルダーズ（三尊天井）',en:'Head & Shoulders Top',tag_jp:'転換型・下降',tag_en:'Reversal · Bearish',draw:drawHSTop,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',exp_jp:'<strong>ヘッドアンドショルダーズ</strong>は最も信頼性が高い転換パターンの一つ✨ 左肩・頭・右肩の3山で構成。ネックライン割れで下落開始！',exp_en:'<strong>Head & Shoulders Top</strong>: most reliable reversal. 3 peaks (LS, Head, RS). Break neckline = decline.',tip_jp:'💡 右肩の高値が頭より低いことが重要ポイント！',tip_en:'💡 RS lower than Head = valid pattern!',opts:['ダブルトップ / Double Top','トリプルトップ / Triple Top','ソーサートップ / Saucer Top','H&Sトップ / H&S Top'],correct:3},
-  {id:'hs_bottom',cat:'reversal',dir:'bullish',jp:'逆三尊（H&Sボトム）',en:'Inverse H&S',tag_jp:'転換型・上昇',tag_en:'Reversal · Bullish',draw:drawHSBottom,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',exp_jp:'<strong>逆三尊</strong>はH&Sの上下逆転版🔄 3谷（左肩・頭＝最安値・右肩）でネックライン上抜けで上昇転換確定！',exp_en:'<strong>Inverse H&S</strong>: 3 troughs (LS, Head=lowest, RS). Neckline breakout = bullish confirmation.',tip_jp:'💡 ブレイク時の出来高急増がシグナルを強化する！',tip_en:'💡 Volume surge on breakout = very strong signal!',opts:['ダブルボトム / Double Bottom','トリプルボトム / Triple Bottom','逆三尊 / Inverse H&S','ソーサーボトム / Saucer Bottom'],correct:2},
-  {id:'saucer_bottom',cat:'reversal',dir:'bullish',jp:'ソーサーボトム（円形底）',en:'Saucer Bottom',tag_jp:'転換型・上昇',tag_en:'Reversal · Bullish',draw:drawSaucerBottom,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',exp_jp:'<strong>ソーサーボトム</strong>は緩やかなU字型の底パターン🥣 ゆっくりですが信頼性が高い！',exp_en:'<strong>Saucer Bottom</strong>: slow, gradual U-shaped reversal. Reliable but takes time.',tip_jp:'💡 週足・月足など長い時間軸で見つかりやすい！',tip_en:'💡 More common on weekly/monthly charts!',opts:['カップ&ハンドル / Cup & Handle','ソーサーボトム / Saucer Bottom','ダブルボトム / Double Bottom','トリプルボトム / Triple Bottom'],correct:1},
-  {id:'saucer_top',cat:'reversal',dir:'bearish',jp:'ソーサートップ（円形天井）',en:'Saucer Top',tag_jp:'転換型・下降',tag_en:'Reversal · Bearish',draw:drawSaucerTop,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',exp_jp:'<strong>ソーサートップ</strong>はソーサーボトムの逆！緩やかな逆U字型でゆっくり下落転換📉',exp_en:'<strong>Saucer Top</strong>: inverted U-shape. Slow bearish reversal.',tip_jp:'💡 出来高が天井付近で減少し、下落とともに増加するのが特徴！',tip_en:'💡 Volume decreases near top, increases as price falls!',opts:['ソーサートップ / Saucer Top','ダブルトップ / Double Top','トリプルトップ / Triple Top','H&Sトップ / H&S Top'],correct:0},
-  {id:'cup_handle',cat:'continuation',dir:'bullish',jp:'カップ&ハンドル',en:'Cup & Handle',tag_jp:'転換型・上昇',tag_en:'Reversal · Bullish',draw:drawCupHandle,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',exp_jp:'<strong>カップ&ハンドル</strong>はウィリアム・オニールが広めた強力な上昇パターン☕ カップ＋小さな調整（ハンドル）の後にブレイクアウト！',exp_en:'<strong>Cup & Handle</strong>: U-shaped base + small handle = powerful bullish breakout. By William O\'Neil.',tip_jp:'💡 ハンドルの調整はカップ深さの1/3以内が理想！',tip_en:'💡 Handle retracement ≤1/3 of cup depth = ideal!',opts:['ソーサーボトム / Saucer Bottom','上昇フラッグ / Bull Flag','カップ&ハンドル / Cup & Handle','ダブルボトム / Double Bottom'],correct:2},
-  {id:'asc_triangle',cat:'continuation',dir:'bullish',jp:'上昇三角保ち合い',en:'Ascending Triangle',tag_jp:'継続型・上昇',tag_en:'Continuation · Bullish',draw:drawAscTriangle,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',exp_jp:'<strong>上昇三角</strong>は水平な抵抗線＋右肩上がりのサポートで構成。買い手が積極的！抵抗線ブレイクで上昇加速🚀',exp_en:'<strong>Ascending Triangle</strong>: flat resistance + rising lows. Bullish breakout above resistance.',tip_jp:'💡 ブレイク時に出来高が急増するのが理想的！',tip_en:'💡 Volume surge on breakout = ideal setup!',opts:['上昇三角 / Ascending','下降三角 / Descending','シンメトリカル三角 / Symmetrical','上昇ウェッジ / Rising Wedge'],correct:0},
-  {id:'desc_triangle',cat:'continuation',dir:'bearish',jp:'下降三角保ち合い',en:'Descending Triangle',tag_jp:'継続型・下降',tag_en:'Continuation · Bearish',draw:drawDescTriangle,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',exp_jp:'<strong>下降三角</strong>は水平なサポート＋右肩下がりのレジスタンスで構成。売り手優勢！サポート割れで下落加速📉',exp_en:'<strong>Descending Triangle</strong>: flat support + falling highs. Bearish breakdown below support.',tip_jp:'💡 旧サポートが抵抗線になることが多い！',tip_en:'💡 Old support often becomes new resistance!',opts:['上昇三角 / Ascending','シンメトリカル三角 / Symmetrical','下降三角 / Descending','下降ウェッジ / Falling Wedge'],correct:2},
-  {id:'symm_triangle',cat:'continuation',dir:'neutral',jp:'シンメトリカルトライアングル',en:'Symmetrical Triangle',tag_jp:'継続型・中立',tag_en:'Continuation · Neutral',draw:drawSymmTriangle,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',exp_jp:'<strong>シンメトリカルトライアングル</strong>は収束する2本のトレンドラインで構成。中立で先行トレンドの方向に60-65%で継続🎯',exp_en:'<strong>Symmetrical Triangle</strong>: converging lines. Neutral — usually breaks with prior trend (60-65%).',tip_jp:'💡 ブレイク方向を予測するより確認後に乗るほうが安全！',tip_en:'💡 Wait for confirmed breakout rather than predicting!',opts:['上昇三角 / Ascending','下降三角 / Descending','シンメトリカル三角 / Symmetrical','上昇ペナント / Pennant'],correct:2},
-  {id:'bull_flag',cat:'continuation',dir:'bullish',jp:'上昇フラッグ型',en:'Bull Flag',tag_jp:'継続型・上昇',tag_en:'Continuation · Bullish',draw:drawBullFlag,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',exp_jp:'<strong>上昇フラッグ</strong>は急騰（ポール）後の緩やかな下降チャンネル🚩 継続パターンで上抜けでポールと同等の上昇が期待！',exp_en:'<strong>Bull Flag</strong>: strong rally + slight pullback channel. Breakout = next leg up.',tip_jp:'💡 フラッグ期間中の出来高が少ないほど良い！',tip_en:'💡 Low volume in flag = stronger breakout ahead!',opts:['上昇ペナント / Pennant','上昇ウェッジ / Rising Wedge','カップ&ハンドル / Cup','上昇フラッグ / Bull Flag'],correct:3},
-  {id:'bear_flag',cat:'continuation',dir:'bearish',jp:'下降フラッグ型',en:'Bear Flag',tag_jp:'継続型・下降',tag_en:'Continuation · Bearish',draw:drawBearFlag,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',exp_jp:'<strong>下降フラッグ</strong>は急落後の緩やかな上昇チャンネル📉 一見反発に見えるが下落継続パターン！',exp_en:'<strong>Bear Flag</strong>: sharp drop + brief upward channel. Breakdown continues the decline.',tip_jp:'💡 反発期間の出来高が少ないほど信頼度UP！',tip_en:'💡 Low volume in consolidation = stronger bear signal!',opts:['下降ペナント / Pennant','下降ウェッジ / Wedge','ダブルトップ / Double Top','下降フラッグ / Bear Flag'],correct:3},
-  {id:'bull_pennant',cat:'continuation',dir:'bullish',jp:'上昇ペナント型',en:'Bull Pennant',tag_jp:'継続型・上昇',tag_en:'Continuation · Bullish',draw:drawBullPennant,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',exp_jp:'<strong>上昇ペナント</strong>は急騰後の小さな対称三角形🔺 フラッグと似るが三角形が収束するのが違い！上抜けで再急騰！',exp_en:'<strong>Bull Pennant</strong>: surge + small symmetrical triangle. Upside breakout = next rally.',tip_jp:'💡 ペナント期間は短いほど良い（1〜3週間が理想）！',tip_en:'💡 Shorter pennant = stronger signal (1-3 weeks ideal)!',opts:['上昇ペナント / Bull Pennant','上昇フラッグ / Bull Flag','上昇三角 / Ascending','上昇ウェッジ / Rising Wedge'],correct:0},
-  {id:'bear_pennant',cat:'continuation',dir:'bearish',jp:'下降ペナント型',en:'Bear Pennant',tag_jp:'継続型・下降',tag_en:'Continuation · Bearish',draw:drawBearPennant,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',exp_jp:'<strong>下降ペナント</strong>は急落後の小さな対称三角形📉 下降フラッグに似るが三角形が収束する！下抜けで再急落！',exp_en:'<strong>Bear Pennant</strong>: sharp drop + small symmetrical triangle. Breakdown continues decline.',tip_jp:'💡 ペナント内の出来高急減が正常！',tip_en:'💡 Volume contraction in pennant is normal!',opts:['下降フラッグ / Bear Flag','下降三角 / Descending','シンメトリカル / Symmetrical','下降ペナント / Bear Pennant'],correct:3},
-  {id:'rising_wedge',cat:'reversal',dir:'bearish',jp:'上昇ウェッジ（ライジングウェッジ）',en:'Rising Wedge',tag_jp:'転換型・下降',tag_en:'Reversal · Bearish',draw:drawRisingWedge,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',exp_jp:'<strong>上昇ウェッジ</strong>は見た目は上昇しているが下落転換パターン⚠️ 両境界線が収束しながら上昇。下支持線割れで急落！',exp_en:'<strong>Rising Wedge</strong>: both lines slope up but converge. Bearish despite appearance!',tip_jp:'💡「上がっているように見えて下がる」ダマシの代表例！',tip_en:'💡 Classic deceptive pattern — looks bullish but is bearish!',opts:['上昇フラッグ / Bull Flag','上昇三角 / Ascending','上昇ウェッジ / Rising Wedge','シンメトリカル / Symmetrical'],correct:2},
-  {id:'falling_wedge',cat:'reversal',dir:'bullish',jp:'下降ウェッジ（フォーリングウェッジ）',en:'Falling Wedge',tag_jp:'転換型・上昇',tag_en:'Reversal · Bullish',draw:drawFallingWedge,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',exp_jp:'<strong>下降ウェッジ</strong>は見た目は下降しているが上昇転換パターン🔼 両境界線が収束しながら下降。上抜けで急騰！',exp_en:'<strong>Falling Wedge</strong>: both lines slope down and converge. Bullish despite appearance!',tip_jp:'💡 継続型として機能することもある（下落トレンド中の調整）！',tip_en:'💡 Can also work as continuation in a downtrend!',opts:['下降フラッグ / Bear Flag','下降三角 / Descending','下降ウェッジ / Falling Wedge','シンメトリカル / Symmetrical'],correct:2},
-  {id:'rect_bull',cat:'continuation',dir:'bullish',jp:'上昇ボックス（長方形）',en:'Bullish Rectangle',tag_jp:'継続型・上昇',tag_en:'Continuation · Bullish',draw:drawRectBull,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',exp_jp:'<strong>上昇ボックス</strong>は上昇トレンド中の水平なレンジ相場📦 上抜けでトレンド再開！目標値はボックスの高さ分。',exp_en:'<strong>Bullish Rectangle</strong>: horizontal consolidation in uptrend. Breakout resumes trend.',tip_jp:'💡 ボックス内の値動きは「エネルギー蓄積」と見なせる！',tip_en:'💡 Range action = energy building for next move!',opts:['下降ボックス / Bear Rectangle','上昇ボックス / Bull Rectangle','上昇フラッグ / Bull Flag','上昇三角 / Ascending'],correct:1},
-  {id:'rect_bear',cat:'continuation',dir:'bearish',jp:'下降ボックス（長方形）',en:'Bearish Rectangle',tag_jp:'継続型・下降',tag_en:'Continuation · Bearish',draw:drawRectBear,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',exp_jp:'<strong>下降ボックス</strong>は下降トレンド中の水平なレンジ相場📦 下抜けでダウントレンド再開！',exp_en:'<strong>Bearish Rectangle</strong>: horizontal consolidation in downtrend. Breakdown resumes decline.',tip_jp:'💡 ボックス上限付近は売りの好機！',tip_en:'💡 Near top of box = good selling opportunity!',opts:['下降ボックス / Bear Rectangle','上昇ボックス / Bull Rectangle','下降フラッグ / Bear Flag','下降三角 / Descending'],correct:0},
-  {id:'spike_top',cat:'reversal',dir:'bearish',jp:'スパイクトップ（Vトップ）',en:'Spike Top',tag_jp:'転換型・下降',tag_en:'Reversal · Bearish',draw:drawSpikeTop,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',exp_jp:'<strong>スパイクトップ</strong>は急騰後に即座に反転するV字型天井⚡ ニュースや過剰投機が原因で急激な下落！',exp_en:'<strong>Spike Top</strong>: sharp rally immediately reversed. Fast, violent reversal.',tip_jp:'💡 出来高急増を伴うスパイクはトレンド終焉のサイン！',tip_en:'💡 Volume spike at top = often marks end of trend!',opts:['ダブルトップ / Double Top','スパイクトップ / Spike Top','ソーサートップ / Saucer Top','トリプルトップ / Triple Top'],correct:1},
-  {id:'spike_bottom',cat:'reversal',dir:'bullish',jp:'スパイクボトム（Vボトム）',en:'Spike Bottom',tag_jp:'転換型・上昇',tag_en:'Reversal · Bullish',draw:drawSpikeBottom,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',exp_jp:'<strong>スパイクボトム</strong>はパニック売りが底値を作り即急騰するV字型底⚡ 反転確認後のエントリーが安全！',exp_en:'<strong>Spike Bottom</strong>: panic selling creates sharp bottom, immediately reversed.',tip_jp:'💡 Vボトムは底確認が難しい。反転確認後の参入が安全！',tip_en:'💡 Hard to time — wait for confirmation!',opts:['ダブルボトム / Double Bottom','スパイクボトム / Spike Bottom','ソーサーボトム / Saucer Bottom','トリプルボトム / Triple Bottom'],correct:1},
-  {id:'broadening',cat:'reversal',dir:'bearish',jp:'拡張型（メガホン）',en:'Broadening Top',tag_jp:'転換型・下降',tag_en:'Reversal · Bearish',draw:drawBroadeningTop,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',exp_jp:'<strong>拡張型（メガホン）</strong>はボラティリティが拡大し続けるパターン📢 高値切上・安値切下で市場が不安定。通常は下落転換！',exp_en:'<strong>Broadening Top</strong>: expanding volatility. Higher highs + lower lows = market chaos. Usually bearish.',tip_jp:'💡 ボラティリティ拡大は市場の混乱を示している！',tip_en:'💡 Expanding volatility = market confusion!',opts:['シンメトリカル / Symmetrical','上昇三角 / Ascending','拡張型 / Broadening','下降ウェッジ / Falling Wedge'],correct:2},
-  {id:'diamond',cat:'reversal',dir:'bearish',jp:'ダイヤモンドトップ',en:'Diamond Top',tag_jp:'転換型・下降',tag_en:'Reversal · Bearish',draw:drawDiamondTop,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',exp_jp:'<strong>ダイヤモンドトップ</strong>は拡張形＋対称三角形が合わさったひし形パターン💎 見つけにくいが信頼性が高い下落転換！',exp_en:'<strong>Diamond Top</strong>: broadening + symmetrical triangle = diamond shape. Rare but reliable!',tip_jp:'💡 ダイヤモンドは発見が難しいが完成したら強力！',tip_en:'💡 Rare but very powerful when identified!',opts:['拡張型 / Broadening','シンメトリカル / Symmetrical','ダイヤモンド / Diamond Top','H&Sトップ / H&S Top'],correct:2},
-  {id:'island',cat:'reversal',dir:'both',jp:'アイランドリバーサル',en:'Island Reversal',tag_jp:'転換型',tag_en:'Reversal',draw:drawIslandReversal,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',exp_jp:'<strong>アイランドリバーサル</strong>はギャップで「孤島」を形成する強力な転換パターン🏝️ 上昇ギャップ→孤島→下降ギャップで下落転換！',exp_en:'<strong>Island Reversal</strong>: price isolated by two gaps. Very powerful reversal signal!',tip_jp:'💡 2つのギャップが同じ価格帯で発生するのが理想！',tip_en:'💡 Two gaps at similar price levels = strongest signal!',opts:['アイランドリバーサル / Island Reversal','スパイクトップ / Spike Top','ダブルトップ / Double Top','拡張型 / Broadening'],correct:0},
-  {id:'three_drives',cat:'reversal',dir:'both',jp:'スリードライブ',en:'Three Drives',tag_jp:'転換型（ハーモニック）',tag_en:'Reversal (Harmonic)',draw:drawThreeDrives,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',exp_jp:'<strong>スリードライブ</strong>はハーモニックパターン🎵 3つの均等なドライブで構成。3回目完成後に強い反転が起きる！',exp_en:'<strong>Three Drives</strong>: harmonic pattern with 3 equal-length moves. Strong reversal after 3rd.',tip_jp:'💡 各ドライブの長さがほぼ等しいことが重要！',tip_en:'💡 Equal drive lengths are key!',opts:['スリードライブ / Three Drives','トリプルトップ / Triple Top','拡張型 / Broadening','ダイヤモンド / Diamond'],correct:0},
-  {id:'bump_run',cat:'reversal',dir:'bearish',jp:'バンプアンドラン反転',en:'Bump & Run Reversal',tag_jp:'転換型・下降',tag_en:'Reversal · Bearish',draw:drawBumpRun,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',exp_jp:'<strong>バンプアンドラン反転</strong>は過剰投機が引き起こすパターン🎢 リードイン→バンプ（急騰）→ラン（急落）の3フェーズ！',exp_en:'<strong>Bump & Run</strong>: gradual rise → speculative surge → sharp decline. 3 phases.',tip_jp:'💡 バンプの傾きがリードインの2倍以上になると成立！',tip_en:'💡 Bump slope ≥2x lead-in slope = trigger condition!',opts:['スパイクトップ / Spike Top','バンプアンドラン / Bump & Run','拡張型 / Broadening','H&Sトップ / H&S Top'],correct:1},
-  {id:'scallop',cat:'continuation',dir:'bullish',jp:'スキャロップ（貝型）',en:'Scallop Pattern',tag_jp:'継続型・上昇',tag_en:'Continuation · Bullish',draw:drawScallop,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',exp_jp:'<strong>スキャロップ</strong>は上昇中に発生するU字型の調整パターン🐚 連続するスキャロップは強いトレンドの証拠！',exp_en:'<strong>Scallop</strong>: U-shaped pullback during uptrend. Multiple scallops = very strong trend.',tip_jp:'💡 連続する複数のスキャロップは強いトレンドの証拠！',tip_en:'💡 Multiple consecutive scallops = very strong trend!',opts:['カップ&ハンドル / Cup','ソーサーボトム / Saucer Bottom','上昇フラッグ / Bull Flag','スキャロップ / Scallop'],correct:3},
-  {id:'pipe_top',cat:'reversal',dir:'bearish',jp:'パイプトップ',en:'Pipe Top',tag_jp:'転換型・下降',tag_en:'Reversal · Bearish',draw:drawPipeTop,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',exp_jp:'<strong>パイプトップ</strong>は週足で隣接する2本の高値（大陽線・大陰線）が形成するパターン📊 2本目の陰線で売りシグナル！',exp_en:'<strong>Pipe Top</strong>: two tall adjacent bars at same high level (weekly). Sell on 2nd bar.',tip_jp:'💡 週足ベースで確認すること！日足では信頼性が下がる',tip_en:'💡 Most reliable on weekly charts!',opts:['スパイクトップ / Spike Top','ダブルトップ / Double Top','アイランドリバーサル / Island','パイプトップ / Pipe Top'],correct:3},
-  {id:'horn_bottom',cat:'reversal',dir:'bullish',jp:'ホーンボトム',en:'Horn Bottom',tag_jp:'転換型・上昇',tag_en:'Reversal · Bullish',draw:drawHornBottom,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',exp_jp:'<strong>ホーンボトム</strong>は2本の急落スパイクが同じ安値を形成するパターン🎺 パイプトップの逆版！2本目のスパイク後に急騰！',exp_en:'<strong>Horn Bottom</strong>: two spike lows at same level. Reverse of Pipe Top. Strong bullish signal.',tip_jp:'💡 2本のスパイク間は1〜3週間が理想！',tip_en:'💡 1-3 weeks between spikes = ideal!',opts:['ホーンボトム / Horn Bottom','スパイクボトム / Spike Bottom','ダブルボトム / Double Bottom','トリプルボトム / Triple Bottom'],correct:0},
-  {id:'dead_cat',cat:'continuation',dir:'bearish',jp:'デッドキャットバウンス',en:'Dead Cat Bounce',tag_jp:'継続型・下降',tag_en:'Continuation · Bearish',draw:drawDeadCat,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',exp_jp:'<strong>デッドキャットバウンス</strong>は大幅下落後の一時的な反発🐱 「死んだ猫でも弾む」から命名。反発後さらに下落！',exp_en:'<strong>Dead Cat Bounce</strong>: temporary relief rally after a sharp drop. Further decline follows.',tip_jp:'💡 反発が前の下落の20〜50%が目安。超えると本物の反転かも！',tip_en:'💡 Bounce ~20-50% of prior drop. Exceeding 50% may be true reversal!',opts:['スパイクボトム / Spike Bottom','下降フラッグ / Bear Flag','デッドキャットバウンス / Dead Cat','ダブルボトム / Double Bottom'],correct:2},
-  {id:'head_fake',cat:'continuation',dir:'both',jp:'フェイクブレイクアウト',en:'Fake Breakout',tag_jp:'ブレイク失敗',tag_en:'Failed Breakout',draw:drawHeadFake,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',exp_jp:'<strong>フェイクブレイクアウト（ダマシ）</strong>は一旦抵抗線を上抜けて見せた後に反落するパターン⚠️ 多くのトレーダーを騙す！',exp_en:'<strong>Fake Breakout</strong>: briefly breaks resistance then quickly reverses. Traps buyers!',tip_jp:'💡 ブレイクアウトは終値ベースで確認が基本！ヒゲは除外！',tip_en:'💡 Always confirm on closing price — wicks don\'t count!',opts:['上昇三角 / Ascending','シンメトリカル / Symmetrical','アイランドリバーサル / Island','フェイクブレイク / Fake Breakout'],correct:3},
-  {id:'measured_up',cat:'continuation',dir:'bullish',jp:'メジャードムーブ（上昇）',en:'Measured Move Up',tag_jp:'継続型・上昇',tag_en:'Continuation · Bullish',draw:drawMeasuredMoveUp,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',exp_jp:'<strong>メジャードムーブ（上昇）</strong>は「上昇→調整→上昇」の3フェーズ📐 2波目の長さは1波目とほぼ同等になる！',exp_en:'<strong>Measured Move Up</strong>: rally → correction → rally. 2nd leg ≈ 1st leg length.',tip_jp:'💡 1波目の長さで2波目の目標値を予測できる！',tip_en:'💡 Use 1st leg to project 2nd leg target!',opts:['上昇フラッグ / Bull Flag','メジャードムーブ上昇 / MM Up','カップ&ハンドル / Cup','スキャロップ / Scallop'],correct:1},
-  {id:'measured_down',cat:'continuation',dir:'bearish',jp:'メジャードムーブ（下降）',en:'Measured Move Down',tag_jp:'継続型・下降',tag_en:'Continuation · Bearish',draw:drawMeasuredMoveDown,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',exp_jp:'<strong>メジャードムーブ（下降）</strong>は「下落→反発→下落」の3フェーズ📐 2波目の下落も1波目とほぼ同等！',exp_en:'<strong>Measured Move Down</strong>: decline → bounce → decline. 2nd drop ≈ 1st drop.',tip_jp:'💡 反発が50%以下なら下落継続の信頼度が高い！',tip_en:'💡 Bounce ≤50% = high reliability for continuation!',opts:['下降フラッグ / Bear Flag','メジャードムーブ下降 / MM Down','デッドキャット / Dead Cat','下降ウェッジ / Falling Wedge'],correct:1},
-  {id:'throwback',cat:'continuation',dir:'both',jp:'スロバック＆プルバック',en:'Throwback & Pullback',tag_jp:'ブレイク後の動き',tag_en:'Post-Breakout',draw:drawThrowback,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',exp_jp:'<strong>スロバック</strong>は上方ブレイク後に旧抵抗線まで一時的に戻る動き🔄 再エントリーの絶好のチャンス！約50%の確率で発生。',exp_en:'<strong>Throwback</strong>: upside breakout then pulls back to old resistance. Re-entry opportunity!',tip_jp:'💡 約50%の確率で発生。見逃したブレイクの再エントリー機会！',tip_en:'💡 Occurs ~50% of time. Best re-entry for missed breakouts!',opts:['フェイクブレイク / Fake Breakout','デッドキャット / Dead Cat','アイランド / Island','スロバック / Throwback'],correct:3},
+  {id:'double_bottom',cat:'reversal',dir:'bullish',jp:'ダブルボトム（W底）',en:'Double Bottom',tag_jp:'転換型・上昇',tag_en:'Reversal · Bullish',tag_zh:'反转型·上涨',draw:drawDoubleBottom,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',q_zh:'这个形态叫什么名字？',exp_jp:'<strong>ダブルボトム</strong>は同じ安値で2回反発後、ネックライン上抜けで完成する上昇転換パターン🚀',exp_en:'<strong>Double Bottom</strong> bounces twice at same support, then breaks neckline bullishly.',exp_zh:'<strong>双底（W底）</strong>在相同支撑位两次反弹后，突破颈线完成的上涨反转形态🚀',tip_jp:'💡 2回目の底の出来高が1回目より少ないと信頼度UP！',tip_en:'💡 Lower volume on 2nd bottom = more reliable!',tip_zh:'💡 第二个底部成交量少于第一个，可信度更高！',opts:['ダブルトップ / Double Top','ダブルボトム / Double Bottom','トリプルボトム / Triple Bottom','ソーサーボトム / Saucer Bottom'],opts_zh:['双顶', '双底', '三重底', '碟形底'],correct:1},
+  {id:'double_top',cat:'reversal',dir:'bearish',jp:'ダブルトップ（M天井）',en:'Double Top',tag_jp:'転換型・下降',tag_en:'Reversal · Bearish',tag_zh:'反转型·下跌',draw:drawDoubleTop,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',q_zh:'这个形态叫什么名字？',exp_jp:'<strong>ダブルトップ</strong>は同じ高値で2回反落後、ネックライン割れで完成する下降転換パターン📉',exp_en:'<strong>Double Top</strong> fails at same resistance twice, then breaks neckline bearishly.',exp_zh:'<strong>双顶（M顶）</strong>在相同阻力位两次受阻后，跌破颈线完成的下跌反转形态📉',tip_jp:'💡 2回目の天井で出来高が少ないほど下落が強くなる傾向！',tip_en:'💡 Lower volume at 2nd top = stronger decline ahead.',tip_zh:'💡 第二个顶部成交量越少，后续跌幅越大！',opts:['ダブルトップ / Double Top','ダブルボトム / Double Bottom','トリプルトップ / Triple Top','ソーサートップ / Saucer Top'],opts_zh:['双顶', '双底', '三重顶', '碟形顶'],correct:0},
+  {id:'triple_bottom',cat:'reversal',dir:'bullish',jp:'トリプルボトム',en:'Triple Bottom',tag_jp:'転換型・上昇',tag_en:'Reversal · Bullish',tag_zh:'反转型·上涨',draw:drawTripleBottom,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',q_zh:'这个形态叫什么名字？',exp_jp:'<strong>トリプルボトム</strong>は3回同じ安値で反発！ダブルボトムよりサポートが強く、ネックライン抜けは強力なシグナル🎯',exp_en:'<strong>Triple Bottom</strong>: 3 bounces at same support. Stronger than Double Bottom.',exp_zh:'<strong>三重底</strong>在相同支撑位三次反弹！比双底支撑更强，突破颈线是强烈信号🎯',tip_jp:'💡 3回目の反発で出来高が増えると最高！',tip_en:'💡 Volume increase on 3rd bounce = strongest signal!',tip_zh:'💡 第三次反弹时成交量放大最佳！',opts:['ダブルボトム / Double Bottom','トリプルボトム / Triple Bottom','H&Sボトム / H&S Bottom','ソーサーボトム / Saucer Bottom'],opts_zh:['双底', '三重底', '头肩底', '碟形底'],correct:1},
+  {id:'triple_top',cat:'reversal',dir:'bearish',jp:'トリプルトップ',en:'Triple Top',tag_jp:'転換型・下降',tag_en:'Reversal · Bearish',tag_zh:'反转型·下跌',draw:drawTripleTop,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',q_zh:'这个形态叫什么名字？',exp_jp:'<strong>トリプルトップ</strong>は3度高値を試して失敗！ネックライン割れで強い下落が始まる📉',exp_en:'<strong>Triple Top</strong>: 3 failed attempts at resistance. Neckline break = strong decline.',exp_zh:'<strong>三重顶</strong>三次尝试突破阻力均告失败！颈线跌破后强势下跌开始📉',tip_jp:'💡 各ピークで出来高が減るのが理想的！',tip_en:'💡 Declining volume at each peak = ideal pattern.',tip_zh:'💡 每个顶部成交量递减是理想形态！',opts:['トリプルトップ / Triple Top','ダブルトップ / Double Top','H&Sトップ / H&S Top','ソーサートップ / Saucer Top'],opts_zh:['三重顶', '双顶', '头肩顶', '碟形顶'],correct:0},
+  {id:'hs_top',cat:'reversal',dir:'bearish',jp:'ヘッドアンドショルダーズ（三尊天井）',en:'Head & Shoulders Top',tag_jp:'転換型・下降',tag_en:'Reversal · Bearish',tag_zh:'反转型·下跌',draw:drawHSTop,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',q_zh:'这个形态叫什么名字？',exp_jp:'<strong>ヘッドアンドショルダーズ</strong>は最も信頼性が高い転換パターンの一つ✨ 左肩・頭・右肩の3山で構成。ネックライン割れで下落開始！',exp_en:'<strong>Head & Shoulders Top</strong>: most reliable reversal. 3 peaks (LS, Head, RS). Break neckline = decline.',exp_zh:'<strong>头肩顶</strong>是最可靠的反转形态之一✨ 由左肩、头部、右肩三个高点构成，颈线跌破开始下跌！',tip_jp:'💡 右肩の高値が頭より低いことが重要ポイント！',tip_en:'💡 RS lower than Head = valid pattern!',tip_zh:'💡 右肩高点低于头部是关键！',opts:['ダブルトップ / Double Top','トリプルトップ / Triple Top','ソーサートップ / Saucer Top','H&Sトップ / H&S Top'],opts_zh:['双顶', '三重顶', '碟形顶', '头肩顶'],correct:3},
+  {id:'hs_bottom',cat:'reversal',dir:'bullish',jp:'逆三尊（H&Sボトム）',en:'Inverse H&S',tag_jp:'転換型・上昇',tag_en:'Reversal · Bullish',tag_zh:'反转型·上涨',draw:drawHSBottom,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',q_zh:'这个形态叫什么名字？',exp_jp:'<strong>逆三尊</strong>はH&Sの上下逆転版🔄 3谷（左肩・頭＝最安値・右肩）でネックライン上抜けで上昇転換確定！',exp_en:'<strong>Inverse H&S</strong>: 3 troughs (LS, Head=lowest, RS). Neckline breakout = bullish confirmation.',exp_zh:'<strong>头肩底（逆头肩）</strong>是头肩顶的反转版🔄 三个低点（左肩、头部=最低、右肩）后突破颈线确认上涨！',tip_jp:'💡 ブレイク時の出来高急増がシグナルを強化する！',tip_en:'💡 Volume surge on breakout = very strong signal!',tip_zh:'💡 突破时成交量急增能增强信号可信度！',opts:['ダブルボトム / Double Bottom','トリプルボトム / Triple Bottom','逆三尊 / Inverse H&S','ソーサーボトム / Saucer Bottom'],opts_zh:['双底', '三重底', '头肩底', '碟形底'],correct:2},
+  {id:'saucer_bottom',cat:'reversal',dir:'bullish',jp:'ソーサーボトム（円形底）',en:'Saucer Bottom',tag_jp:'転換型・上昇',tag_en:'Reversal · Bullish',tag_zh:'反转型·上涨',draw:drawSaucerBottom,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',q_zh:'这个形态叫什么名字？',exp_jp:'<strong>ソーサーボトム</strong>は緩やかなU字型の底パターン🥣 ゆっくりですが信頼性が高い！',exp_en:'<strong>Saucer Bottom</strong>: slow, gradual U-shaped reversal. Reliable but takes time.',exp_zh:'<strong>碟形底（圆形底）</strong>是缓慢的U形底部形态🥣 速度慢但可信度高！',tip_jp:'💡 週足・月足など長い時間軸で見つかりやすい！',tip_en:'💡 More common on weekly/monthly charts!',tip_zh:'💡 在周线、月线等长周期图表上更常见！',opts:['カップ&ハンドル / Cup & Handle','ソーサーボトム / Saucer Bottom','ダブルボトム / Double Bottom','トリプルボトム / Triple Bottom'],opts_zh:['杯柄形态', '碟形底', '双底', '三重底'],correct:1},
+  {id:'saucer_top',cat:'reversal',dir:'bearish',jp:'ソーサートップ（円形天井）',en:'Saucer Top',tag_jp:'転換型・下降',tag_en:'Reversal · Bearish',tag_zh:'反转型·下跌',draw:drawSaucerTop,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',q_zh:'这个形态叫什么名字？',exp_jp:'<strong>ソーサートップ</strong>はソーサーボトムの逆！緩やかな逆U字型でゆっくり下落転換📉',exp_en:'<strong>Saucer Top</strong>: inverted U-shape. Slow bearish reversal.',exp_zh:'<strong>碟形顶（圆形顶）</strong>是碟形底的反转！缓慢的倒U形，慢慢转为下跌📉',tip_jp:'💡 出来高が天井付近で減少し、下落とともに増加するのが特徴！',tip_en:'💡 Volume decreases near top, increases as price falls!',tip_zh:'💡 成交量在顶部附近减少，下跌时增加是特征！',opts:['ソーサートップ / Saucer Top','ダブルトップ / Double Top','トリプルトップ / Triple Top','H&Sトップ / H&S Top'],opts_zh:['碟形顶', '双顶', '三重顶', '头肩顶'],correct:0},
+  {id:'cup_handle',cat:'continuation',dir:'bullish',jp:'カップ&ハンドル',en:'Cup & Handle',tag_jp:'転換型・上昇',tag_en:'Reversal · Bullish',tag_zh:'反转型·上涨',draw:drawCupHandle,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',q_zh:'这个形态叫什么名字？',exp_jp:'<strong>カップ&ハンドル</strong>はウィリアム・オニールが広めた強力な上昇パターン☕ カップ＋小さな調整（ハンドル）の後にブレイクアウト！',exp_en:'<strong>Cup & Handle</strong>: U-shaped base + small handle = powerful bullish breakout. By William O\'Neil.',exp_zh:'<strong>杯柄形态</strong>是威廉·欧奈尔推广的强力上涨形态☕ U形杯底+小幅回调（把手）后突破！',tip_jp:'💡 ハンドルの調整はカップ深さの1/3以内が理想！',tip_en:'💡 Handle retracement ≤1/3 of cup depth = ideal!',tip_zh:'💡 把手回调不超过杯深1/3为理想！',opts:['ソーサーボトム / Saucer Bottom','上昇フラッグ / Bull Flag','カップ&ハンドル / Cup & Handle','ダブルボトム / Double Bottom'],opts_zh:['碟形底', '上涨旗形', '杯柄形态', '双底'],correct:2},
+  {id:'asc_triangle',cat:'continuation',dir:'bullish',jp:'上昇三角保ち合い',en:'Ascending Triangle',tag_jp:'継続型・上昇',tag_en:'Continuation · Bullish',tag_zh:'持续型·上涨',draw:drawAscTriangle,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',q_zh:'这个形态叫什么名字？',exp_jp:'<strong>上昇三角</strong>は水平な抵抗線＋右肩上がりのサポートで構成。買い手が積極的！抵抗線ブレイクで上昇加速🚀',exp_en:'<strong>Ascending Triangle</strong>: flat resistance + rising lows. Bullish breakout above resistance.',exp_zh:'<strong>上升三角形</strong>由水平阻力线+上升支撑线构成，买方积极！突破阻力线加速上涨🚀',tip_jp:'💡 ブレイク時に出来高が急増するのが理想的！',tip_en:'💡 Volume surge on breakout = ideal setup!',tip_zh:'💡 突破时成交量急增最为理想！',opts:['上昇三角 / Ascending','下降三角 / Descending','シンメトリカル三角 / Symmetrical','上昇ウェッジ / Rising Wedge'],opts_zh:['上升三角', '下降三角', '对称三角', '上升楔形'],correct:0},
+  {id:'desc_triangle',cat:'continuation',dir:'bearish',jp:'下降三角保ち合い',en:'Descending Triangle',tag_jp:'継続型・下降',tag_en:'Continuation · Bearish',tag_zh:'持续型·下跌',draw:drawDescTriangle,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',q_zh:'这个形态叫什么名字？',exp_jp:'<strong>下降三角</strong>は水平なサポート＋右肩下がりのレジスタンスで構成。売り手優勢！サポート割れで下落加速📉',exp_en:'<strong>Descending Triangle</strong>: flat support + falling highs. Bearish breakdown below support.',exp_zh:'<strong>下降三角形</strong>由水平支撑线+下降阻力线构成，卖方占优！跌破支撑线加速下跌📉',tip_jp:'💡 旧サポートが抵抗線になることが多い！',tip_en:'💡 Old support often becomes new resistance!',tip_zh:'💡 旧支撑线往往变为阻力线！',opts:['上昇三角 / Ascending','シンメトリカル三角 / Symmetrical','下降三角 / Descending','下降ウェッジ / Falling Wedge'],opts_zh:['上升三角', '对称三角', '下降三角', '下降楔形'],correct:2},
+  {id:'symm_triangle',cat:'continuation',dir:'neutral',jp:'シンメトリカルトライアングル',en:'Symmetrical Triangle',tag_jp:'継続型・中立',tag_en:'Continuation · Neutral',tag_zh:'持续型·中性',draw:drawSymmTriangle,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',q_zh:'这个形态叫什么名字？',exp_jp:'<strong>シンメトリカルトライアングル</strong>は収束する2本のトレンドラインで構成。中立で先行トレンドの方向に60-65%で継続🎯',exp_en:'<strong>Symmetrical Triangle</strong>: converging lines. Neutral — usually breaks with prior trend (60-65%).',exp_zh:'<strong>对称三角形</strong>由两条收敛的趋势线构成，中性形态，60-65%沿先前趋势方向突破🎯',tip_jp:'💡 ブレイク方向を予測するより確認後に乗るほうが安全！',tip_en:'💡 Wait for confirmed breakout rather than predicting!',tip_zh:'💡 等待确认突破比预测方向更安全！',opts:['上昇三角 / Ascending','下降三角 / Descending','シンメトリカル三角 / Symmetrical','上昇ペナント / Pennant'],opts_zh:['上升三角', '下降三角', '对称三角', '上升三角旗'],correct:2},
+  {id:'bull_flag',cat:'continuation',dir:'bullish',jp:'上昇フラッグ型',en:'Bull Flag',tag_jp:'継続型・上昇',tag_en:'Continuation · Bullish',tag_zh:'持续型·上涨',draw:drawBullFlag,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',q_zh:'这个形态叫什么名字？',exp_jp:'<strong>上昇フラッグ</strong>は急騰（ポール）後の緩やかな下降チャンネル🚩 継続パターンで上抜けでポールと同等の上昇が期待！',exp_en:'<strong>Bull Flag</strong>: strong rally + slight pullback channel. Breakout = next leg up.',exp_zh:'<strong>上涨旗形</strong>是急涨（旗杆）后的缓和下行通道🚩 持续形态，突破后预期涨幅与旗杆相当！',tip_jp:'💡 フラッグ期間中の出来高が少ないほど良い！',tip_en:'💡 Low volume in flag = stronger breakout ahead!',tip_zh:'💡 旗形期间成交量越少越好！',opts:['上昇ペナント / Pennant','上昇ウェッジ / Rising Wedge','カップ&ハンドル / Cup','上昇フラッグ / Bull Flag'],opts_zh:['三角旗', '上升楔形', '杯柄', '上涨旗形'],correct:3},
+  {id:'bear_flag',cat:'continuation',dir:'bearish',jp:'下降フラッグ型',en:'Bear Flag',tag_jp:'継続型・下降',tag_en:'Continuation · Bearish',tag_zh:'持续型·下跌',draw:drawBearFlag,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',q_zh:'这个形态叫什么名字？',exp_jp:'<strong>下降フラッグ</strong>は急落後の緩やかな上昇チャンネル📉 一見反発に見えるが下落継続パターン！',exp_en:'<strong>Bear Flag</strong>: sharp drop + brief upward channel. Breakdown continues the decline.',exp_zh:'<strong>下跌旗形</strong>是急跌后的缓和上行通道📉 看似反弹，实为持续下跌形态！',tip_jp:'💡 反発期間の出来高が少ないほど信頼度UP！',tip_en:'💡 Low volume in consolidation = stronger bear signal!',tip_zh:'💡 回调期间成交量越少，可信度越高！',opts:['下降ペナント / Pennant','下降ウェッジ / Wedge','ダブルトップ / Double Top','下降フラッグ / Bear Flag'],opts_zh:['下跌三角旗', '下降楔形', '双顶', '下跌旗形'],correct:3},
+  {id:'bull_pennant',cat:'continuation',dir:'bullish',jp:'上昇ペナント型',en:'Bull Pennant',tag_jp:'継続型・上昇',tag_en:'Continuation · Bullish',tag_zh:'持续型·上涨',draw:drawBullPennant,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',q_zh:'这个形态叫什么名字？',exp_jp:'<strong>上昇ペナント</strong>は急騰後の小さな対称三角形🔺 フラッグと似るが三角形が収束するのが違い！上抜けで再急騰！',exp_en:'<strong>Bull Pennant</strong>: surge + small symmetrical triangle. Upside breakout = next rally.',exp_zh:'<strong>上涨三角旗</strong>是急涨后的小型对称三角形🔺 与旗形相似但为三角形收敛！突破后再次急涨！',tip_jp:'💡 ペナント期間は短いほど良い（1〜3週間が理想）！',tip_en:'💡 Shorter pennant = stronger signal (1-3 weeks ideal)!',tip_zh:'💡 三角旗期间越短越好（1~3周为理想）！',opts:['上昇ペナント / Bull Pennant','上昇フラッグ / Bull Flag','上昇三角 / Ascending','上昇ウェッジ / Rising Wedge'],opts_zh:['上涨三角旗', '上涨旗形', '上升三角', '上升楔形'],correct:0},
+  {id:'bear_pennant',cat:'continuation',dir:'bearish',jp:'下降ペナント型',en:'Bear Pennant',tag_jp:'継続型・下降',tag_en:'Continuation · Bearish',tag_zh:'持续型·下跌',draw:drawBearPennant,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',q_zh:'这个形态叫什么名字？',exp_jp:'<strong>下降ペナント</strong>は急落後の小さな対称三角形📉 下降フラッグに似るが三角形が収束する！下抜けで再急落！',exp_en:'<strong>Bear Pennant</strong>: sharp drop + small symmetrical triangle. Breakdown continues decline.',exp_zh:'<strong>下跌三角旗</strong>是急跌后的小型对称三角形📉 与下跌旗形相似但为三角形收敛！跌破后再次急跌！',tip_jp:'💡 ペナント内の出来高急減が正常！',tip_en:'💡 Volume contraction in pennant is normal!',tip_zh:'💡 三角旗内成交量急减是正常现象！',opts:['下降フラッグ / Bear Flag','下降三角 / Descending','シンメトリカル / Symmetrical','下降ペナント / Bear Pennant'],opts_zh:['下跌旗形', '下降三角', '对称三角', '下跌三角旗'],correct:3},
+  {id:'rising_wedge',cat:'reversal',dir:'bearish',jp:'上昇ウェッジ（ライジングウェッジ）',en:'Rising Wedge',tag_jp:'転換型・下降',tag_en:'Reversal · Bearish',tag_zh:'反转型·下跌',draw:drawRisingWedge,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',q_zh:'这个形态叫什么名字？',exp_jp:'<strong>上昇ウェッジ</strong>は見た目は上昇しているが下落転換パターン⚠️ 両境界線が収束しながら上昇。下支持線割れで急落！',exp_en:'<strong>Rising Wedge</strong>: both lines slope up but converge. Bearish despite appearance!',exp_zh:'<strong>上升楔形</strong>看似上涨，实为下跌反转形态⚠️ 两条边界线均上升但收敛，跌破下支撑线急跌！',tip_jp:'💡「上がっているように見えて下がる」ダマシの代表例！',tip_en:'💡 Classic deceptive pattern — looks bullish but is bearish!',tip_zh:'💡 "看涨实跌"的经典欺骗性形态！',opts:['上昇フラッグ / Bull Flag','上昇三角 / Ascending','上昇ウェッジ / Rising Wedge','シンメトリカル / Symmetrical'],opts_zh:['上涨旗形', '上升三角', '上升楔形', '对称三角'],correct:2},
+  {id:'falling_wedge',cat:'reversal',dir:'bullish',jp:'下降ウェッジ（フォーリングウェッジ）',en:'Falling Wedge',tag_jp:'転換型・上昇',tag_en:'Reversal · Bullish',tag_zh:'反转型·上涨',draw:drawFallingWedge,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',q_zh:'这个形态叫什么名字？',exp_jp:'<strong>下降ウェッジ</strong>は見た目は下降しているが上昇転換パターン🔼 両境界線が収束しながら下降。上抜けで急騰！',exp_en:'<strong>Falling Wedge</strong>: both lines slope down and converge. Bullish despite appearance!',exp_zh:'<strong>下降楔形</strong>看似下跌，实为上涨反转形态🔼 两条边界线均下降但收敛，突破后急涨！',tip_jp:'💡 継続型として機能することもある（下落トレンド中の調整）！',tip_en:'💡 Can also work as continuation in a downtrend!',tip_zh:'💡 也可作为下跌趋势中的持续形态！',opts:['下降フラッグ / Bear Flag','下降三角 / Descending','下降ウェッジ / Falling Wedge','シンメトリカル / Symmetrical'],opts_zh:['下跌旗形', '下降三角', '下降楔形', '对称三角'],correct:2},
+  {id:'rect_bull',cat:'continuation',dir:'bullish',jp:'上昇ボックス（長方形）',en:'Bullish Rectangle',tag_jp:'継続型・上昇',tag_en:'Continuation · Bullish',tag_zh:'持续型·上涨',draw:drawRectBull,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',q_zh:'这个形态叫什么名字？',exp_jp:'<strong>上昇ボックス</strong>は上昇トレンド中の水平なレンジ相場📦 上抜けでトレンド再開！目標値はボックスの高さ分。',exp_en:'<strong>Bullish Rectangle</strong>: horizontal consolidation in uptrend. Breakout resumes trend.',exp_zh:'<strong>上涨矩形（箱体）</strong>是上涨趋势中的水平盘整📦 突破上方后趋势继续！目标值为箱体高度。',tip_jp:'💡 ボックス内の値動きは「エネルギー蓄積」と見なせる！',tip_en:'💡 Range action = energy building for next move!',tip_zh:'💡 箱体内的价格波动可视为"能量积累"！',opts:['下降ボックス / Bear Rectangle','上昇ボックス / Bull Rectangle','上昇フラッグ / Bull Flag','上昇三角 / Ascending'],opts_zh:['下跌矩形', '上涨矩形', '上涨旗形', '上升三角'],correct:1},
+  {id:'rect_bear',cat:'continuation',dir:'bearish',jp:'下降ボックス（長方形）',en:'Bearish Rectangle',tag_jp:'継続型・下降',tag_en:'Continuation · Bearish',tag_zh:'持续型·下跌',draw:drawRectBear,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',q_zh:'这个形态叫什么名字？',exp_jp:'<strong>下降ボックス</strong>は下降トレンド中の水平なレンジ相場📦 下抜けでダウントレンド再開！',exp_en:'<strong>Bearish Rectangle</strong>: horizontal consolidation in downtrend. Breakdown resumes decline.',exp_zh:'<strong>下跌矩形（箱体）</strong>是下跌趋势中的水平盘整📦 跌破下方后下跌趋势继续！',tip_jp:'💡 ボックス上限付近は売りの好機！',tip_en:'💡 Near top of box = good selling opportunity!',tip_zh:'💡 箱体上沿附近是卖出良机！',opts:['下降ボックス / Bear Rectangle','上昇ボックス / Bull Rectangle','下降フラッグ / Bear Flag','下降三角 / Descending'],opts_zh:['下跌矩形', '上涨矩形', '下跌旗形', '下降三角'],correct:0},
+  {id:'spike_top',cat:'reversal',dir:'bearish',jp:'スパイクトップ（Vトップ）',en:'Spike Top',tag_jp:'転換型・下降',tag_en:'Reversal · Bearish',tag_zh:'反转型·下跌',draw:drawSpikeTop,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',q_zh:'这个形态叫什么名字？',exp_jp:'<strong>スパイクトップ</strong>は急騰後に即座に反転するV字型天井⚡ ニュースや過剰投機が原因で急激な下落！',exp_en:'<strong>Spike Top</strong>: sharp rally immediately reversed. Fast, violent reversal.',exp_zh:'<strong>尖顶（V形顶）</strong>急涨后立即反转的V形顶部⚡ 由新闻或过度投机引发急剧下跌！',tip_jp:'💡 出来高急増を伴うスパイクはトレンド終焉のサイン！',tip_en:'💡 Volume spike at top = often marks end of trend!',tip_zh:'💡 伴随成交量急增的尖顶是趋势终结的信号！',opts:['ダブルトップ / Double Top','スパイクトップ / Spike Top','ソーサートップ / Saucer Top','トリプルトップ / Triple Top'],opts_zh:['双顶', '尖顶', '碟形顶', '三重顶'],correct:1},
+  {id:'spike_bottom',cat:'reversal',dir:'bullish',jp:'スパイクボトム（Vボトム）',en:'Spike Bottom',tag_jp:'転換型・上昇',tag_en:'Reversal · Bullish',tag_zh:'反转型·上涨',draw:drawSpikeBottom,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',q_zh:'这个形态叫什么名字？',exp_jp:'<strong>スパイクボトム</strong>はパニック売りが底値を作り即急騰するV字型底⚡ 反転確認後のエントリーが安全！',exp_en:'<strong>Spike Bottom</strong>: panic selling creates sharp bottom, immediately reversed.',exp_zh:'<strong>尖底（V形底）</strong>恐慌性抛售造成底部后立即急涨⚡ 等待反转确认后再入场更安全！',tip_jp:'💡 Vボトムは底確認が難しい。反転確認後の参入が安全！',tip_en:'💡 Hard to time — wait for confirmation!',tip_zh:'💡 V底难以把握时机，等待反转确认后入场更安全！',opts:['ダブルボトム / Double Bottom','スパイクボトム / Spike Bottom','ソーサーボトム / Saucer Bottom','トリプルボトム / Triple Bottom'],opts_zh:['双底', '尖底', '碟形底', '三重底'],correct:1},
+  {id:'broadening',cat:'reversal',dir:'bearish',jp:'拡張型（メガホン）',en:'Broadening Top',tag_jp:'転換型・下降',tag_en:'Reversal · Bearish',tag_zh:'反转型·下跌',draw:drawBroadeningTop,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',q_zh:'这个形态叫什么名字？',exp_jp:'<strong>拡張型（メガホン）</strong>はボラティリティが拡大し続けるパターン📢 高値切上・安値切下で市場が不安定。通常は下落転換！',exp_en:'<strong>Broadening Top</strong>: expanding volatility. Higher highs + lower lows = market chaos. Usually bearish.',exp_zh:'<strong>扩张形态（喇叭形）</strong>波动率持续扩大的形态📢 高点上移、低点下移，市场不稳定，通常转为下跌！',tip_jp:'💡 ボラティリティ拡大は市場の混乱を示している！',tip_en:'💡 Expanding volatility = market confusion!',tip_zh:'💡 波动率扩大表示市场混乱！',opts:['シンメトリカル / Symmetrical','上昇三角 / Ascending','拡張型 / Broadening','下降ウェッジ / Falling Wedge'],opts_zh:['对称三角', '上升三角', '扩张形态', '下降楔形'],correct:2},
+  {id:'diamond',cat:'reversal',dir:'bearish',jp:'ダイヤモンドトップ',en:'Diamond Top',tag_jp:'転換型・下降',tag_en:'Reversal · Bearish',tag_zh:'反转型·下跌',draw:drawDiamondTop,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',q_zh:'这个形态叫什么名字？',exp_jp:'<strong>ダイヤモンドトップ</strong>は拡張形＋対称三角形が合わさったひし形パターン💎 見つけにくいが信頼性が高い下落転換！',exp_en:'<strong>Diamond Top</strong>: broadening + symmetrical triangle = diamond shape. Rare but reliable!',exp_zh:'<strong>钻石顶</strong>是扩张形态+对称三角形组合的菱形形态💎 难以发现但可信度高的下跌反转！',tip_jp:'💡 ダイヤモンドは発見が難しいが完成したら強力！',tip_en:'💡 Rare but very powerful when identified!',tip_zh:'💡 钻石形态难以识别，但一旦完成非常强力！',opts:['拡張型 / Broadening','シンメトリカル / Symmetrical','ダイヤモンド / Diamond Top','H&Sトップ / H&S Top'],opts_zh:['扩张形态', '对称三角', '钻石顶', '头肩顶'],correct:2},
+  {id:'island',cat:'reversal',dir:'both',jp:'アイランドリバーサル',en:'Island Reversal',tag_jp:'転換型',tag_en:'Reversal',tag_zh:'反转型',draw:drawIslandReversal,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',q_zh:'这个形态叫什么名字？',exp_jp:'<strong>アイランドリバーサル</strong>はギャップで「孤島」を形成する強力な転換パターン🏝️ 上昇ギャップ→孤島→下降ギャップで下落転換！',exp_en:'<strong>Island Reversal</strong>: price isolated by two gaps. Very powerful reversal signal!',exp_zh:'<strong>孤岛反转</strong>是由缺口形成"孤岛"的强力反转形态🏝️ 上升缺口→孤岛→下降缺口，形成下跌反转！',tip_jp:'💡 2つのギャップが同じ価格帯で発生するのが理想！',tip_en:'💡 Two gaps at similar price levels = strongest signal!',tip_zh:'💡 两个缺口在相同价格区间出现最为理想！',opts:['アイランドリバーサル / Island Reversal','スパイクトップ / Spike Top','ダブルトップ / Double Top','拡張型 / Broadening'],opts_zh:['孤岛反转', '尖顶', '双顶', '扩张形态'],correct:0},
+  {id:'three_drives',cat:'reversal',dir:'both',jp:'スリードライブ',en:'Three Drives',tag_jp:'転換型（ハーモニック）',tag_en:'Reversal (Harmonic)',tag_zh:'反转型（谐波）',draw:drawThreeDrives,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',q_zh:'这个形态叫什么名字？',exp_jp:'<strong>スリードライブ</strong>はハーモニックパターン🎵 3つの均等なドライブで構成。3回目完成後に強い反転が起きる！',exp_en:'<strong>Three Drives</strong>: harmonic pattern with 3 equal-length moves. Strong reversal after 3rd.',exp_zh:'<strong>三驱动形态</strong>是谐波形态🎵 由三个等长的驱动波构成，第三个完成后强力反转！',tip_jp:'💡 各ドライブの長さがほぼ等しいことが重要！',tip_en:'💡 Equal drive lengths are key!',tip_zh:'💡 每个驱动波长度大致相等是关键！',opts:['スリードライブ / Three Drives','トリプルトップ / Triple Top','拡張型 / Broadening','ダイヤモンド / Diamond'],opts_zh:['三驱动', '三重顶', '扩张形态', '钻石顶'],correct:0},
+  {id:'bump_run',cat:'reversal',dir:'bearish',jp:'バンプアンドラン反転',en:'Bump & Run Reversal',tag_jp:'転換型・下降',tag_en:'Reversal · Bearish',tag_zh:'反转型·下跌',draw:drawBumpRun,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',q_zh:'这个形态叫什么名字？',exp_jp:'<strong>バンプアンドラン反転</strong>は過剰投機が引き起こすパターン🎢 リードイン→バンプ（急騰）→ラン（急落）の3フェーズ！',exp_en:'<strong>Bump & Run</strong>: gradual rise → speculative surge → sharp decline. 3 phases.',exp_zh:'<strong>隆起与奔跑反转</strong>是过度投机引发的形态🎢 引导阶段→隆起（急涨）→奔跑（急跌）三个阶段！',tip_jp:'💡 バンプの傾きがリードインの2倍以上になると成立！',tip_en:'💡 Bump slope ≥2x lead-in slope = trigger condition!',tip_zh:'💡 隆起的坡度是引导阶段的2倍以上时成立！',opts:['スパイクトップ / Spike Top','バンプアンドラン / Bump & Run','拡張型 / Broadening','H&Sトップ / H&S Top'],opts_zh:['尖顶', '隆起奔跑', '扩张形态', '头肩顶'],correct:1},
+  {id:'scallop',cat:'continuation',dir:'bullish',jp:'スキャロップ（貝型）',en:'Scallop Pattern',tag_jp:'継続型・上昇',tag_en:'Continuation · Bullish',tag_zh:'持续型·上涨',draw:drawScallop,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',q_zh:'这个形态叫什么名字？',exp_jp:'<strong>スキャロップ</strong>は上昇中に発生するU字型の調整パターン🐚 連続するスキャロップは強いトレンドの証拠！',exp_en:'<strong>Scallop</strong>: U-shaped pullback during uptrend. Multiple scallops = very strong trend.',exp_zh:'<strong>扇贝形态</strong>是上涨途中出现的U形回调形态🐚 连续的扇贝形态是强劲趋势的证明！',tip_jp:'💡 連続する複数のスキャロップは強いトレンドの証拠！',tip_en:'💡 Multiple consecutive scallops = very strong trend!',tip_zh:'💡 连续出现多个扇贝形态是强劲趋势的证明！',opts:['カップ&ハンドル / Cup','ソーサーボトム / Saucer Bottom','上昇フラッグ / Bull Flag','スキャロップ / Scallop'],opts_zh:['杯柄', '碟形底', '上涨旗形', '扇贝形态'],correct:3},
+  {id:'pipe_top',cat:'reversal',dir:'bearish',jp:'パイプトップ',en:'Pipe Top',tag_jp:'転換型・下降',tag_en:'Reversal · Bearish',tag_zh:'反转型·下跌',draw:drawPipeTop,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',q_zh:'这个形态叫什么名字？',exp_jp:'<strong>パイプトップ</strong>は週足で隣接する2本の高値（大陽線・大陰線）が形成するパターン📊 2本目の陰線で売りシグナル！',exp_en:'<strong>Pipe Top</strong>: two tall adjacent bars at same high level (weekly). Sell on 2nd bar.',exp_zh:'<strong>管道顶</strong>是周线图上相邻两根大阳线和大阴线形成的形态📊 第二根阴线出现后卖出信号！',tip_jp:'💡 週足ベースで確認すること！日足では信頼性が下がる',tip_en:'💡 Most reliable on weekly charts!',tip_zh:'💡 在周线图上确认！日线图可信度较低。',opts:['スパイクトップ / Spike Top','ダブルトップ / Double Top','アイランドリバーサル / Island','パイプトップ / Pipe Top'],opts_zh:['尖顶', '双顶', '孤岛反转', '管道顶'],correct:3},
+  {id:'horn_bottom',cat:'reversal',dir:'bullish',jp:'ホーンボトム',en:'Horn Bottom',tag_jp:'転換型・上昇',tag_en:'Reversal · Bullish',tag_zh:'反转型·上涨',draw:drawHornBottom,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',q_zh:'这个形态叫什么名字？',exp_jp:'<strong>ホーンボトム</strong>は2本の急落スパイクが同じ安値を形成するパターン🎺 パイプトップの逆版！2本目のスパイク後に急騰！',exp_en:'<strong>Horn Bottom</strong>: two spike lows at same level. Reverse of Pipe Top. Strong bullish signal.',exp_zh:'<strong>角底</strong>是两根急跌尖刺在相同低位形成的形态🎺 管道顶的反转版！第二根尖刺后急涨！',tip_jp:'💡 2本のスパイク間は1〜3週間が理想！',tip_en:'💡 1-3 weeks between spikes = ideal!',tip_zh:'💡 两根尖刺之间间隔1~3周为理想！',opts:['ホーンボトム / Horn Bottom','スパイクボトム / Spike Bottom','ダブルボトム / Double Bottom','トリプルボトム / Triple Bottom'],opts_zh:['角底', '尖底', '双底', '三重底'],correct:0},
+  {id:'dead_cat',cat:'continuation',dir:'bearish',jp:'デッドキャットバウンス',en:'Dead Cat Bounce',tag_jp:'継続型・下降',tag_en:'Continuation · Bearish',tag_zh:'持续型·下跌',draw:drawDeadCat,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',q_zh:'这个形态叫什么名字？',exp_jp:'<strong>デッドキャットバウンス</strong>は大幅下落後の一時的な反発🐱 「死んだ猫でも弾む」から命名。反発後さらに下落！',exp_en:'<strong>Dead Cat Bounce</strong>: temporary relief rally after a sharp drop. Further decline follows.',exp_zh:'<strong>死猫反弹</strong>是大幅下跌后的短暂反弹🐱 "死猫也会弹起"的比喻，反弹后继续下跌！',tip_jp:'💡 反発が前の下落の20〜50%が目安。超えると本物の反転かも！',tip_en:'💡 Bounce ~20-50% of prior drop. Exceeding 50% may be true reversal!',tip_zh:'💡 反弹幅度约为前期下跌的20~50%为参考，超过50%可能是真正反转！',opts:['スパイクボトム / Spike Bottom','下降フラッグ / Bear Flag','デッドキャットバウンス / Dead Cat','ダブルボトム / Double Bottom'],opts_zh:['尖底', '下跌旗形', '死猫反弹', '双底'],correct:2},
+  {id:'head_fake',cat:'continuation',dir:'both',jp:'フェイクブレイクアウト',en:'Fake Breakout',tag_jp:'ブレイク失敗',tag_en:'Failed Breakout',tag_zh:'假突破',draw:drawHeadFake,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',q_zh:'这个形态叫什么名字？',exp_jp:'<strong>フェイクブレイクアウト（ダマシ）</strong>は一旦抵抗線を上抜けて見せた後に反落するパターン⚠️ 多くのトレーダーを騙す！',exp_en:'<strong>Fake Breakout</strong>: briefly breaks resistance then quickly reverses. Traps buyers!',exp_zh:'<strong>假突破</strong>是短暂突破阻力线后回落的形态⚠️ 欺骗许多交易者！',tip_jp:'💡 ブレイクアウトは終値ベースで確認が基本！ヒゲは除外！',tip_en:'💡 Always confirm on closing price — wicks don\'t count!',tip_zh:'💡 以收盘价确认突破为基本原则！长影线不算！',opts:['上昇三角 / Ascending','シンメトリカル / Symmetrical','アイランドリバーサル / Island','フェイクブレイク / Fake Breakout'],opts_zh:['上升三角', '对称三角', '孤岛反转', '假突破'],correct:3},
+  {id:'measured_up',cat:'continuation',dir:'bullish',jp:'メジャードムーブ（上昇）',en:'Measured Move Up',tag_jp:'継続型・上昇',tag_en:'Continuation · Bullish',tag_zh:'持续型·上涨',draw:drawMeasuredMoveUp,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',q_zh:'这个形态叫什么名字？',exp_jp:'<strong>メジャードムーブ（上昇）</strong>は「上昇→調整→上昇」の3フェーズ📐 2波目の長さは1波目とほぼ同等になる！',exp_en:'<strong>Measured Move Up</strong>: rally → correction → rally. 2nd leg ≈ 1st leg length.',exp_zh:'<strong>等幅上涨</strong>是"上涨→回调→上涨"的三阶段📐 第二波涨幅与第一波大致相同！',tip_jp:'💡 1波目の長さで2波目の目標値を予測できる！',tip_en:'💡 Use 1st leg to project 2nd leg target!',tip_zh:'💡 用第一波长度可预测第二波目标位！',opts:['上昇フラッグ / Bull Flag','メジャードムーブ上昇 / MM Up','カップ&ハンドル / Cup','スキャロップ / Scallop'],opts_zh:['上涨旗形', '等幅上涨', '杯柄', '扇贝形态'],correct:1},
+  {id:'measured_down',cat:'continuation',dir:'bearish',jp:'メジャードムーブ（下降）',en:'Measured Move Down',tag_jp:'継続型・下降',tag_en:'Continuation · Bearish',tag_zh:'持续型·下跌',draw:drawMeasuredMoveDown,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',q_zh:'这个形态叫什么名字？',exp_jp:'<strong>メジャードムーブ（下降）</strong>は「下落→反発→下落」の3フェーズ📐 2波目の下落も1波目とほぼ同等！',exp_en:'<strong>Measured Move Down</strong>: decline → bounce → decline. 2nd drop ≈ 1st drop.',exp_zh:'<strong>等幅下跌</strong>是"下跌→反弹→下跌"的三阶段📐 第二波跌幅与第一波大致相同！',tip_jp:'💡 反発が50%以下なら下落継続の信頼度が高い！',tip_en:'💡 Bounce ≤50% = high reliability for continuation!',tip_zh:'💡 反弹不超过50%则下跌持续可信度高！',opts:['下降フラッグ / Bear Flag','メジャードムーブ下降 / MM Down','デッドキャット / Dead Cat','下降ウェッジ / Falling Wedge'],opts_zh:['下跌旗形', '等幅下跌', '死猫反弹', '下降楔形'],correct:1},
+  {id:'throwback',cat:'continuation',dir:'both',jp:'スロバック＆プルバック',en:'Throwback & Pullback',tag_jp:'ブレイク後の動き',tag_en:'Post-Breakout',tag_zh:'突破后动态',draw:drawThrowback,q_jp:'このパターンの名前は？',q_en:'Name this pattern?',q_zh:'这个形态叫什么名字？',exp_jp:'<strong>スロバック</strong>は上方ブレイク後に旧抵抗線まで一時的に戻る動き🔄 再エントリーの絶好のチャンス！約50%の確率で発生。',exp_en:'<strong>Throwback</strong>: upside breakout then pulls back to old resistance. Re-entry opportunity!',exp_zh:'<strong>回踩与回抽</strong>是向上突破后短暂回到旧阻力线的动作🔄 是绝佳的再入场机会！约50%概率发生。',tip_jp:'💡 約50%の確率で発生。見逃したブレイクの再エントリー機会！',tip_en:'💡 Occurs ~50% of time. Best re-entry for missed breakouts!',tip_zh:'💡 约50%概率发生，是错过突破后的再入场机会！',opts:['フェイクブレイク / Fake Breakout','デッドキャット / Dead Cat','アイランド / Island','スロバック / Throwback'],opts_zh:['假突破', '死猫反弹', '孤岛', '回踩'],correct:3},
 ];
 
 // Signal questions WITH pattern reference
 const CANDLE_Q=[
-{id:'cn1',q_jp:'ヒゲなしの大きな陽線の名称は？',q_en:'Large bullish candle with no wicks?',
+{id:'cn1',q_jp:'ヒゲなしの大きな陽線の名称は？',q_en:'Large bullish candle with no wicks?',q_zh:'没有影线的大阳线叫什么？',
 draw:function(s){G(s);yAx(s);s.innerHTML+=`<rect x="210" y="35" width="100" height="130" fill="#26a69a" rx="3"/>`;},
-opts_jp:['大引け坤主','コマ','トンカチ','丸坤主（大陽線）'],opts_en:['Closing Marubozu','Spinning Top','Hammer','Marubozu (Bull)'],correct:3,
-exp_jp:'<strong>丸坤主（大陽線）</strong> ヒゲが全くない大陽線。始値から終値まで一方的に上昇した強烈な買い圧力のサイン！',exp_en:'<strong>Marubozu (Bull)</strong> No wicks, strong bullish momentum all session!',
-tip_jp:'弱点パターンですが学んだことが記録されます',tip_en:'Your weak areas are tracked here'},
-{id:'cn2',q_jp:'長い上ヒゲ・小さい実体が高値圈で示すサインは？',q_en:'Long upper wick, small body at price peak?',
+opts_jp:['大引け坤主','コマ','トンカチ','丸坤主（大陽線）'],opts_en:['Closing Marubozu','Spinning Top','Hammer','Marubozu (Bull)'],opts_zh:['收盘秃头', '纺锤线', '锤子线', '光头光脚大阳线（多方秃头）'],correct:3,
+exp_jp:'<strong>丸坤主（大陽線）</strong> ヒゲが全くない大陽線。始値から終値まで一方的に上昇した強烈な買い圧力のサイン！',exp_en:'<strong>Marubozu (Bull)</strong> No wicks, strong bullish momentum all session!',exp_zh:'<strong>光头光脚大阳线</strong> 没有影线的大阳线，从开盘到收盘一路上涨，强烈买入压力的信号！',
+tip_jp:'弱点パターンですが学んだことが記録されます',tip_en:'Your weak areas are tracked here',tip_zh:'这是弱势形态，但学习记录会被保存'},
+{id:'cn2',q_jp:'長い上ヒゲ・小さい実体が高値圈で示すサインは？',q_en:'Long upper wick, small body at price peak?',q_zh:'长上影线·小实体在高位区域的信号是？',
 draw:function(s){G(s);yAx(s);s.innerHTML+=`<line x1="260" y1="18" x2="260" y2="100" stroke="#26a69a" stroke-width="3" stroke-linecap="round"/><rect x="232" y="100" width="56" height="28" fill="#26a69a" rx="3"/><line x1="260" y1="128" x2="260" y2="148" stroke="#26a69a" stroke-width="3" stroke-linecap="round"/>`;},
-opts_jp:['買い場の到来','上昇継続サイン','中立サイン','売り圧力と下落警戟'],opts_en:['Buying opportunity','Bullish continuation','Neutral','Bearish warning'],correct:3,
-exp_jp:'<strong>トンカチ（上影線）</strong> 長い上ヒゲ＝高値で売られた証拠。高値圈で出ると天井サイン！',exp_en:'<strong>Shooting Star</strong> Long upper wick = rejected at highs. Bearish reversal warning!',
-tip_jp:'上ヒゲがボディの2倍以上→売り圧力が特に強い！',tip_en:'Upper wick 2x+ body = very strong selling pressure!'},
-{id:'cn3',q_jp:'長い下ヒゲ・小さい実体のローソク足の名称は？',q_en:'Long lower wick, small body name?',
+opts_jp:['買い場の到来','上昇継続サイン','中立サイン','売り圧力と下落警戟'],opts_en:['Buying opportunity','Bullish continuation','Neutral','Bearish warning'],opts_zh:['买入机会来临', '继续上涨信号', '中性信号', '卖压与下跌警告'],correct:3,
+exp_jp:'<strong>トンカチ（上影線）</strong> 長い上ヒゲ＝高値で売られた証拠。高値圈で出ると天井サイン！',exp_en:'<strong>Shooting Star</strong> Long upper wick = rejected at highs. Bearish reversal warning!',exp_zh:'<strong>射击之星（上影线）</strong> 长上影线=在高位遭到抛售的证据，在高位出现是顶部信号！',
+tip_jp:'上ヒゲがボディの2倍以上→売り圧力が特に強い！',tip_en:'Upper wick 2x+ body = very strong selling pressure!',tip_zh:'上影线是实体2倍以上→卖压特别强！'},
+{id:'cn3',q_jp:'長い下ヒゲ・小さい実体のローソク足の名称は？',q_en:'Long lower wick, small body name?',q_zh:'长下影线·小实体蜡烛的名称是？',
 draw:function(s){G(s);yAx(s);s.innerHTML+=`<line x1="260" y1="45" x2="260" y2="65" stroke="#26a69a" stroke-width="3" stroke-linecap="round"/><rect x="232" y="65" width="56" height="28" fill="#26a69a" rx="3"/><line x1="260" y1="93" x2="260" y2="162" stroke="#26a69a" stroke-width="3" stroke-linecap="round"/>`;},
-opts_jp:['トンカチ','コマ','カラカサ（ハンマー）','十字線'],opts_en:['Shooting Star','Spinning Top','Hammer','Doji'],correct:2,
-exp_jp:'<strong>カラカサ（ハンマー）</strong> 長い下ヒゲ＝下で売られたが全て買い戈された。底値圈での強力な反転上昇サイン！',exp_en:'<strong>Hammer</strong> Long lower wick = sellers tried, buyers won. Bullish reversal at bottoms!',
-tip_jp:'サポートラインでカラカサ＋出来高増加＝最強の買いシグナル！',tip_en:'Hammer at support + volume surge = strongest buy signal!'},
-{id:'cn4',q_jp:'上下に均等なヒゲ・小さい実体が意味するのは？',q_en:'Small body with equal upper and lower wicks?',
+opts_jp:['トンカチ','コマ','カラカサ（ハンマー）','十字線'],opts_en:['Shooting Star','Spinning Top','Hammer','Doji'],opts_zh:['锤头线', '纺锤线', '锤子线（卡拉卡薩）', '十字线'],correct:2,
+exp_jp:'<strong>カラカサ（ハンマー）</strong> 長い下ヒゲ＝下で売られたが全て買い戈された。底値圈での強力な反転上昇サイン！',exp_en:'<strong>Hammer</strong> Long lower wick = sellers tried, buyers won. Bullish reversal at bottoms!',exp_zh:'<strong>锤子线</strong> 长下影线=下方被大量买入。在底部出现是强力反转上涨信号！',
+tip_jp:'サポートラインでカラカサ＋出来高増加＝最強の買いシグナル！',tip_en:'Hammer at support + volume surge = strongest buy signal!',tip_zh:'在支撑位出现锤子线+成交量放大=最强买入信号！'},
+{id:'cn4',q_jp:'上下に均等なヒゲ・小さい実体が意味するのは？',q_en:'Small body with equal upper and lower wicks?',q_zh:'上下影线均等·小实体意味着什么？',
 draw:function(s){G(s);yAx(s);s.innerHTML+=`<line x1="260" y1="28" x2="260" y2="82" stroke="#26a69a" stroke-width="3" stroke-linecap="round"/><rect x="232" y="82" width="56" height="24" fill="#26a69a" rx="3"/><line x1="260" y1="106" x2="260" y2="158" stroke="#26a69a" stroke-width="3" stroke-linecap="round"/>`;},
-opts_jp:['強い買いシグナル','売り買い拮抗・様子見','強い売りシグナル','トレンド加速'],opts_en:['Strong buy','Indecision balanced','Strong sell','Trend accelerating'],correct:1,
-exp_jp:'<strong>コマ（スピニングトップ）</strong> 上下均等ヒゲ＋小さい実体＝売り買い拮抗。次のローソクで方向が決まる！',exp_en:'<strong>Spinning Top</strong> Bulls and bears balanced. Watch next candle!',
-tip_jp:'コマが続いたら大きな動きの前兆！ブレイク方向にポジションを取ろう。',tip_en:'Multiple spinning tops = breakout coming!'},
-{id:'cn5',q_jp:'実体がほぼゼロで十字型のローソク足の名称は？',q_en:'Candle with almost no body like a cross?',
+opts_jp:['強い買いシグナル','売り買い拮抗・様子見','強い売りシグナル','トレンド加速'],opts_en:['Strong buy','Indecision balanced','Strong sell','Trend accelerating'],opts_zh:['明确的上涨', '明确的下跌', '买卖双方均势·方向待定', '趋势加速'],correct:1,
+exp_jp:'<strong>コマ（スピニングトップ）</strong> 上下均等ヒゲ＋小さい実体＝売り買い拮抗。次のローソクで方向が決まる！',exp_en:'<strong>Spinning Top</strong> Bulls and bears balanced. Watch next candle!',exp_zh:'<strong>十字线（Doji）</strong> 开收价相同=买卖均势，是趋势转变的预警信号！',
+tip_jp:'コマが続いたら大きな動きの前兆！ブレイク方向にポジションを取ろう。',tip_en:'Multiple spinning tops = breakout coming!',tip_zh:'在关键价位出现十字线=必须关注！'},
+{id:'cn5',q_jp:'実体がほぼゼロで十字型のローソク足の名称は？',q_en:'Candle with almost no body like a cross?',q_zh:'大阳线后紧跟大阴线，这是什么形态？',
 draw:function(s){G(s);yAx(s);s.innerHTML+=`<line x1="260" y1="22" x2="260" y2="93" stroke="#888" stroke-width="3" stroke-linecap="round"/><line x1="218" y1="93" x2="302" y2="93" stroke="#888" stroke-width="3" stroke-linecap="round"/><line x1="260" y1="93" x2="260" y2="160" stroke="#888" stroke-width="3" stroke-linecap="round"/>`;},
-opts_jp:['コマ','十字線（ドージ）','トンボ','大陽線'],opts_en:['Spinning Top','Doji','Dragonfly Doji','Marubozu'],correct:1,
-exp_jp:'<strong>十字線（ドージ）</strong> 始値≈終値。売り買いが完全均衡。トレンド転換の予兆！',exp_en:'<strong>Doji</strong> Open equals Close. Signals potential trend reversal!',
-tip_jp:'高値圈のドージ→天井、底値圈のドージ→底打ちサイン！',tip_en:'Doji at highs = top, at lows = bottom reversal!'},
-{id:'cn6',q_jp:'大陰線（ヒゲなし）が意味することは？',q_en:'Large bearish Marubozu meaning?',
+opts_jp:['コマ','十字線（ドージ）','トンボ','大陽線'],opts_en:['Spinning Top','Doji','Dragonfly Doji','Marubozu'],opts_zh:['持续上涨信号', '看跌吞没形态', '看涨吞没形态', '中性形态'],correct:1,
+exp_jp:'<strong>十字線（ドージ）</strong> 始値≈終値。売り買いが完全均衡。トレンド転換の予兆！',exp_en:'<strong>Doji</strong> Open equals Close. Signals potential trend reversal!',exp_zh:'<strong>看跌吞没形态</strong> 大阴线完全吞没前一根大阳线=强力卖出信号！在顶部区域出现时尤为强烈📉',
+tip_jp:'高値圈のドージ→天井、底値圈のドージ→底打ちサイン！',tip_en:'Doji at highs = top, at lows = bottom reversal!',tip_zh:'成交量越大，信号越可靠！'},
+{id:'cn6',q_jp:'大陰線（ヒゲなし）が意味することは？',q_en:'Large bearish Marubozu meaning?',q_zh:'连续三根大阴线意味着什么？',
 draw:function(s){G(s);yAx(s);s.innerHTML+=`<rect x="210" y="35" width="100" height="130" fill="#ef5350" rx="3"/>`;},
-opts_jp:['買い場の到来','上昇転換','強い売り圧力・下落継続','様子見'],opts_en:['Buying opportunity','Bullish reversal','Strong selling continues','Indecision'],correct:2,
-exp_jp:'<strong>大陰線（丸坤主）</strong> ヒゲなし大陰線＝売り圧力が極めて強い。下落継続のサイン！',exp_en:'<strong>Bearish Marubozu</strong> Extreme selling. Downtrend continues.',
-tip_jp:'大陰線への逆張りは危険！トレンドフォローが基本。',tip_en:'Never fight a Bearish Marubozu!'},
-{id:'cn7',q_jp:'下ヒゲのみの十字線（トンボ）が底値圈で出た。次の展開は？',q_en:'Dragonfly Doji at price bottom?',
+opts_jp:['買い場の到来','上昇転換','強い売り圧力・下落継続','様子見'],opts_en:['Buying opportunity','Bullish reversal','Strong selling continues','Indecision'],opts_zh:['买入机会来临', '上涨反转', '强烈的卖压·下跌持续', '中性信号'],correct:2,
+exp_jp:'<strong>大陰線（丸坤主）</strong> ヒゲなし大陰線＝売り圧力が極めて強い。下落継続のサイン！',exp_en:'<strong>Bearish Marubozu</strong> Extreme selling. Downtrend continues.',exp_zh:'<strong>光头光脚大阴线</strong> 没有影线的大阴线=卖压极强，下跌持续的信号！',
+tip_jp:'大陰線への逆張りは危険！トレンドフォローが基本。',tip_en:'Never fight a Bearish Marubozu!',tip_zh:'对大阴线逆势操作很危险！顺势而为是基本。'},
+{id:'cn7',q_jp:'下ヒゲのみの十字線（トンボ）が底値圈で出た。次の展開は？',q_en:'Dragonfly Doji at price bottom?',q_zh:'只有下影线的十字线（蜻蜓线）在底部出现，下一步是？',
 draw:function(s){G(s);yAx(s);s.innerHTML+=`<line x1="218" y1="58" x2="302" y2="58" stroke="#888" stroke-width="3" stroke-linecap="round"/><line x1="260" y1="58" x2="260" y2="162" stroke="#888" stroke-width="3" stroke-linecap="round"/>`;},
-opts_jp:['下落継続の可能性が高い','横ばい継続','反転上昇の可能性が高い','変化なし'],opts_en:['Likely continues lower','Sideways','High probability bullish reversal','No change'],correct:2,
-exp_jp:'<strong>トンボ（ドラゴンフライドージ）</strong> 長い下ヒゲのみ＝下で売られたが全て買い戈された。底値での強力な反転上昇サイン！',exp_en:'<strong>Dragonfly Doji</strong> Sellers failed, buyers won. Strong bullish reversal!',
-tip_jp:'サポートでのトンボ＋次の大陽線＝最強の反転パターン！',tip_en:'Dragonfly at support + confirming bull candle = strongest reversal!'},
-{id:'cn8',q_jp:'上ヒゲのみの十字線（トウバ）が高値圈に出現。意味は？',q_en:'Gravestone Doji at price peak?',
+opts_jp:['下落継続の可能性が高い','横ばい継続','反転上昇の可能性が高い','変化なし'],opts_en:['Likely continues lower','Sideways','High probability bullish reversal','No change'],opts_zh:['大概率继续下跌', '横盘持续', '大概率反转上涨', '无变化'],correct:2,
+exp_jp:'<strong>トンボ（ドラゴンフライドージ）</strong> 長い下ヒゲのみ＝下で売られたが全て買い戈された。底値での強力な反転上昇サイン！',exp_en:'<strong>Dragonfly Doji</strong> Sellers failed, buyers won. Strong bullish reversal!',exp_zh:'<strong>蜻蜓线</strong> 只有长下影线=下方被大量买入。在底部出现是强力反转上涨信号！',
+tip_jp:'サポートでのトンボ＋次の大陽線＝最強の反転パターン！',tip_en:'Dragonfly at support + confirming bull candle = strongest reversal!',tip_zh:'在支撑位出现蜻蜓线+确认性大阳线=最强反转形态！'},
+{id:'cn8',q_jp:'上ヒゲのみの十字線（トウバ）が高値圈に出現。意味は？',q_en:'Gravestone Doji at price peak?',q_zh:'只有上影线的十字线（墓碑线）在高位出现，意味着什么？',
 draw:function(s){G(s);yAx(s);s.innerHTML+=`<line x1="260" y1="22" x2="260" y2="118" stroke="#888" stroke-width="3" stroke-linecap="round"/><line x1="218" y1="118" x2="302" y2="118" stroke="#888" stroke-width="3" stroke-linecap="round"/>`;},
-opts_jp:['天井形成・下落転換サイン','底値確認・上昇継続','様子見','出来高急増'],opts_en:['Top bearish reversal','Bottom bullish continues','Indecision','Volume surge'],correct:0,
-exp_jp:'<strong>トウバ（グレイブストーンドージ）</strong> 高値まで買われたが全て売り概された。高値圈での強力な天井サイン！',exp_en:'<strong>Gravestone Doji</strong> Buyers pushed high, sellers took over. Bearish reversal at peaks!',
-tip_jp:'レジスタンスでのトウバ＝売りの好機！ストップは高値より少し上に。',tip_en:'Gravestone at resistance = sell signal!'},
-{id:'cn9',q_jp:'陽線（緑）と陰線（赤）、どちらが終値 > 始値？',q_en:'Which candle has Close > Open?',
+opts_jp:['天井形成・下落転換サイン','底値確認・上昇継続','様子見','出来高急増'],opts_en:['Top bearish reversal','Bottom bullish continues','Indecision','Volume surge'],opts_zh:['顶部形成·转跌信号', '底部确认·上涨持续', '观望', '成交量急增'],correct:0,
+exp_jp:'<strong>トウバ（グレイブストーンドージ）</strong> 高値まで買われたが全て売り概された。高値圈での強力な天井サイン！',exp_en:'<strong>Gravestone Doji</strong> Buyers pushed high, sellers took over. Bearish reversal at peaks!',exp_zh:'<strong>墓碑线</strong> 买方推至高位但全被卖方击退，在高位出现是强力顶部信号！',
+tip_jp:'レジスタンスでのトウバ＝売りの好機！ストップは高値より少し上に。',tip_en:'Gravestone at resistance = sell signal!',tip_zh:'在阻力位出现墓碑线=卖出信号！'},
+{id:'cn9',q_jp:'陽線（緑）と陰線（赤）、どちらが終値 > 始値？',q_en:'Which candle has Close > Open?',q_zh:'阳线（绿）和阴线（红），哪个收盘价>开盘价？',
 draw:function(s){G(s);yAx(s);s.innerHTML+=`<rect x="130" y="48" width="90" height="110" fill="#26a69a" rx="3"/><rect x="300" y="48" width="90" height="110" fill="#ef5350" rx="3"/><text x="175" y="178" text-anchor="middle" font-size="13" fill="#26a69a" font-weight="700" font-family="Plus Jakarta Sans">A</text><text x="345" y="178" text-anchor="middle" font-size="13" fill="#ef5350" font-weight="700" font-family="Plus Jakarta Sans">B</text>`;},
-opts_jp:['A（陽線・緑）','B（陰線・赤）','どちらも同じ','ヒゲの長さで決まる'],opts_en:['A (Bullish/Green)','B (Bearish/Red)','Both same','Determined by wick'],correct:0,
-exp_jp:'<strong>陽線（A・緑）</strong> 終値が始値より高い＝価格が上昇した。陰線（赤）は終値が始値より低い。',exp_en:'<strong>Bullish (A/Green)</strong> Close > Open = price rose. Bearish (B/Red) = Close < Open.',
-tip_jp:'陽線連続＝上昇トレンド、陰線連続＝下落トレンド。まずこれを見極めよう！',tip_en:'Consecutive bullish = uptrend, bearish = downtrend. Master this first!'},
-{id:'cn10',q_jp:'サポートラインで長い下ヒゲのローソク足。次の展開は？',q_en:'Long lower wick candle at support line?',
+opts_jp:['A（陽線・緑）','B（陰線・赤）','どちらも同じ','ヒゲの長さで決まる'],opts_en:['A (Bullish/Green)','B (Bearish/Red)','Both same','Determined by wick'],opts_zh:['A（阳线·绿）', 'B（阴线·红）', '两者相同', '由影线长度决定'],correct:0,
+exp_jp:'<strong>陽線（A・緑）</strong> 終値が始値より高い＝価格が上昇した。陰線（赤）は終値が始値より低い。',exp_en:'<strong>Bullish (A/Green)</strong> Close > Open = price rose. Bearish (B/Red) = Close < Open.',exp_zh:'<strong>阳线（A·绿）</strong> 收盘价高于开盘价=价格上涨，阴线（红）收盘价低于开盘价。',
+tip_jp:'陽線連続＝上昇トレンド、陰線連続＝下落トレンド。まずこれを見極めよう！',tip_en:'Consecutive bullish = uptrend, bearish = downtrend. Master this first!',tip_zh:'连续阳线=上涨趋势，连续阴线=下跌趋势，先掌握这个！'},
+{id:'cn10',q_jp:'サポートラインで長い下ヒゲのローソク足。次の展開は？',q_en:'Long lower wick candle at support line?',q_zh:'在支撑线上出现长下影线蜡烛，下一步是？',
 draw:function(s){G(s);yAx(s);s.innerHTML+=`<line x1="55" y1="122" x2="465" y2="122" stroke="rgba(92,225,255,0.45)" stroke-width="1.5" stroke-dasharray="6,4"/><text x="472" y="126" font-size="9" fill="rgba(92,225,255,0.7)" font-family="Plus Jakarta Sans">SUP</text><line x1="260" y1="45" x2="260" y2="65" stroke="#26a69a" stroke-width="3" stroke-linecap="round"/><rect x="232" y="65" width="56" height="26" fill="#26a69a" rx="3"/><line x1="260" y1="91" x2="260" y2="162" stroke="#26a69a" stroke-width="3" stroke-linecap="round"/>`;},
-opts_jp:['下落継続の可能性が高い','反転上昇の可能性が高い','トレンドに変化なし','出来高が減少'],opts_en:['Likely continues lower','High probability reversal upward','No trend change','Volume decreases'],correct:1,
-exp_jp:'<strong>サポートでのカラカサ</strong> 底値圈で長い下ヒゲ＝下で強く買われた証拠。反転上昇の強力なシグナル！',exp_en:'<strong>Hammer at Support</strong> Strong buying from lows = bullish reversal!',
-tip_jp:'サポート＋下ヒゲ長＋出来高増＝三拍子揃った最強の買いシグナル！',tip_en:'Support + long lower wick + high volume = perfect buy signal!'},
+opts_jp:['下落継続の可能性が高い','反転上昇の可能性が高い','トレンドに変化なし','出来高が減少'],opts_en:['Likely continues lower','High probability reversal upward','No trend change','Volume decreases'],opts_zh:['大概率继续下跌', '大概率反转上涨', '趋势无变化', '成交量减少'],correct:1,
+exp_jp:'<strong>サポートでのカラカサ</strong> 底値圈で長い下ヒゲ＝下で強く買われた証拠。反転上昇の強力なシグナル！',exp_en:'<strong>Hammer at Support</strong> Strong buying from lows = bullish reversal!',exp_zh:'<strong>支撑位锤子线</strong> 在底部出现长下影线=被大量买入的证据，反转上涨的强力信号！',
+tip_jp:'サポート＋下ヒゲ長＋出来高増＝三拍子揃った最強の買いシグナル！',tip_en:'Support + long lower wick + high volume = perfect buy signal!',tip_zh:'支撑位+长下影线+成交量放大=三重确认最强买入信号！'},
 ];
 
 const SIG_Q=[
-  {id:'sq1',patternId:'double_bottom',q_jp:'ダブルボトムでエントリーするタイミングは？',q_en:'When to enter on a Double Bottom?',opts_jp:['2つ目の底で即座に','ネックライン上抜け確認後','最初の底で','パターン認識直後'],opts_en:['At 2nd bottom immediately','After neckline breakout','At first bottom','When pattern spotted'],correct:1,exp_jp:'<strong>エントリーはネックライン上抜け確認後</strong>が基本！底での早期エントリーはリスクが高い。終値での確認が重要🎯',exp_en:'Enter on <strong>confirmed neckline breakout</strong>. Bottom entry is risky — wait for closing confirmation.',tip_jp:'💡 焦って底で買うより、確認後の安全なエントリーを！',tip_en:'💡 Patient confirmation entry beats bottom-fishing!'},
-  {id:'sq2',patternId:'hs_top',q_jp:'ヘッドアンドショルダーズのストップロスはどこに置く？',q_en:'Where to place stop-loss for H&S Top?',opts_jp:['ネックラインの少し下','ヘッドの少し上','左肩の少し上','右肩の高値の少し上'],opts_en:['Just below neckline','Just above Head','Just above Left Shoulder','Just above Right Shoulder'],correct:3,exp_jp:'<strong>ストップロスは右肩の高値すぐ上</strong>に置くのが基本！右肩を超えたらパターン失効と判断できる🛑',exp_en:'Place <strong>stop just above Right Shoulder</strong>. If price exceeds RS, pattern has failed.',tip_jp:'💡 ストップは明確なパターン否定ポイントに置くのが原則！',tip_en:'💡 Stop at pattern invalidation point!'},
-  {id:'sq3',patternId:'bull_flag',q_jp:'フラッグパターンの利益目標はどこ？',q_en:'Profit target for a Flag pattern?',opts_jp:['フラッグの高さ分','ポール（旗竿）の長さ分','フラッグの2倍','ランダム'],opts_en:['Flag height','Flagpole length','2x flag','Random'],correct:1,exp_jp:'<strong>目標値＝ポール（旗竿）の長さ</strong>をブレイク点から測る！ポールと同等の上昇が期待できる📏',exp_en:'<strong>Target = flagpole length</strong> projected from breakout point!',tip_jp:'💡 ポールが長いほど次の動きも大きい傾向！',tip_en:'💡 Longer pole = larger expected move!'},
-  {id:'sq4',patternId:'symm_triangle',q_jp:'シンメトリカルトライアングルのブレイク方向の判断は？',q_en:'How to determine breakout direction of Symmetrical Triangle?',opts_jp:['常に上方','常に下方','先行トレンドの方向','コインの裏表'],opts_en:['Always up','Always down','Prior trend direction','Random'],correct:2,exp_jp:'<strong>先行トレンドの方向に60-65%で継続</strong>することが多い！ただし確認後に乗るのが最安全🎯',exp_en:'<strong>60-65% follows prior trend</strong>! But wait for confirmed breakout — safest approach.',tip_jp:'💡 ブレイク方向の予測より確認後に乗る方が安全！',tip_en:'💡 Safer to confirm than predict!'},
-  {id:'sq5',patternId:'double_top',q_jp:'ダブルトップの目標値の計算方法は？',q_en:'How to calculate Double Top target?',opts_jp:['トップからネックラインの距離を下に測る','ネックラインからトップまでの距離を上に測る','トップ間の距離','ランダム'],opts_en:['Top-to-neckline down','Neckline-to-top up','Distance between tops','Random'],correct:0,exp_jp:'<strong>目標値＝トップからネックラインの距離</strong>をネックラインブレイク点から下に測る📐 これが最低限の下落目標！',exp_en:'<strong>Target = top-to-neckline distance</strong> projected downward from neckline breakout.',tip_jp:'💡 目標値は最低限の目安。実際にはさらに下落することも！',tip_en:'💡 Target is minimum — price often falls further!'},
-  {id:'sq6',patternId:'asc_triangle',q_jp:'上昇三角のエントリーポイントは？',q_en:'Entry point for Ascending Triangle?',opts_jp:['サポートラインで毎回買う','水平レジスタンスのブレイク確認後','三角形内のどこでも','パターン開始時点'],opts_en:['Buy at support each time','After flat resistance breaks','Anywhere in pattern','At pattern start'],correct:1,exp_jp:'<strong>エントリーは水平レジスタンスのブレイク確認後</strong>！終値ベースで確認し、出来高増加も確認するとなお良い🚀',exp_en:'<strong>Enter after flat resistance breakout confirmed</strong>! Confirm on closing price + volume increase.',tip_jp:'💡 終値確認が大切！ヒゲのブレイクは惑わされないで！',tip_en:'💡 Closing price confirmation is key — ignore wicks!'},
+  {id:'sq1',patternId:'double_bottom',q_jp:'ダブルボトムでエントリーするタイミングは？',q_en:'When to enter on a Double Bottom?',q_zh:'双底的入场时机是？',opts_jp:['2つ目の底で即座に','ネックライン上抜け確認後','最初の底で','パターン認識直後'],opts_en:['At 2nd bottom immediately','After neckline breakout','At first bottom','When pattern spotted'],opts_zh:['在第二个底部立即入场', '确认颈线突破后入场', '在第一个底部入场', '识别形态后立即入场'],correct:1,exp_jp:'<strong>エントリーはネックライン上抜け確認後</strong>が基本！底での早期エントリーはリスクが高い。終値での確認が重要🎯',exp_en:'Enter on <strong>confirmed neckline breakout</strong>. Bottom entry is risky — wait for closing confirmation.',exp_zh:'<strong>入场基本原则是确认颈线突破后</strong>！在底部过早入场风险高，以收盘价确认很重要🎯',tip_jp:'💡 焦って底で買うより、確認後の安全なエントリーを！',tip_en:'💡 Patient confirmation entry beats bottom-fishing!',tip_zh:'💡 耐心等待确认后入场，比在底部抢入更安全！'},
+  {id:'sq2',patternId:'hs_top',q_jp:'ヘッドアンドショルダーズのストップロスはどこに置く？',q_en:'Where to place stop-loss for H&S Top?',q_zh:'头肩顶的止损应放在哪里？',opts_jp:['ネックラインの少し下','ヘッドの少し上','左肩の少し上','右肩の高値の少し上'],opts_en:['Just below neckline','Just above Head','Just above Left Shoulder','Just above Right Shoulder'],opts_zh:['颈线略下方', '头部略上方', '左肩略上方', '右肩高点略上方'],correct:3,exp_jp:'<strong>ストップロスは右肩の高値すぐ上</strong>に置くのが基本！右肩を超えたらパターン失効と判断できる🛑',exp_en:'Place <strong>stop just above Right Shoulder</strong>. If price exceeds RS, pattern has failed.',exp_zh:'<strong>止损放在右肩高点略上方</strong>是基本原则！若价格超过右肩，则形态失效🛑',tip_jp:'💡 ストップは明確なパターン否定ポイントに置くのが原則！',tip_en:'💡 Stop at pattern invalidation point!',tip_zh:'💡 止损应放在明确的形态否定点！'},
+  {id:'sq3',patternId:'bull_flag',q_jp:'フラッグパターンの利益目標はどこ？',q_en:'Profit target for a Flag pattern?',q_zh:'旗形形态的利润目标在哪里？',opts_jp:['フラッグの高さ分','ポール（旗竿）の長さ分','フラッグの2倍','ランダム'],opts_en:['Flag height','Flagpole length','2x flag','Random'],opts_zh:['旗形高度', '旗杆长度', '旗形的2倍', '随机'],correct:1,exp_jp:'<strong>目標値＝ポール（旗竿）の長さ</strong>をブレイク点から測る！ポールと同等の上昇が期待できる📏',exp_en:'<strong>Target = flagpole length</strong> projected from breakout point!',exp_zh:'<strong>目标位=旗杆长度</strong>从突破点向上测量！预期涨幅与旗杆相当📏',tip_jp:'💡 ポールが長いほど次の動きも大きい傾向！',tip_en:'💡 Longer pole = larger expected move!',tip_zh:'💡 旗杆越长，下一波行情越大！'},
+  {id:'sq4',patternId:'symm_triangle',q_jp:'シンメトリカルトライアングルのブレイク方向の判断は？',q_en:'How to determine breakout direction of Symmetrical Triangle?',q_zh:'如何判断对称三角形的突破方向？',opts_jp:['常に上方','常に下方','先行トレンドの方向','コインの裏表'],opts_en:['Always up','Always down','Prior trend direction','Random'],opts_zh:['总是向上', '总是向下', '先前趋势方向', '抛硬币'],correct:2,exp_jp:'<strong>先行トレンドの方向に60-65%で継続</strong>することが多い！ただし確認後に乗るのが最安全🎯',exp_en:'<strong>60-65% follows prior trend</strong>! But wait for confirmed breakout — safest approach.',exp_zh:'<strong>60-65%沿先前趋势方向持续</strong>！但等待确认后入场是最安全的🎯',tip_jp:'💡 ブレイク方向の予測より確認後に乗る方が安全！',tip_en:'💡 Safer to confirm than predict!',tip_zh:'💡 等待确认比预测方向更安全！'},
+  {id:'sq5',patternId:'double_top',q_jp:'ダブルトップの目標値の計算方法は？',q_en:'How to calculate Double Top target?',q_zh:'双顶目标位的计算方法？',opts_jp:['トップからネックラインの距離を下に測る','ネックラインからトップまでの距離を上に測る','トップ間の距離','ランダム'],opts_en:['Top-to-neckline down','Neckline-to-top up','Distance between tops','Random'],opts_zh:['从顶部到颈线的距离向下测量', '从颈线到顶部的距离向上测量', '两顶之间的距离', '随机'],correct:0,exp_jp:'<strong>目標値＝トップからネックラインの距離</strong>をネックラインブレイク点から下に測る📐 これが最低限の下落目標！',exp_en:'<strong>Target = top-to-neckline distance</strong> projected downward from neckline breakout.',exp_zh:'<strong>目标位=顶部到颈线的距离</strong>从颈线突破点向下测量📐 这是最低下跌目标！',tip_jp:'💡 目標値は最低限の目安。実際にはさらに下落することも！',tip_en:'💡 Target is minimum — price often falls further!',tip_zh:'💡 目标位只是最低参考，实际跌幅可能更大！'},
+  {id:'sq6',patternId:'asc_triangle',q_jp:'上昇三角のエントリーポイントは？',q_en:'Entry point for Ascending Triangle?',q_zh:'上升三角形的入场点是？',opts_jp:['サポートラインで毎回買う','水平レジスタンスのブレイク確認後','三角形内のどこでも','パターン開始時点'],opts_en:['Buy at support each time','After flat resistance breaks','Anywhere in pattern','At pattern start'],opts_zh:['每次在支撑线买入', '确认水平阻力线突破后', '在三角形内任意位置', '在形态开始时'],correct:1,exp_jp:'<strong>エントリーは水平レジスタンスのブレイク確認後</strong>！終値ベースで確認し、出来高増加も確認するとなお良い🚀',exp_en:'<strong>Enter after flat resistance breakout confirmed</strong>! Confirm on closing price + volume increase.',exp_zh:'<strong>在确认水平阻力线突破后入场</strong>！以收盘价确认，最好同时确认成交量放大🚀',tip_jp:'💡 終値確認が大切！ヒゲのブレイクは惑わされないで！',tip_en:'💡 Closing price confirmation is key — ignore wicks!',tip_zh:'💡 收盘价确认很重要！长影线突破不算！'},
 ];
 
 const CAT_Q=[
-  {id:'cq1',q_jp:'ダブルボトム・H&Sボトム・逆三尊は何型？',q_en:'Double Bottom, H&S Bottom, Inverse H&S — what type?',opts_jp:['継続型','転換型（上昇）','転換型（下降）','中立型'],opts_en:['Continuation','Reversal (Bullish)','Reversal (Bearish)','Neutral'],correct:1,exp_jp:'これらはすべて<strong>転換型・上昇パターン</strong>🚀 下降トレンドから上昇トレンドへの転換を示す！',exp_en:'All <strong>Bullish Reversal patterns</strong> — signal shift from downtrend to uptrend!',tip_jp:'💡 転換型は必ずネックライン等のブレイクで確認しよう！',tip_en:'💡 Always confirm reversals with a neckline break!',patternIds:['double_bottom','hs_bottom']},
-  {id:'cq2',q_jp:'フラッグ・ペナント・三角・ボックスは何型？',q_en:'Flags, Pennants, Triangles, Rectangles — what type?',opts_jp:['転換型','継続型','ハーモニック型','収束型'],opts_en:['Reversal','Continuation','Harmonic','Converging'],correct:1,exp_jp:'これらはすべて<strong>継続型パターン</strong>🔄 トレンドが一時休憩した後、同方向に継続するサイン！',exp_en:'All <strong>Continuation patterns</strong> — trend pauses then resumes same direction!',tip_jp:'💡 継続型はトレンドの途中で見つかる。先行トレンドの確認が重要！',tip_en:'💡 Appear mid-trend — confirm prior trend first!',patternIds:['bull_flag','bull_pennant','asc_triangle']},
-  {id:'cq3',q_jp:'上昇ウェッジのブレイク方向は？',q_en:'Rising Wedge typical breakout direction?',opts_jp:['上方（上昇継続）','下方（下落転換）','横ばい','ランダム'],opts_en:['Upward','Downward','Sideways','Random'],correct:1,exp_jp:'<strong>上昇ウェッジは下方ブレイク</strong>が基本！⚠️ 見た目は上昇しているが実際は下落転換パターン。ダマシ注意！',exp_en:'<strong>Rising Wedge breaks down!</strong> Looks bullish but is bearish. Watch out for fakeouts!',tip_jp:'💡「上がっているように見えて下がる」ダマシパターンの代表！',tip_en:'💡 Classic deceptive pattern — looks bullish but is bearish!',patternIds:['rising_wedge']},
-  {id:'cq4',q_jp:'下降フラッグはどちらのトレンドの継続？',q_en:'Bear Flag signals continuation of which trend?',opts_jp:['上昇トレンド','下降トレンド','横ばいトレンド','不明'],opts_en:['Uptrend','Downtrend','Sideways','Unknown'],correct:1,exp_jp:'<strong>下降フラッグは下降トレンドの継続</strong>📉 急落後の一時的な反発（フラッグ）で、フラッグ下抜けでさらに下落！',exp_en:'<strong>Bear Flag = downtrend continuation</strong>! Brief bounce after sharp drop, then continues lower.',tip_jp:'💡 フラッグ期間の出来高が少ないほど下落継続の可能性が高い！',tip_en:'💡 Low flag volume = higher probability of continued decline!',patternIds:['bear_flag']},
-  {id:'cq5',q_jp:'カップ&ハンドルは主に何型パターン？',q_en:'Cup & Handle is primarily what type of pattern?',opts_jp:['下降転換型','継続型（下降）','上昇転換/継続型','ハーモニック型'],opts_en:['Bearish reversal','Bearish continuation','Bullish reversal/continuation','Harmonic'],correct:2,exp_jp:'<strong>カップ&ハンドルは上昇転換・継続パターン</strong>☕ U字カップ＋小さなハンドル後のブレイクアウトで大きな上昇！',exp_en:'<strong>Cup & Handle is bullish reversal/continuation</strong>! Big U-shape + handle, then powerful breakout!',tip_jp:'💡 ハンドルの調整はカップ深さの1/3以内が理想！',tip_en:'💡 Handle retracement ≤1/3 of cup depth = ideal!',patternIds:['cup_handle']},
+  {id:'cq1',q_jp:'ダブルボトム・H&Sボトム・逆三尊は何型？',q_en:'Double Bottom, H&S Bottom, Inverse H&S — what type?',q_zh:'双底·头肩底·逆头肩是什么类型？',opts_jp:['継続型','転換型（上昇）','転換型（下降）','中立型'],opts_en:['Continuation','Reversal (Bullish)','Reversal (Bearish)','Neutral'],opts_zh:['持续型', '反转型（上涨）', '反转型（下跌）', '中性型'],correct:1,exp_jp:'これらはすべて<strong>転換型・上昇パターン</strong>🚀 下降トレンドから上昇トレンドへの転換を示す！',exp_en:'All <strong>Bullish Reversal patterns</strong> — signal shift from downtrend to uptrend!',exp_zh:'这些都是<strong>反转型·上涨形态</strong>🚀 预示从下跌趋势转为上涨趋势！',tip_jp:'💡 転換型は必ずネックライン等のブレイクで確認しよう！',tip_en:'💡 Always confirm reversals with a neckline break!',tip_zh:'💡 反转型形态必须通过颈线等突破来确认！',patternIds:['double_bottom','hs_bottom']},
+  {id:'cq2',q_jp:'フラッグ・ペナント・三角・ボックスは何型？',q_en:'Flags, Pennants, Triangles, Rectangles — what type?',q_zh:'旗形·三角旗·三角形·矩形是什么类型？',opts_jp:['転換型','継続型','ハーモニック型','収束型'],opts_en:['Reversal','Continuation','Harmonic','Converging'],opts_zh:['反转型', '持续型', '谐波型', '收敛型'],correct:1,exp_jp:'これらはすべて<strong>継続型パターン</strong>🔄 トレンドが一時休憩した後、同方向に継続するサイン！',exp_en:'All <strong>Continuation patterns</strong> — trend pauses then resumes same direction!',exp_zh:'这些都是<strong>持续型形态</strong>🔄 趋势暂歇后沿同方向继续的信号！',tip_jp:'💡 継続型はトレンドの途中で見つかる。先行トレンドの確認が重要！',tip_en:'💡 Appear mid-trend — confirm prior trend first!',tip_zh:'💡 持续型出现在趋势途中，确认先前趋势很重要！',patternIds:['bull_flag','bull_pennant','asc_triangle']},
+  {id:'cq3',q_jp:'上昇ウェッジのブレイク方向は？',q_en:'Rising Wedge typical breakout direction?',q_zh:'上升楔形的突破方向？',opts_jp:['上方（上昇継続）','下方（下落転換）','横ばい','ランダム'],opts_en:['Upward','Downward','Sideways','Random'],opts_zh:['向上（持续上涨）', '向下（转为下跌）', '横盘', '随机'],correct:1,exp_jp:'<strong>上昇ウェッジは下方ブレイク</strong>が基本！⚠️ 見た目は上昇しているが実際は下落転換パターン。ダマシ注意！',exp_en:'<strong>Rising Wedge breaks down!</strong> Looks bullish but is bearish. Watch out for fakeouts!',exp_zh:'<strong>上升楔形向下突破</strong>是基本！⚠️ 看似上涨，实为下跌反转形态，注意假突破！',tip_jp:'💡「上がっているように見えて下がる」ダマシパターンの代表！',tip_en:'💡 Classic deceptive pattern — looks bullish but is bearish!',tip_zh:'💡 "看涨实跌"的代表性欺骗形态！',patternIds:['rising_wedge']},
+  {id:'cq4',q_jp:'下降フラッグはどちらのトレンドの継続？',q_en:'Bear Flag signals continuation of which trend?',q_zh:'下跌旗形是哪种趋势的持续？',opts_jp:['上昇トレンド','下降トレンド','横ばいトレンド','不明'],opts_en:['Uptrend','Downtrend','Sideways','Unknown'],opts_zh:['上涨趋势', '下跌趋势', '横盘趋势', '未知'],correct:1,exp_jp:'<strong>下降フラッグは下降トレンドの継続</strong>📉 急落後の一時的な反発（フラッグ）で、フラッグ下抜けでさらに下落！',exp_en:'<strong>Bear Flag = downtrend continuation</strong>! Brief bounce after sharp drop, then continues lower.',exp_zh:'<strong>下跌旗形是下跌趋势的持续</strong>📉 急跌后短暂反弹，跌破旗形下方后继续下跌！',tip_jp:'💡 フラッグ期間の出来高が少ないほど下落継続の可能性が高い！',tip_en:'💡 Low flag volume = higher probability of continued decline!',tip_zh:'💡 旗形期间成交量越少，下跌持续可能性越高！',patternIds:['bear_flag']},
+  {id:'cq5',q_jp:'カップ&ハンドルは主に何型パターン？',q_en:'Cup & Handle is primarily what type of pattern?',q_zh:'杯柄形态主要是什么类型？',opts_jp:['下降転換型','継続型（下降）','上昇転換/継続型','ハーモニック型'],opts_en:['Bearish reversal','Bearish continuation','Bullish reversal/continuation','Harmonic'],opts_zh:['下跌反转型', '持续型（下跌）', '上涨反转/持续型', '谐波型'],correct:2,exp_jp:'<strong>カップ&ハンドルは上昇転換・継続パターン</strong>☕ U字カップ＋小さなハンドル後のブレイクアウトで大きな上昇！',exp_en:'<strong>Cup & Handle is bullish reversal/continuation</strong>! Big U-shape + handle, then powerful breakout!',exp_zh:'<strong>杯柄是上涨反转·持续形态</strong>☕ U形杯底+小把手后突破，强势上涨！',tip_jp:'💡 ハンドルの調整はカップ深さの1/3以内が理想！',tip_en:'💡 Handle retracement ≤1/3 of cup depth = ideal!',tip_zh:'💡 把手回调不超过杯深1/3为理想！',patternIds:['cup_handle']},
 ];
 
 // ── AFFILIATE CONFIG ──
-const AFF_DATA={bitget:{url:'https://www.bitgetapps.com/ja/referral/register?clacCode=HE4WTZBM&from=%2Fja%2Fevents%2Freferral-all-program&source=events&utmSource=PremierInviter',icon:'📊',badge:'PR — 暗号資産取引所',title:'チャートを実践で試そう！Bitgetで口座開設',sub:'コピートレード機能搭載 | 初心者でも安心 | 手数料業界最低水準',cta:'無料で始める →'},mexc:{url:'https://www.mexc.com/ja-JP/acquisition/custom-sign-up?shareCode=mexc-chapi',icon:'🔥',badge:'⚠️ MEXC限定 · 手数料永久20%OFF',title:'このリンクから登録すると、手数料が永久20%割引！',sub:'✔ Chapiユーザー限定 | ✔ 無料登録するだけで自動適用 | ✔ いま登録しないと通常手数料のまま',cta:'今すぐ無料登録 →'}};
+const AFF_DATA={
+  bitget:{
+    url:'https://www.bitgetapps.com/ja/referral/register?clacCode=HE4WTZBM&from=%2Fja%2Fevents%2Freferral-all-program&source=events&utmSource=PremierInviter',
+    icon:'📊',
+    badge_ja:'PR — 暗号資産取引所', badge_en:'PR — Crypto Exchange', badge_zh:'PR — 加密货币交易所',
+    title_ja:'チャートを実践で試そう！Bitgetで口座開設', title_en:'Put your charts to work! Open a Bitget account', title_zh:'将图表分析付诸实践！在Bitget开户',
+    sub_ja:'コピートレード機能搭載 | 初心者でも安心 | 手数料業界最低水準', sub_en:'Copy trading built-in | Beginner-friendly | Industry-low fees', sub_zh:'内置跟单交易 | 新手友好 | 行业最低手续费',
+    cta_ja:'無料で始める →', cta_en:'Start for free →', cta_zh:'免费开始 →'
+  },
+  mexc:{
+    url:'https://www.mexc.com/ja-JP/acquisition/custom-sign-up?shareCode=mexc-chapi',
+    icon:'🔥',
+    badge_ja:'⚠️ MEXC限定 · 手数料永久20%OFF', badge_en:'⚠️ MEXC exclusive · 20% off fees forever', badge_zh:'⚠️ MEXC限定 · 手续费永久8折',
+    title_ja:'このリンクから登録すると、手数料が永久20%割引！', title_en:'Sign up via this link — get 20% off trading fees forever!', title_zh:'通过此链接注册，手续费永久8折！',
+    sub_ja:'✔ Chapiユーザー限定 | ✔ 無料登録するだけで自動適用 | ✔ いま登録しないと通常手数料のまま', sub_en:'✔ Chapi users only | ✔ Applied automatically | ✔ Miss this and pay full fees', sub_zh:'✔ 仅限Chapi用户 | ✔ 免费注册自动生效 | ✔ 现在不注册将支付全额手续费',
+    cta_ja:'今すぐ無料登録 →', cta_en:'Register now →', cta_zh:'立即免费注册 →'
+  },
+  coincheck:{
+    url:'https://campaign.coincheck.com/invitation?code=SE5H1KI',
+    icon:'🪙',
+    badge_ja:'🎁 国内取引所 · 紹介特典あり', badge_en:'🎁 Japan Exchange · Sign-up Bonus', badge_zh:'🎁 日本交易所 · 注册奖励',
+    title_ja:'コインチェックに登録して1,500円相当のBTCをゲット！', title_en:'Join Coincheck & earn ¥1,500 worth of Bitcoin!', title_zh:'注册Coincheck即可获得价值1,500日元的比特币！',
+    sub_ja:'✔ このリンクから口座開設 | ✔ 簡単な条件達成で1,500円相当BTC | ✔ 国内最大級・取引アプリNo.1', sub_en:'✔ Open account via this link | ✔ Complete simple task = ¥1,500 BTC | ✔ Japan\'s top crypto app', sub_zh:'✔ 通过此链接开户 | ✔ 完成简单条件即可获得BTC | ✔ 日本最大级别交易所',
+    cta_ja:'1,500円BTCをもらう →', cta_en:'Get ¥1,500 BTC →', cta_zh:'领取1,500日元BTC →'
+  }
+};
 const CARD_DATA={};
-const INLINE_AFF=[{text_jp:'📈 実践練習には<strong>Bitget</strong>！コピートレードでプロの手法を学べる！',text_en:'📈 Practice with <strong>Bitget</strong>! Copy pro traders.',url:'https://www.bitgetapps.com/ja/referral/register?clacCode=HE4WTZBM&from=%2Fja%2Fevents%2Freferral-all-program&source=events&utmSource=PremierInviter',btn_jp:'無料登録 →',btn_en:'Register →'},{text_jp:'🚀 <strong>MEXC（暗号資産取引所）限定！</strong>このリンクから登録すると<strong style="color:var(--accent)">手数料が永久20%OFF</strong>になります！ミームコイン・ゴールドな〒2,300種以上のコインを取引できる大手取引所',text_en:'🎯 Register <strong>MEXC</strong> via referral — enjoy <strong>20% fee discount</strong>!',url:'https://www.mexc.com/ja-JP/acquisition/custom-sign-up?shareCode=mexc-chapi',btn_jp:'20%割引で始める →',btn_en:'Start with 20% off →'}];
+const INLINE_AFF=[
+  {text_jp:'📈 実践練習には<strong>Bitget</strong>！コピートレードでプロの手法を学べる！',text_en:'📈 Practice with <strong>Bitget</strong>! Copy pro traders.',text_zh:'📈 用<strong>Bitget</strong>实战练习！跟单交易学习专业手法！',url:'https://www.bitgetapps.com/ja/referral/register?clacCode=HE4WTZBM&from=%2Fja%2Fevents%2Freferral-all-program&source=events&utmSource=PremierInviter',btn_jp:'無料登録 →',btn_en:'Register →',btn_zh:'免费注册 →'},
+  {text_jp:'🚀 <strong>MEXC限定！</strong>このリンクから登録すると<strong style="color:var(--accent)">手数料が永久20%OFF</strong>！2,300種以上のコインを取引できる大手取引所',text_en:'🎯 Register <strong>MEXC</strong> via referral — enjoy <strong>20% fee discount</strong>!',text_zh:'🚀 <strong>MEXC限定！</strong>通过此链接注册可享<strong style="color:var(--accent)">手续费永久8折</strong>！2,300种以上币种可交易',url:'https://www.mexc.com/ja-JP/acquisition/custom-sign-up?shareCode=mexc-chapi',btn_jp:'20%割引で始める →',btn_en:'Start with 20% off →',btn_zh:'享8折优惠 →'},
+  {text_jp:'🎁 <strong>コインチェック</strong>に紹介リンクから登録して条件達成で<strong style="color:var(--accent)">1,500円相当のBTC</strong>をプレゼント！国内No.1の取引アプリ',text_en:'🎁 Join <strong>Coincheck</strong> via referral & earn <strong style="color:var(--accent)">¥1,500 worth of BTC</strong> after completing simple requirements!',text_zh:'🎁 通过推荐链接注册<strong>Coincheck</strong>并完成条件，即可获得<strong style="color:var(--accent)">价值1,500日元的BTC</strong>！',url:'https://campaign.coincheck.com/invitation?code=SE5H1KI',btn_jp:'BTCをもらう →',btn_en:'Claim BTC →',btn_zh:'领取BTC →'}
+];
 let affIdx=0,ccIdx=0;
-function rotAff(){rotSecAd();const keys=Object.keys(AFF_DATA);const d=AFF_DATA[keys[affIdx++%keys.length]];document.getElementById('affIcon').textContent=d.icon;document.getElementById('affBadge').textContent=d.badge;document.getElementById('affTitle').textContent=d.title;document.getElementById('affSub').textContent=d.sub;document.getElementById('affCta').textContent=d.cta;document.getElementById('affCta').href=d.url;}
+function rotAff(){rotSecAd();const keys=Object.keys(AFF_DATA);const d=AFF_DATA[keys[affIdx++%keys.length]];const L=lang==='zh'?'zh':lang==='en'?'en':'ja';document.getElementById('affIcon').textContent=d.icon;document.getElementById('affBadge').textContent=d['badge_'+L]||d.badge_ja;document.getElementById('affTitle').textContent=d['title_'+L]||d.title_ja;document.getElementById('affSub').textContent=d['sub_'+L]||d.sub_ja;document.getElementById('affCta').textContent=d['cta_'+L]||d.cta_ja;document.getElementById('affCta').href=d.url;}
 function rotCC(){}
 function trackAff(src){console.log('[AFF]',src,Date.now());}
-function showInlineAff(){const a=INLINE_AFF[Math.floor(Math.random()*INLINE_AFF.length)];document.getElementById('affInlineText').innerHTML=lang==='ja'?a.text_jp:a.text_en;document.getElementById('affInlineBtn').textContent=lang==='ja'?a.btn_jp:a.btn_en;document.getElementById('affInlineBtn').href=a.url;document.getElementById('affInlineBtn').onclick=()=>trackAff('inline');document.getElementById('affInline').style.display='flex';}
+function showInlineAff(){const a=INLINE_AFF[Math.floor(Math.random()*INLINE_AFF.length)];const t=lang==='zh'?a.text_zh:lang==='en'?a.text_en:a.text_jp;const b=lang==='zh'?a.btn_zh:lang==='en'?a.btn_en:a.btn_jp;document.getElementById('affInlineText').innerHTML=t;document.getElementById('affInlineBtn').textContent=b;document.getElementById('affInlineBtn').href=a.url;document.getElementById('affInlineBtn').onclick=()=>trackAff('inline');document.getElementById('affInline').style.display='flex';}
 
 // ── LOCAL STORAGE ──
 const LS='chartpi_v3';
@@ -1016,19 +1125,32 @@ function buildHM(){
 }
 
 // ── QUIZ STATE ──
-let lang='ja',mode='name';
+let lang='en',mode='name';
 let questions=[],current=0,correct=0,wrong=0,streak=0,bestStreak=0;
 let answered=false,weakMap={},startTime;
 
 function shuffle(a){return [...a].sort(()=>Math.random()-.5);}
 
 const MASCOT_MSGS={
-  correct:['やった！正解🎉','すごい！その調子！✨','完璧！💪','天才かも！🌟','やったね！🚀'],
-  wrong:['大丈夫！次頑張ろう💪','惜しかった！解説を読んでね📚','チャピも最初は間違えたよ🐣','一緒に覚えよう！🤝','復習が大事！📖'],
-  start:['問題スタート！頑張ってね🚀','集中！💡','できるよ！信じてる！✨','いい感じ！続けよう！⚡','もう少しで習熟度アップ！🌟']
+  correct:{
+    ja:['やった！正解🎉','すごい！その調子！✨','完璧！💪','天才かも！🌟','やったね！🚀'],
+    en:['Nailed it! 🎉','Amazing! Keep going! ✨','Perfect! 💪','You\'re a genius! 🌟','Yes! 🚀'],
+    zh:['答对了！🎉','太棒了！继续加油！✨','完美！💪','你真是天才！🌟','太好了！🚀']
+  },
+  wrong:{
+    ja:['大丈夫！次頑張ろう💪','惜しかった！解説を読んでね📚','チャピも最初は間違えたよ！','一緒に覚えよう！🤝','復習が大事！📖'],
+    en:['No worries! Try again 💪','So close! Read the hint 📚','Chapi got it wrong first too!','Let\'s learn together! 🤝','Review is key! 📖'],
+    zh:['没关系！下次加油💪','差一点！看看解析吧📚','Chapi一开始也会出错！','我们一起记住它！🤝','复习很重要！📖']
+  },
+  start:{
+    ja:['問題スタート！頑張ってね🚀','集中！💡','できるよ！信じてる！✨','いい感じ！続けよう！⚡','もう少しで習熟度アップ！🌟'],
+    en:['Let\'s go! Good luck 🚀','Focus! 💡','You\'ve got this! ✨','Looking good! Keep it up! ⚡','Almost to the next level! 🌟'],
+    zh:['开始答题！加油🚀','专注！💡','你可以的！相信你！✨','状态不错！继续！⚡','马上就能提升熟练度！🌟']
+  }
 };
 function setMascot(type){
-  const msgs=MASCOT_MSGS[type]||MASCOT_MSGS.start;
+  const msgSet=MASCOT_MSGS[type]||MASCOT_MSGS.start;
+  const msgs=msgSet[lang]||msgSet.ja;
   const msg=msgs[Math.floor(Math.random()*msgs.length)];
   // Use real Chapi images
   const emotionMap={correct:'celebrate',wrong:'surprised',start:'neutral',ai:'thinking',sleep:'sleeping'};
@@ -1081,7 +1203,7 @@ function showQ(){
       refSvg.innerHTML='';
       refPattern.draw(refSvg);
       document.getElementById('refName').textContent=lang==='ja'?refPattern.jp:refPattern.en;
-      document.getElementById('refDesc').textContent=lang==='ja'?'このパターンに関する問題です':'Question about this pattern';
+      document.getElementById('refDesc').textContent=lang==='zh'?'关于此形态的题目':lang==='en'?'Question about this pattern':'このパターンに関する問題です';
       // Hide full chart for signal questions
       cw.style.display='none';
     }
@@ -1109,10 +1231,10 @@ function showQ(){
   // Tag
   const tag=document.getElementById('qTag');
   let tagClass='category',tagText='—';
-  if(q._candle){tagClass='continuation';tagText=lang==='ja'?'🕯️ ローソク足':'🕯️ Candlestick';}
-  else if(q._sig){tagClass='signal';tagText=lang==='ja'?'⚡ 実戦シグナル':'⚡ Signal';}
-  else if(q._dir){tagClass=q.dir==='bullish'?'continuation':'reversal';tagText=lang==='ja'?'📈 方向予測':'📈 Direction';}
-  else if(q._cat){tagClass='category';tagText=lang==='ja'?'📚 分類':'📚 Category';}
+  if(q._candle){tagClass='continuation';tagText=lang==='zh'?'🕯️ 蜡烛图':lang==='en'?'🕯️ Candlestick':'🕯️ ローソク足';}
+  else if(q._sig){tagClass='signal';tagText=lang==='zh'?'⚡ 实战信号':lang==='en'?'⚡ Signal':'⚡ 実戦シグナル';}
+  else if(q._dir){tagClass=q.dir==='bullish'?'continuation':'reversal';tagText=lang==='zh'?'📈 方向预测':lang==='en'?'📈 Direction':'📈 方向予測';}
+  else if(q._cat){tagClass='category';tagText=lang==='zh'?'📚 分类':lang==='en'?'📚 Category':'📚 分類';}
   else{
     const isRev=q.cat==='reversal';
     tagClass=isRev?'reversal':'continuation';
@@ -1126,23 +1248,32 @@ function showQ(){
 
   const qEl=document.getElementById('qText');
   let mainQ='';
-  if(q._candle) mainQ=lang==='ja'?q.q_jp:q.q_en;
-  else if(q._dir) mainQ=lang==='ja'?`<strong>${q.jp}</strong>、ブレイク後の方向は？`:`<strong>${q.en}</strong> — which direction after breakout?`;
-  else mainQ=lang==='ja'?q.q_jp:q.q_en;
+  if(q._candle) mainQ=lang==='zh'?(q.q_zh||q.q_jp):lang==='en'?q.q_en:q.q_jp;
+  else if(q._dir) mainQ=lang==='zh'?`<strong>${q.jp}</strong>，突破后的方向？`:lang==='en'?`<strong>${q.en}</strong> — which direction after breakout?`:`<strong>${q.jp}</strong>、ブレイク後の方向は？`;
+  else mainQ=lang==='zh'?(q.q_zh||q.q_jp):lang==='en'?q.q_en:q.q_jp;
   qEl.innerHTML=mainQ;
 
   const grid=document.getElementById('optsGrid');grid.innerHTML='';
   const LETTERS=['A','B','C','D'];
   let opts;
-  if(q._cat) opts=lang==='ja'?q.opts_jp:q.opts_en;
-  else if(q._sig) opts=lang==='ja'?q.opts_jp:q.opts_en;
-  else if(q._candle) opts=lang==='ja'?q.opts_jp:q.opts_en;
-  else if(q._dir) opts=lang==='ja'?['↑ 上昇（ブレイクアウト）📈','↓ 下落（ブレイクダウン）📉','→ 横ばい継続','予測不可']:['↑ Upward breakout 📈','↓ Downward breakdown 📉','→ Sideways','Cannot predict'];
-  else opts=q.opts;
+  if(q._cat) opts=lang==='zh'?(q.opts_zh||q.opts_jp):lang==='en'?q.opts_en:q.opts_jp;
+  else if(q._sig) opts=lang==='zh'?(q.opts_zh||q.opts_jp):lang==='en'?q.opts_en:q.opts_jp;
+  else if(q._candle) opts=lang==='zh'?(q.opts_zh||q.opts_jp):lang==='en'?q.opts_en:q.opts_jp;
+  else if(q._dir) opts=lang==='zh'?['↑ 上涨（突破）📈','↓ 下跌（跌破）📉','→ 横盘继续','无法预测']:lang==='en'?['↑ Upward breakout 📈','↓ Downward breakdown 📉','→ Sideways','Cannot predict']:['↑ 上昇（ブレイクアウト）📈','↓ 下落（ブレイクダウン）📉','→ 横ばい継続','予測不可'];
+  else opts=lang==='zh'?(q.opts_zh||q.opts):q.opts;
   opts.forEach((opt,i)=>{
     const b=document.createElement('button');b.className='opt';
     const parts=opt.split(' / ');
-    b.innerHTML=`<span class="ltr">${LETTERS[i]}</span><span class="main">${parts[0]}</span>${parts[1]?`<span class="sub2">${parts[1]}</span>`:''}`;
+    // Name quizは "日本語 / English" 形式。英語モードでは英語側だけ表示
+    let mainText, subText;
+    if(parts.length>=2 && !q._cat && !q._sig && !q._candle && !q._dir){
+      mainText = lang==='ja' ? parts[0] : parts[1];
+      subText = lang==='ja' ? parts[1] : null;
+    } else {
+      mainText = parts[0];
+      subText = parts[1] || null;
+    }
+    b.innerHTML=`<span class="ltr">${LETTERS[i]}</span><span class="main">${mainText}</span>${subText?`<span class="sub2">${subText}</span>`:''}`;
     b.onclick=()=>checkAns(i,q);
     grid.appendChild(b);
   });
@@ -1176,17 +1307,17 @@ function checkAns(idx,q){
   const fb=document.getElementById('fbBox');
   document.getElementById('fbEmoji').textContent=ok?'🎉':'😅';
   const ft=document.getElementById('fbTitle');ft.className=`fb-title ${ok?'ok':'ng'}`;
-  ft.textContent=ok?(lang==='ja'?`正解！ 🔥連続${streak}回`:`Correct! 🔥 Streak: ${streak}`):(lang==='ja'?'惜しい！解説を確認しよう📖':'Not quite! Check the explanation 📖');
-  document.getElementById('fbBody').innerHTML=lang==='ja'?q.exp_jp:q.exp_en;
+  ft.textContent=ok?(lang==='zh'?`答对了！🔥连续${streak}次`:lang==='en'?`Correct! 🔥 Streak: ${streak}`:`正解！ 🔥連続${streak}回`):(lang==='zh'?'差一点！请看解析📖':lang==='en'?'Not quite! Check the explanation 📖':'惜しい！解説を確認しよう📖');
+  document.getElementById('fbBody').innerHTML=lang==='zh'?(q.exp_zh||q.exp_jp):lang==='en'?q.exp_en:q.exp_jp;
   const tip=q.tip_jp||q.tip_en;
-  if(tip){document.getElementById('fbTip').textContent=lang==='ja'?q.tip_jp:q.tip_en;document.getElementById('fbTip').style.display='';}
+  if(tip){document.getElementById('fbTip').textContent=lang==='zh'?(q.tip_zh||q.tip_jp):lang==='en'?q.tip_en:q.tip_jp;document.getElementById('fbTip').style.display='';}
   const fbChartsEl=document.getElementById('fbCharts');
   if(q._cat&&q.patternIds&&q.patternIds.length>0){
     fbChartsEl.style.display='';
     const patterns=q.patternIds.map(pid=>DB.find(p=>p.id===pid)).filter(Boolean);
     if(patterns.length>0){
-      let ch=`<div style="font-size:11px;font-weight:700;color:var(--muted);margin-bottom:6px;">📊 チャートで確認</div><div class="fb-charts-wrap">`;
-      patterns.forEach(pat=>{ch+=`<div class="fb-mini-chart"><div class="fb-mini-label">${lang==='ja'?pat.jp:pat.en}</div><svg class="fb-mini-svg" viewBox="0 0 520 180" preserveAspectRatio="xMidYMid meet"></svg></div>`;});
+      let ch=`<div style="font-size:11px;font-weight:700;color:var(--muted);margin-bottom:6px;">${lang==='zh'?'📊 图表确认':lang==='en'?'📊 Chart reference':'📊 チャートで確認'}</div><div class="fb-charts-wrap">`;
+      patterns.forEach(pat=>{ch+=`<div class="fb-mini-chart"><div class="fb-mini-label">${lang==='zh'?(pat.zh||pat.jp):lang==='en'?pat.en:pat.jp}</div><svg class="fb-mini-svg" viewBox="0 0 520 180" preserveAspectRatio="xMidYMid meet"></svg></div>`;});
       ch+='</div>';
       fbChartsEl.innerHTML=ch;
       requestAnimationFrame(()=>{
@@ -1198,7 +1329,7 @@ function checkAns(idx,q){
   fb.className=`fb ${ok?'ok-fb':'ng-fb'} show`;
   if(!ok&&Math.random()<0.5)showInlineAff();
   const nb=document.getElementById('nextBtn');
-  nb.textContent=current<questions.length-1?(lang==='ja'?'次の問題へ 🚀':'Next Question 🚀'):(lang==='ja'?'結果を見る 🏆':'See Results 🏆');
+  nb.textContent=current<questions.length-1?(lang==='zh'?'下一题 🚀':lang==='en'?'Next Question 🚀':'次の問題へ 🚀'):(lang==='zh'?'查看结果 🏆':lang==='en'?'See Results 🏆':'結果を見る 🏆');
   nb.className='next-btn show';
 }
 
@@ -1213,8 +1344,8 @@ function showResults(){
   const resImgEl=document.getElementById('resChapiImg');
   if(resImgEl){resImgEl.src=CHAPI_IMGS[pct>=80?'celebrate':pct>=50?'happy':'surprised'];}
   document.getElementById('resPct').textContent=pct+'%';
-  document.getElementById('resSub').textContent=lang==='ja'?`${questions.length}問中 ${correct}問正解！`:`${correct} of ${questions.length} correct!`;
-  const emoji=pct>=90?'🏆🐥🏆':pct>=70?'🎯🐣':pct>=50?'📚🐤':'💪🥚';
+  document.getElementById('resSub').textContent=lang==='zh'?`${questions.length}题中答对${correct}题！`:lang==='en'?`${correct} of ${questions.length} correct!`:`${questions.length}問中 ${correct}問正解！`;
+  const emoji=pct>=90?'🏆🌟🏆':pct>=70?'🎯⚡':pct>=50?'📚💪':'🔥📈';
   document.getElementById('resEmoji').textContent=emoji;
   document.getElementById('resC').textContent=correct;
   document.getElementById('resSt').textContent=bestStreak;
@@ -1257,8 +1388,117 @@ function setLang(l,btn){
   lang=l;
   document.querySelectorAll('.lang-sw button').forEach(b=>b.classList.remove('on'));
   btn.classList.add('on');
-  document.querySelectorAll('[data-jp]').forEach(el=>{el.textContent=lang==='ja'?el.dataset.jp:el.dataset.en;});
-  if(mode!=='ai')showQ();
+  // data-jp/en/zh属性の一括切替
+  document.querySelectorAll('[data-jp]').forEach(el=>{
+    el.textContent = lang==='zh' ? (el.dataset.zh||el.dataset.jp) : lang==='en' ? el.dataset.en : el.dataset.jp;
+  });
+
+  // AI クイックボタン
+  const quickQs=document.getElementById('quickQs');
+  if(quickQs){
+    const qs={
+      ja:[{t:'ダブルボトムのエントリーは？',q:'ダブルボトムのエントリータイミングを教えて'},{t:'H&Sのストップロスは？',q:'ヘッドアンドショルダーズのストップロスはどこに置く？'},{t:'フラッグとペナントの違い',q:'フラッグとペナントの違いは何？'},{t:'初心者向けパターンは？',q:'初心者がまず覚えるべきチャートパターンは？'},{t:'信頼度を上げるコツ',q:'チャートパターンの信頼度を上げるコツは？'}],
+      en:[{t:'Entry for Double Bottom?',q:'When to enter on a Double Bottom?'},{t:'H&S stop-loss placement?',q:'Where to place stop-loss for H&S Top?'},{t:'Flag vs Pennant difference?',q:'What is the difference between a Flag and Pennant?'},{t:'Best patterns for beginners?',q:'What chart patterns should beginners learn first?'},{t:'How to increase reliability?',q:'How to increase the reliability of chart patterns?'}],
+      zh:[{t:'双底的入场时机？',q:'请告诉我双底形态的入场时机'},{t:'H&S止损应放哪里？',q:'头肩顶的止损应该放在哪里？'},{t:'旗形和三角旗的区别？',q:'旗形和三角旗有什么区别？'},{t:'新手先学哪些形态？',q:'新手应该先掌握哪些图表形态？'},{t:'如何提高可靠性？',q:'如何提高图表形态的可靠性？'}]
+    };
+    const list=qs[lang]||qs.ja;
+    quickQs.innerHTML=list.map(q=>`<div class="quick-q" onclick="sendQ('${q.q}')">${q.t}</div>`).join('');
+  }
+
+  // AI パネルのplaceholder・送信ボタン
+  const aiInput=document.getElementById('aiInput');
+  if(aiInput) aiInput.placeholder=lang==='zh'?'例：什么是双底形态？':lang==='en'?'e.g. What is a Double Bottom?':'例：ダブルボトムとは何ですか？';
+  const aiSendBtn=document.getElementById('aiSendBtn');
+  if(aiSendBtn) aiSendBtn.textContent=lang==='zh'?'发送 ✈️':lang==='en'?'Send ✈️':'送信 ✈️';
+  const aiResult=document.getElementById('aiResult');
+  if(aiResult&&aiResult.querySelector('span')){
+    const hint=lang==='zh'?'👆 点击上方按钮或输入问题！':lang==='en'?'👆 Tap a button above or type a question!':'👆 上のボタンをタップするか、質問を入力してね！';
+    aiResult.innerHTML=`<span style="color:var(--muted);font-size:13px;">${hint}</span>`;
+  }
+
+  // AI descボックス
+  const aiDescText=document.querySelector('.ai-desc-text');
+  if(aiDescText){
+    if(lang==='zh') aiDescText.innerHTML='<strong>图表形态专业AI</strong><br><span>关于双底的判断方法、趋势反转的解读等<strong>图表·技术分析</strong>的任何问题都可以提问。<br>※ 无法回答投资判断和价格预测</span>';
+    else if(lang==='en') aiDescText.innerHTML='<strong>Chart Pattern AI Expert</strong><br><span>Ask anything about <strong>chart patterns & technical analysis</strong> — Double Bottom entries, trend reversals, and more.<br>※ Cannot answer investment advice or price predictions</span>';
+    else aiDescText.innerHTML='<strong>チャートパターン専門AI</strong><br><span>ダブルボトムの見方、RCIの使い方、トレンド転換の読み方など<strong>チャート・テクニカル分析</strong>について何でも聞けます。<br>※ 投資判断・価格予想はお答えできません</span>';
+  }
+
+  // 習熟度マップの凡例
+  const hmLegend=document.querySelector('.hmap + div')||document.getElementById('hmapGrid')?.nextElementSibling;
+  if(hmLegend){
+    if(lang==='zh') hmLegend.innerHTML='<span style="font-size:10px;color:var(--muted);">⬜未挑战</span><span style="font-size:10px;color:#3b82f6;">🔵挑战中</span><span style="font-size:10px;color:#16a34a;">🟢良好</span><span style="font-size:10px;color:#d97706;">🟡进步中</span><span style="font-size:10px;color:var(--accent);">🟣已掌握</span>';
+    else if(lang==='en') hmLegend.innerHTML='<span style="font-size:10px;color:var(--muted);">⬜Untried</span><span style="font-size:10px;color:#3b82f6;">🔵Trying</span><span style="font-size:10px;color:#16a34a;">🟢Good</span><span style="font-size:10px;color:#d97706;">🟡Improving</span><span style="font-size:10px;color:var(--accent);">🟣Mastered</span>';
+    else hmLegend.innerHTML='<span style="font-size:10px;color:var(--muted);">⬜未挑戦</span><span style="font-size:10px;color:#3b82f6;">🔵挑戦中</span><span style="font-size:10px;color:#16a34a;">🟢良好</span><span style="font-size:10px;color:#d97706;">🟡上達</span><span style="font-size:10px;color:var(--accent);">🟣マスター</span>';
+  }
+
+  // 結果画面の取引所セクションタイトル
+  const exTitle=document.querySelector('.ex-section-title');
+  if(exTitle) exTitle.textContent=lang==='zh'?'📈 学完图表后「实战」！推荐的加密货币交易所':lang==='en'?'📈 Ready to trade? Top recommended exchanges':'📈 チャートを学んだら「実践」へ！おすすめの暗号資産取引所';
+
+  // 友達招待セクション
+  const refTitle=document.getElementById('refSectionTitle');
+  const refDesc=document.getElementById('refSectionDesc');
+  const refYouTitle=document.getElementById('refYouTitle');
+  const refYouSub=document.getElementById('refYouSub');
+  const refFriendTitle=document.getElementById('refFriendTitle');
+  const refFriendSub=document.getElementById('refFriendSub');
+  const refCopyBtn=document.getElementById('refCopyBtn');
+  if(refTitle) refTitle.textContent=lang==='zh'?'👥 邀请好友获取奖励！':lang==='en'?'👥 Invite friends & earn rewards!':'👥 友達を招待して特典をもらおう！';
+  if(refDesc) refDesc.innerHTML=lang==='zh'
+    ?'好友通过您的邀请码注册高级版，<strong style="color:var(--accent)">您的套餐1个月享5折优惠</strong>！好友享受<strong style="color:var(--accent)">首月7折优惠</strong>。'
+    :lang==='en'?'When a friend signs up with your code, <strong style="color:var(--accent)">you get 50% off for one month</strong>! Your friend gets <strong style="color:var(--accent)">30% off their first month</strong>.'
+    :'友達があなたのコードでプレミアム登録すると、<strong style="color:var(--accent)">あなたのプランが1ヶ月50%OFF</strong>に！友達には初月<strong style="color:var(--accent)">30%OFF</strong>をプレゼント。';
+  if(refYouTitle) refYouTitle.textContent=lang==='zh'?'您的奖励':lang==='en'?'For you':'あなたへ';
+  if(refYouSub) refYouSub.innerHTML=lang==='zh'?'高级版<br>月费5折':lang==='en'?'Premium<br>50% off':'プレミアム<br>月額50%OFF';
+  if(refFriendTitle) refFriendTitle.textContent=lang==='zh'?'好友奖励':lang==='en'?'For friend':'友達へ';
+  if(refFriendSub) refFriendSub.innerHTML=lang==='zh'?'首月<br>7折':lang==='en'?'First month<br>30% off':'初月<br>30%OFF';
+  if(refCopyBtn&&refCopyBtn.textContent!=='コピー完了 ✓'&&refCopyBtn.textContent!=='Copied ✓'&&refCopyBtn.textContent!=='已复制 ✓')
+    refCopyBtn.textContent=lang==='zh'?'复制':lang==='en'?'Copy':'コピー';
+
+  // 広告表示・フッター
+  const adNote=document.getElementById('adDisclosureText');
+  if(adNote) adNote.innerHTML=lang==='zh'
+    ?'<strong style="color:var(--yellow);">【广告·PR声明】</strong>本服务包含广告内容。部分交易所链接使用联盟计划，通过我们的链接注册时我们可能获得佣金。所有内容仅供学习目的，不构成投资建议。'
+    :lang==='en'?'<strong style="color:var(--yellow);">【AD / PR Disclosure】</strong>This service contains advertisements. Some exchange links use affiliate programs — we may earn a commission if you register via our links. All content is for educational purposes only and does not constitute investment advice.'
+    :'<strong style="color:var(--yellow);">【広告・PR表示】</strong>本サービスには広告が含まれます。掲載している取引所・サービスの一部はアフィリエイトプログラムを利用しており、リンク経由でご登録いただいた場合に報酬を受け取ることがあります。掲載内容はユーザーの学習を目的としており、投資を勧誘するものではありません。';
+  const footerDisclaimer=document.getElementById('footerDisclaimer');
+  if(footerDisclaimer) footerDisclaimer.innerHTML=lang==='zh'
+    ?'※ 本服务提供的信息仅供图表形态学习目的，不构成投资建议或投资劝诱。<br>实际投资决策请自行负责。'
+    :lang==='en'?'※ Information provided is for educational purposes only and does not constitute investment advice.<br>All investment decisions are made at your own risk.'
+    :'※ 本サービスで提供する情報はチャートパターンの学習を目的としたものであり、投資助言・投資勧誘を行うものではありません。<br>実際の投資判断はご自身の責任において行ってください。';
+  const footerCopy=document.getElementById('footerCopy');
+  if(footerCopy) footerCopy.textContent='© 2025 Chapi. All rights reserved.';
+  const footerPrivacy=document.getElementById('footerPrivacyLink');
+  const footerDiscl=document.getElementById('footerDisclLink');
+  const footerContact=document.getElementById('footerContactLink');
+  if(footerPrivacy) footerPrivacy.textContent=lang==='zh'?'隐私政策':lang==='en'?'Privacy Policy':'プライバシーポリシー';
+  if(footerDiscl) footerDiscl.textContent=lang==='zh'?'免责声明':lang==='en'?'Disclaimer':'免責事項';
+  if(footerContact) footerContact.textContent=lang==='zh'?'联系我们':lang==='en'?'Contact':'お問い合わせ';
+
+  // stickyバナー
+  const stickyAdText=document.getElementById('stickyAdText');
+  if(stickyAdText) stickyAdText.innerHTML=lang==='zh'
+    ?'<strong style="color:var(--text);font-size:12px;">🚀 MEXC</strong> 注册账户 — 迎新奖励最高$30,000！<span style="display:block;font-size:10px;color:var(--muted2);margin-top:1px;">※广告·PR</span>'
+    :lang==='en'?'<strong style="color:var(--text);font-size:12px;">🚀 MEXC</strong> — Open account &amp; earn up to $30,000 bonus!<span style="display:block;font-size:10px;color:var(--muted2);margin-top:1px;">*Sponsored</span>'
+    :'<strong style="color:var(--text);font-size:12px;">🚀 MEXC</strong> で口座開設 — ウェルカムボーナス最大$30,000！<span style="display:block;font-size:10px;color:var(--muted2);margin-top:1px;">※広告・PR</span>';
+  const stickyAdBtn=document.getElementById('stickyAdBtn');
+  if(stickyAdBtn) stickyAdBtn.textContent=lang==='zh'?'免费开户':lang==='en'?'Sign up free':'無料開設';
+
+  // プレミアムボタン（ヘッダー）
+  const premBtn=document.querySelector('button[onclick="showModal()"]');
+  if(premBtn) premBtn.textContent=lang==='zh'?'⭐ 高级版':lang==='en'?'⭐ Premium':'⭐ プレミアム';
+
+  // mascot intro message
+  const chapiMsg=document.getElementById('chapiMsg');
+  if(chapiMsg){
+    chapiMsg.innerHTML=lang==='zh'
+      ?'你好！让我们愉快地学习<strong>图表形态</strong>吧！先选择一个模式 📊'
+      :lang==='en'?'Hi! Let\'s learn <strong>chart patterns</strong> together! Pick a mode to start 📊'
+      :'こんにちは！<strong>チャートパターン</strong>を楽しく学ぼう！まずはモードを選んでね 📊';
+  }
+
+  if(mode!=='ai') showQ();
 }
 
 function showModal(){document.getElementById('premModal').classList.add('show');}
@@ -1281,9 +1521,9 @@ function sendQ(q){
   if(aiUsageCount>=AI_FREE_LIMIT){
     document.getElementById('aiResult').innerHTML=`<div style="text-align:center;padding:16px;">
       <div style="font-size:28px;margin-bottom:8px;">⭐</div>
-      <div style="font-weight:700;margin-bottom:6px;">無料利用回数(${AI_FREE_LIMIT}回)を使い切りました</div>
-      <div style="font-size:12px;color:var(--muted);margin-bottom:14px;">プレミアムで無制限に使えます！</div>
-      <button onclick="showModal()" style="background:linear-gradient(135deg,var(--accent),var(--pink));color:#fff;border:none;border-radius:12px;padding:10px 20px;font-family:'Plus Jakarta Sans',sans-serif;font-size:13px;font-weight:800;cursor:pointer;">プレミアムを見る →</button>
+      <div style="font-weight:700;margin-bottom:6px;">${lang==='zh'?`免费使用次数（${AI_FREE_LIMIT}次）已用完`:lang==='en'?`Free usage limit (${AI_FREE_LIMIT}) reached`:`無料利用回数(${AI_FREE_LIMIT}回)を使い切りました`}</div>
+      <div style="font-size:12px;color:var(--muted);margin-bottom:14px;">${lang==='zh'?'升级高级版即可无限使用！':lang==='en'?'Go Premium for unlimited use!':'プレミアムで無制限に使えます！'}</div>
+      <button onclick="showModal()" style="background:linear-gradient(135deg,var(--accent),var(--pink));color:#fff;border:none;border-radius:12px;padding:10px 20px;font-family:'Plus Jakarta Sans',sans-serif;font-size:13px;font-weight:800;cursor:pointer;">${lang==='zh'?'查看高级版 →':lang==='en'?'See Premium →':'プレミアムを見る →'}</button>
     </div>`;
     return;
   }
@@ -1322,7 +1562,7 @@ function sendQ(q){
     // Show usage count
     const remaining=AI_FREE_LIMIT-aiUsageCount;
     if(remaining<=5){
-      resultEl.innerHTML+=`<div style="margin-top:10px;font-size:11px;color:var(--muted);text-align:right;">残り${remaining}回 | <span style="color:var(--accent);cursor:pointer;font-weight:700;" onclick="showModal()">プレミアムで無制限</span></div>`;
+      resultEl.innerHTML+=`<div style="margin-top:10px;font-size:11px;color:var(--muted);text-align:right;">${lang==='zh'?`剩余${remaining}次`:lang==='en'?`${remaining} left`:`残り${remaining}回`} | <span style="color:var(--accent);cursor:pointer;font-weight:700;" onclick="showModal()">${lang==='zh'?'升级无限制':lang==='en'?'Go Premium':'プレミアムで無制限'}</span></div>`;
     }
   }).catch(e=>{
     btn.disabled=false;
@@ -1352,6 +1592,8 @@ function setChapiImg(emotion) {
 // Initialize with neutral
 document.addEventListener('DOMContentLoaded', function() {
   setChapiImg('neutral');
+  openPrivacy(); document.getElementById('privacyModal').style.display='none';
+  openDisclaimer(); document.getElementById('disclaimerModal').style.display='none';
 });
 
 // ── REFERRAL ──
@@ -1363,7 +1605,7 @@ function initReferral(){
   const ref=url.searchParams.get('ref');
   if(ref&&!localStorage.getItem('chapi_used_ref')){
     localStorage.setItem('chapi_used_ref',ref);
-    setTimeout(()=>{const m=document.getElementById('chapiMsg');if(m)m.innerHTML='<strong>紹介コード</strong>ありがとう！🎉 プレミアム初月<strong style="color:var(--accent)">30%OFF</strong>が適用されます！';},800);
+    setTimeout(()=>{const m=document.getElementById('chapiMsg');if(m)m.innerHTML=lang==='zh'?'<strong>推荐码</strong>谢谢！🎉 高级版首月<strong style="color:var(--accent)">7折优惠</strong>已生效！':lang==='en'?'<strong>Referral code</strong> applied! 🎉 Your first month is <strong style="color:var(--accent)">30% OFF</strong>!':'<strong>紹介コード</strong>ありがとう！🎉 プレミアム初月<strong style="color:var(--accent)">30%OFF</strong>が適用されます！';},800);
   }
 }
 function copyRef(){
@@ -1371,8 +1613,8 @@ function copyRef(){
   const shareUrl=window.location.origin+window.location.pathname+'?ref='+code;
   navigator.clipboard.writeText(shareUrl).then(()=>{
     const btn=document.getElementById('refCopyBtn');
-    btn.textContent='コピー完了 ✓';btn.style.color='var(--mint,#34d399)';
-    setTimeout(()=>{btn.textContent='コピー';btn.style.color='';},2500);
+    btn.textContent=lang==='zh'?'已复制 ✓':lang==='en'?'Copied ✓':'コピー完了 ✓';btn.style.color='var(--mint,#34d399)';
+    setTimeout(()=>{btn.textContent=lang==='zh'?'复制':lang==='en'?'Copy':'コピー';btn.style.color='';},2500);
   });
 }
 
@@ -1386,11 +1628,169 @@ setChapiImg('neutral');
 initReferral();
 buildHM();
 buildQ();
+
+// ── モーダルコンテンツ（多言語） ──
+const MODAL_CONTENT = {
+  privacy: {
+    title: { ja:'プライバシーポリシー', en:'Privacy Policy', zh:'隐私政策' },
+    body: {
+      ja: `<p style="margin-bottom:12px;color:var(--text);">Chapi（以下「本サービス」）は、ユーザーのプライバシーを尊重し、個人情報の適切な管理に努めます。</p>
+<h3 style="font-size:14px;font-weight:700;color:var(--text);margin:16px 0 6px;">1. 収集する情報</h3>
+<p>本サービスは、サービス改善のためにGoogle Analytics（アクセス解析）を使用しており、IPアドレス、閲覧ページ、滞在時間等の匿名の利用状況データを収集することがあります。個人を特定できる情報は収集しません。</p>
+<p style="margin-top:8px;">クイズの進捗・スコア等のデータは、お使いのブラウザのローカルストレージにのみ保存され、外部サーバーには送信されません。</p>
+<h3 style="font-size:14px;font-weight:700;color:var(--text);margin:16px 0 6px;">2. Cookieの使用</h3>
+<p>本サービスおよび掲載している広告・アフィリエイトリンクは、Cookieを使用することがあります。ブラウザの設定でCookieを無効にすることができますが、一部機能が制限される場合があります。</p>
+<h3 style="font-size:14px;font-weight:700;color:var(--text);margin:16px 0 6px;">3. 第三者サービス</h3>
+<p>本サービスは以下の第三者サービスを利用しています：</p>
+<ul style="margin:8px 0 0 16px;"><li>Google Analytics（アクセス解析）</li><li>Google Fonts（フォント配信）</li><li>Anthropic Claude API（AI診断機能）</li><li>MEXC・Bitget・Coincheck（アフィリエイト広告）</li></ul>
+<p style="margin-top:8px;">各サービスのプライバシーポリシーは各社のウェブサイトをご確認ください。</p>
+<h3 style="font-size:14px;font-weight:700;color:var(--text);margin:16px 0 6px;">4. お問い合わせ</h3>
+<p>プライバシーに関するお問い合わせは <a href="mailto:support.chapi@gmail.com" style="color:var(--accent);">support.chapi@gmail.com</a> までご連絡ください。</p>
+<p style="margin-top:20px;font-size:11px;color:var(--muted2);">制定日：2025年1月　最終更新：2025年1月</p>`,
+
+      en: `<p style="margin-bottom:12px;color:var(--text);">Chapi ("the Service") respects user privacy and is committed to proper management of personal information.</p>
+<h3 style="font-size:14px;font-weight:700;color:var(--text);margin:16px 0 6px;">1. Information We Collect</h3>
+<p>We use Google Analytics to improve our service, which may collect anonymous usage data such as IP addresses, pages viewed, and time spent. We do not collect personally identifiable information.</p>
+<p style="margin-top:8px;">Quiz progress and score data is stored only in your browser's local storage and is never sent to external servers.</p>
+<h3 style="font-size:14px;font-weight:700;color:var(--text);margin:16px 0 6px;">2. Use of Cookies</h3>
+<p>The Service and its affiliate links may use cookies. You may disable cookies in your browser settings, though some features may be limited.</p>
+<h3 style="font-size:14px;font-weight:700;color:var(--text);margin:16px 0 6px;">3. Third-Party Services</h3>
+<p>We use the following third-party services:</p>
+<ul style="margin:8px 0 0 16px;"><li>Google Analytics (access analysis)</li><li>Google Fonts (font delivery)</li><li>Anthropic Claude API (AI diagnosis)</li><li>MEXC · Bitget · Coincheck (affiliate advertising)</li></ul>
+<p style="margin-top:8px;">Please refer to each company's website for their privacy policies.</p>
+<h3 style="font-size:14px;font-weight:700;color:var(--text);margin:16px 0 6px;">4. Contact</h3>
+<p>For privacy-related inquiries, please contact <a href="mailto:support.chapi@gmail.com" style="color:var(--accent);">support.chapi@gmail.com</a>.</p>
+<p style="margin-top:20px;font-size:11px;color:var(--muted2);">Established: January 2025 &nbsp; Last updated: January 2025</p>`,
+
+      zh: `<p style="margin-bottom:12px;color:var(--text);">Chapi（以下简称"本服务"）尊重用户隐私，致力于妥善管理个人信息。</p>
+<h3 style="font-size:14px;font-weight:700;color:var(--text);margin:16px 0 6px;">1. 收集的信息</h3>
+<p>本服务使用Google Analytics（访问分析）以改善服务，可能收集IP地址、浏览页面、停留时间等匿名使用数据。我们不收集可识别个人身份的信息。</p>
+<p style="margin-top:8px;">测验进度和分数数据仅保存在您浏览器的本地存储中，不会发送到外部服务器。</p>
+<h3 style="font-size:14px;font-weight:700;color:var(--text);margin:16px 0 6px;">2. Cookie的使用</h3>
+<p>本服务及其广告联盟链接可能使用Cookie。您可以在浏览器设置中禁用Cookie，但部分功能可能会受到限制。</p>
+<h3 style="font-size:14px;font-weight:700;color:var(--text);margin:16px 0 6px;">3. 第三方服务</h3>
+<p>本服务使用以下第三方服务：</p>
+<ul style="margin:8px 0 0 16px;"><li>Google Analytics（访问分析）</li><li>Google Fonts（字体服务）</li><li>Anthropic Claude API（AI分析功能）</li><li>MEXC · Bitget · Coincheck（联盟广告）</li></ul>
+<p style="margin-top:8px;">请参阅各公司网站了解其隐私政策。</p>
+<h3 style="font-size:14px;font-weight:700;color:var(--text);margin:16px 0 6px;">4. 联系我们</h3>
+<p>如有隐私相关问题，请联系 <a href="mailto:support.chapi@gmail.com" style="color:var(--accent);">support.chapi@gmail.com</a>。</p>
+<p style="margin-top:20px;font-size:11px;color:var(--muted2);">制定日期：2025年1月　最后更新：2025年1月</p>`
+    }
+  },
+  disclaimer: {
+    title: { ja:'免責事項', en:'Disclaimer', zh:'免责声明' },
+    body: {
+      ja: `<h3 style="font-size:14px;font-weight:700;color:var(--text);margin:0 0 6px;">1. 投資に関する免責</h3>
+<p>本サービスは、チャートパターンの学習・教育を目的としたものであり、投資助言・投資勧誘・売買推奨を行うものでは一切ありません。実際の投資・トレードに関する判断はご自身の責任において行ってください。投資には元本割れ等のリスクが伴います。</p>
+<h3 style="font-size:14px;font-weight:700;color:var(--text);margin:16px 0 6px;">2. 情報の正確性</h3>
+<p>本サービスに掲載する情報は正確性を期していますが、その完全性・最新性・有用性を保証するものではありません。掲載情報に基づく行為によって生じたいかなる損害についても、本サービスは責任を負いません。</p>
+<h3 style="font-size:14px;font-weight:700;color:var(--text);margin:16px 0 6px;">3. 外部リンク・広告</h3>
+<p>本サービスに掲載されている外部サービスへのリンク・広告は、アフィリエイトプログラムを通じて掲載しています。リンク先サービスの内容・品質・安全性等について本サービスは保証せず、リンク先サービスの利用によって生じた損害について責任を負いません。</p>
+<h3 style="font-size:14px;font-weight:700;color:var(--text);margin:16px 0 6px;">4. AI診断機能</h3>
+<p>AI診断機能の回答は自動生成されたものであり、専門家による助言ではありません。内容の正確性を保証するものではなく、実際の投資判断の根拠として使用しないでください。</p>
+<h3 style="font-size:14px;font-weight:700;color:var(--text);margin:16px 0 6px;">5. サービスの変更・停止</h3>
+<p>本サービスは予告なく内容の変更・停止・終了を行うことがあります。これによって生じたいかなる損害についても責任を負いません。</p>
+<p style="margin-top:20px;font-size:11px;color:var(--muted2);">制定日：2025年1月　最終更新：2025年1月</p>`,
+
+      en: `<h3 style="font-size:14px;font-weight:700;color:var(--text);margin:0 0 6px;">1. Investment Disclaimer</h3>
+<p>This service is intended solely for educational purposes regarding chart patterns and does not constitute investment advice, solicitation, or recommendations to buy or sell. All investment decisions are made at your own risk. Investments carry the risk of loss of principal.</p>
+<h3 style="font-size:14px;font-weight:700;color:var(--text);margin:16px 0 6px;">2. Accuracy of Information</h3>
+<p>While we strive for accuracy, we make no guarantees regarding the completeness, timeliness, or usefulness of the information provided. We are not liable for any damages arising from actions taken based on the information provided.</p>
+<h3 style="font-size:14px;font-weight:700;color:var(--text);margin:16px 0 6px;">3. External Links & Advertising</h3>
+<p>External links and advertisements are placed through affiliate programs. We make no guarantees regarding the content, quality, or safety of linked services and are not liable for any damages arising from their use.</p>
+<h3 style="font-size:14px;font-weight:700;color:var(--text);margin:16px 0 6px;">4. AI Diagnosis Feature</h3>
+<p>AI responses are automatically generated and do not constitute professional advice. We do not guarantee their accuracy. Please do not use them as the basis for investment decisions.</p>
+<h3 style="font-size:14px;font-weight:700;color:var(--text);margin:16px 0 6px;">5. Service Changes & Termination</h3>
+<p>We may change, suspend, or terminate the service without notice. We are not liable for any damages resulting from such changes.</p>
+<p style="margin-top:20px;font-size:11px;color:var(--muted2);">Established: January 2025 &nbsp; Last updated: January 2025</p>`,
+
+      zh: `<h3 style="font-size:14px;font-weight:700;color:var(--text);margin:0 0 6px;">1. 投资免责声明</h3>
+<p>本服务仅以图表形态学习和教育为目的，不构成任何投资建议、投资劝诱或买卖推荐。实际的投资和交易判断请自行负责。投资存在本金亏损等风险。</p>
+<h3 style="font-size:14px;font-weight:700;color:var(--text);margin:16px 0 6px;">2. 信息准确性</h3>
+<p>本服务力求提供准确信息，但不保证其完整性、时效性或有用性。对于因依赖本服务信息而产生的任何损失，本服务不承担责任。</p>
+<h3 style="font-size:14px;font-weight:700;color:var(--text);margin:16px 0 6px;">3. 外部链接·广告</h3>
+<p>本服务中的外部链接和广告通过联盟计划发布。本服务不保证链接目标服务的内容、质量或安全性，对因使用链接服务而产生的损失不承担责任。</p>
+<h3 style="font-size:14px;font-weight:700;color:var(--text);margin:16px 0 6px;">4. AI分析功能</h3>
+<p>AI分析功能的回答为自动生成内容，不构成专家建议。我们不保证内容的准确性，请勿将其作为实际投资判断的依据。</p>
+<h3 style="font-size:14px;font-weight:700;color:var(--text);margin:16px 0 6px;">5. 服务变更·停止</h3>
+<p>本服务可能在不事先通知的情况下变更、暂停或终止服务内容。对此产生的任何损失，本服务不承担责任。</p>
+<p style="margin-top:20px;font-size:11px;color:var(--muted2);">制定日期：2025年1月　最后更新：2025年1月</p>`
+    }
+  }
+};
+
+function openPrivacy(){
+  const m=MODAL_CONTENT.privacy;
+  const l=lang==='zh'?'zh':lang==='en'?'en':'ja';
+  document.getElementById('privacyTitle').textContent=m.title[l];
+  document.getElementById('privacyBody').innerHTML=m.body[l];
+  document.getElementById('privacyModal').style.display='flex';
+}
+function openDisclaimer(){
+  const m=MODAL_CONTENT.disclaimer;
+  const l=lang==='zh'?'zh':lang==='en'?'en':'ja';
+  document.getElementById('disclaimerTitle').textContent=m.title[l];
+  document.getElementById('disclaimerBody').innerHTML=m.body[l];
+  document.getElementById('disclaimerModal').style.display='flex';
+}
+// 初期表示（日本語）
+
 </script>
 
+<!-- ── FOOTER ── -->
+<footer style="position:relative;z-index:1;max-width:680px;margin:0 auto;padding:32px 16px 120px;">
+  <div style="border-top:1px solid var(--border2);padding-top:24px;">
+
+    <!-- 広告表示義務（景品表示法・ASP規約対応） -->
+    <div style="background:rgba(251,191,36,0.06);border:1px solid rgba(251,191,36,0.2);border-radius:12px;padding:12px 16px;margin-bottom:20px;">
+      <p id="adDisclosureText" style="font-size:11px;color:rgba(251,191,36,0.8);line-height:1.7;margin:0;">
+        <strong style="color:var(--yellow);">【広告・PR表示】</strong>
+        本サービスには広告が含まれます。掲載している取引所・サービスの一部はアフィリエイトプログラムを利用しており、リンク経由でご登録いただいた場合に報酬を受け取ることがあります。掲載内容はユーザーの学習を目的としており、投資を勧誘するものではありません。
+      </p>
+    </div>
+
+    <!-- リンク -->
+    <nav style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:16px;">
+      <a id="footerPrivacyLink" href="#privacy" onclick="openPrivacy();return false;" style="font-size:12px;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--border2);">プライバシーポリシー</a>
+      <a id="footerDisclLink" href="#disclaimer" onclick="openDisclaimer();return false;" style="font-size:12px;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--border2);">免責事項</a>
+      <a id="footerContactLink" href="mailto:support.chapi@gmail.com" style="font-size:12px;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--border2);">お問い合わせ</a>
+    </nav>
+
+    <p id="footerDisclaimer" style="font-size:11px;color:var(--muted2);line-height:1.6;margin-bottom:8px;">
+      ※ 本サービスで提供する情報はチャートパターンの学習を目的としたものであり、投資助言・投資勧誘を行うものではありません。<br>
+      実際の投資判断はご自身の責任において行ってください。
+    </p>
+    <p id="footerCopy" style="font-size:11px;color:var(--muted2);">© 2025 Chapi（チャピ）. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ── プライバシーポリシー モーダル ── -->
+<div id="privacyModal" style="display:none;position:fixed;inset:0;z-index:200;background:rgba(0,0,0,0.75);align-items:center;justify-content:center;padding:16px;" onclick="if(event.target===this)this.style.display='none'">
+  <div style="background:var(--card);border:1px solid var(--border2);border-radius:20px;padding:28px 24px;max-width:580px;width:100%;max-height:80vh;overflow-y:auto;">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
+      <h2 id="privacyTitle" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:18px;font-weight:900;">プライバシーポリシー</h2>
+      <button onclick="document.getElementById('privacyModal').style.display='none'" style="background:none;border:none;color:var(--muted);font-size:24px;cursor:pointer;">×</button>
+    </div>
+    <div id="privacyBody" style="font-size:13px;line-height:1.9;color:var(--muted);"></div>
+  </div>
+</div>
+
+<!-- ── 免責事項 モーダル ── -->
+<div id="disclaimerModal" style="display:none;position:fixed;inset:0;z-index:200;background:rgba(0,0,0,0.75);align-items:center;justify-content:center;padding:16px;" onclick="if(event.target===this)this.style.display='none'">
+  <div style="background:var(--card);border:1px solid var(--border2);border-radius:20px;padding:28px 24px;max-width:580px;width:100%;max-height:80vh;overflow-y:auto;">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
+      <h2 id="disclaimerTitle" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:18px;font-weight:900;">免責事項</h2>
+      <button onclick="document.getElementById('disclaimerModal').style.display='none'" style="background:none;border:none;color:var(--muted);font-size:24px;cursor:pointer;">×</button>
+    </div>
+    <div id="disclaimerBody" style="font-size:13px;line-height:1.9;color:var(--muted);"></div>
+  </div>
+</div>
+
+
+<!-- ── STICKY AD ── -->
 <div id="stickyAd" style="position:fixed;bottom:0;left:0;right:0;z-index:50;background:var(--s1);border-top:1px solid var(--border2);padding:10px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 -6px 24px rgba(0,0,0,.4);">
-  <div style="flex:1;font-size:11px;color:var(--muted);line-height:1.4;"><strong style="color:var(--text);font-size:12px;">🚀 MEXC</strong> で口座開設 — ウェルカムボーナス最大$30,000！</div>
-  <a href="https://www.mexc.com/ja-JP/acquisition/custom-sign-up?shareCode=mexc-chapi" target="_blank" rel="nofollow sponsored noopener" onclick="trackAff('sticky')" style="background:linear-gradient(135deg,var(--accent),#7de82a);color:#0d0e14;border:none;border-radius:8px;font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;font-weight:800;padding:9px 14px;cursor:pointer;white-space:nowrap;text-decoration:none;display:inline-block;">無料開設</a>
+  <div id="stickyAdText" style="flex:1;font-size:11px;color:var(--muted);line-height:1.4;"><strong style="color:var(--text);font-size:12px;">🚀 MEXC</strong> で口座開設 — ウェルカムボーナス最大$30,000！<span style="display:block;font-size:10px;color:var(--muted2);margin-top:1px;">※広告・PR</span></div>
+  <a id="stickyAdBtn" href="https://www.mexc.com/ja-JP/acquisition/custom-sign-up?shareCode=mexc-chapi" target="_blank" rel="nofollow sponsored noopener" onclick="trackAff('sticky')" style="background:linear-gradient(135deg,var(--accent),#7de82a);color:#0d0e14;border:none;border-radius:8px;font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;font-weight:800;padding:9px 14px;cursor:pointer;white-space:nowrap;text-decoration:none;display:inline-block;">無料開設</a>
   <button onclick="document.getElementById('stickyAd').style.display='none'" style="background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;padding:0 4px;line-height:1;flex-shrink:0;">×</button>
 </div>
 </body>
