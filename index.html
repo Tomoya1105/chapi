@@ -588,7 +588,7 @@ header{
   </div>
   <div class="header-right">
     <div class="streak-pill" id="streakChip">🔥 <span id="streakNum">0</span></div>
-    <button style="background:linear-gradient(135deg,var(--accent),var(--pink));color:#fff;border:none;border-radius:12px;padding:8px 14px;font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;font-weight:800;cursor:pointer;" onclick="showModal()">⭐ プレミアム</button>
+    <button style="background:linear-gradient(135deg,var(--accent),var(--pink));color:#fff;border:none;border-radius:12px;padding:8px 14px;font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;font-weight:800;cursor:pointer;" onclick="showModal()" id="premHeaderBtn">⭐ Premium</button>
     <div class="lang-sw">
       <button class="on" onclick="setLang('en',this)">EN</button>
       <button onclick="setLang('zh',this)">CN</button>
@@ -607,32 +607,32 @@ header{
   </div>
   <div class="mascot-bubble">
     <span class="chapi-name">CHAPI ✦</span>
-    <span class="chapi-msg" id="chapiMsg">こんにちは！<strong>チャートパターン</strong>を楽しく学ぼう！まずはモードを選んでね 📊</span>
+    <span class="chapi-msg" id="chapiMsg">Hi! Let's learn <strong>chart patterns</strong> together! Pick a mode to start 📊</span>
   </div>
 </div>
 
 <!-- STATS -->
 <div class="stats-bar">
-  <div class="sc"><div class="sc-icon">✅</div><div class="sc-v g" id="stC">0</div><div class="sc-l" data-jp="正解" data-en="Correct" data-zh="正确">正解</div></div>
-  <div class="sc"><div class="sc-icon">❌</div><div class="sc-v r" id="stW">0</div><div class="sc-l" data-jp="不正解" data-en="Wrong" data-zh="错误">不正解</div></div>
-  <div class="sc"><div class="sc-icon">📊</div><div class="sc-v b" id="stA">—</div><div class="sc-l" data-jp="正解率" data-en="Accuracy" data-zh="正确率">正解率</div></div>
-  <div class="sc"><div class="sc-icon">⚡</div><div class="sc-v y" id="stT">0</div><div class="sc-l" data-jp="総問題" data-en="Total" data-zh="总题数">総問題</div></div>
+  <div class="sc"><div class="sc-icon">✅</div><div class="sc-v g" id="stC">0</div><div class="sc-l" data-jp="正解" data-en="Correct" data-zh="正确">Correct</div></div>
+  <div class="sc"><div class="sc-icon">❌</div><div class="sc-v r" id="stW">0</div><div class="sc-l" data-jp="不正解" data-en="Wrong" data-zh="错误">Wrong</div></div>
+  <div class="sc"><div class="sc-icon">📊</div><div class="sc-v b" id="stA">—</div><div class="sc-l" data-jp="正解率" data-en="Accuracy" data-zh="正确率">Accuracy</div></div>
+  <div class="sc"><div class="sc-icon">⚡</div><div class="sc-v y" id="stT">0</div><div class="sc-l" data-jp="総問題" data-en="Total" data-zh="总题数">Total</div></div>
 </div>
 
 <!-- TABS -->
 <div class="tabs">
-  <div class="tab on" onclick="setMode('name',this)"><span class="tab-icon">🏷️</span><span data-jp="名前当て" data-en="Name Quiz" data-zh="名称测验">名前当て</span></div>
-  <div class="tab" onclick="setMode('direction',this)"><span class="tab-icon">📈</span><span data-jp="方向予測" data-en="Direction" data-zh="方向预测">方向予測</span></div>
-  <div class="tab" onclick="setMode('category',this)"><span class="tab-icon">📚</span><span data-jp="分類" data-en="Category" data-zh="分类">分類</span></div>
-  <div class="tab" onclick="setMode('signal',this)"><span class="tab-icon">⚡</span><span data-jp="実戦" data-en="Signal" data-zh="实战">実戦</span></div>
-  <div class="tab" onclick="setMode('candle',this)"><span class="tab-icon"><svg viewBox="0 0 24 24" style="width:22px;height:22px;display:block;margin:0 auto;" fill="none"><line x1="7" y1="2" x2="7" y2="5" stroke="#b8ff47" stroke-width="1.8" stroke-linecap="round"/><rect x="4" y="5" width="6" height="9" rx="1" fill="#b8ff47"/><line x1="7" y1="14" x2="7" y2="17" stroke="#b8ff47" stroke-width="1.8" stroke-linecap="round"/><line x1="17" y1="4" x2="17" y2="7" stroke="#b8ff47" stroke-width="1.8" stroke-linecap="round"/><rect x="14" y="7" width="6" height="11" rx="1" fill="none" stroke="#b8ff47" stroke-width="1.8"/><line x1="17" y1="18" x2="17" y2="22" stroke="#b8ff47" stroke-width="1.8" stroke-linecap="round"/></svg></span><span data-jp="ローソク足" data-en="Candle" data-zh="蜡烛图">ローソク足</span></div>
-  <div class="tab tab-ai" onclick="setMode('ai',this)"><span class="tab-icon">🤖</span><span data-jp="AI診断" data-en="AI Chat" data-zh="AI分析">AI診断</span></div>
+  <div class="tab on" onclick="setMode('name',this)"><span class="tab-icon">🏷️</span><span data-jp="名前当て" data-en="Name Quiz" data-zh="名称测验">Name Quiz</span></div>
+  <div class="tab" onclick="setMode('direction',this)"><span class="tab-icon">📈</span><span data-jp="方向予測" data-en="Direction" data-zh="方向预测">Direction</span></div>
+  <div class="tab" onclick="setMode('category',this)"><span class="tab-icon">📚</span><span data-jp="分類" data-en="Category" data-zh="分类">Category</span></div>
+  <div class="tab" onclick="setMode('signal',this)"><span class="tab-icon">⚡</span><span data-jp="実戦" data-en="Signal" data-zh="实战">Signal</span></div>
+  <div class="tab" onclick="setMode('candle',this)"><span class="tab-icon"><svg viewBox="0 0 24 24" style="width:22px;height:22px;display:block;margin:0 auto;" fill="none"><line x1="7" y1="2" x2="7" y2="5" stroke="#b8ff47" stroke-width="1.8" stroke-linecap="round"/><rect x="4" y="5" width="6" height="9" rx="1" fill="#b8ff47"/><line x1="7" y1="14" x2="7" y2="17" stroke="#b8ff47" stroke-width="1.8" stroke-linecap="round"/><line x1="17" y1="4" x2="17" y2="7" stroke="#b8ff47" stroke-width="1.8" stroke-linecap="round"/><rect x="14" y="7" width="6" height="11" rx="1" fill="none" stroke="#b8ff47" stroke-width="1.8"/><line x1="17" y1="18" x2="17" y2="22" stroke="#b8ff47" stroke-width="1.8" stroke-linecap="round"/></svg></span><span data-jp="ローソク足" data-en="Candle" data-zh="蜡烛图">Candle</span></div>
+  <div class="tab tab-ai" onclick="setMode('ai',this)"><span class="tab-icon">🤖</span><span data-jp="AI診断" data-en="AI Chat" data-zh="AI分析">AI Chat</span></div>
 </div>
 
 <!-- PROGRESS -->
 <div class="prog-wrap" id="progWrap">
   <div class="prog-label">
-    <span id="progLabel" data-jp="進捗" data-en="Progress" data-zh="进度">進捗</span>
+    <span id="progLabel" data-jp="進捗" data-en="Progress" data-zh="进度">Progress</span>
     <span id="qProg">1 / 10</span>
   </div>
   <div class="prog-bg"><div class="prog-fill" id="progFill" style="width:0%"></div></div>
@@ -643,31 +643,31 @@ header{
   <div class="ai-header">
     <div class="ai-badge">✨ AI</div>
     <div class="ai-header-text">
-      <h3 data-jp="チャピAI — パターン診断＆質問" data-en="ChartPi AI — Pattern Analysis & Q&A" data-zh="Chapi AI — 形态分析&提问">チャピAI — パターン診断＆質問</h3>
-      <p data-jp="チャートについて何でも聞いてね！" data-en="Ask anything about chart patterns!" data-zh="随时提问关于图表形态的问题！">チャートについて何でも聞いてね！</p>
+      <h3 data-jp="チャピAI — パターン診断＆質問" data-en="ChartPi AI — Pattern Analysis & Q&A" data-zh="Chapi AI — 形态分析&提问">ChartPi AI — Pattern Analysis & Q&A</h3>
+      <p data-jp="チャートについて何でも聞いてね！" data-en="Ask anything about chart patterns!" data-zh="随时提问关于图表形态的问题！">Ask anything about chart patterns!</p>
     </div>
   </div>
   <div class="quick-qs" id="quickQs">
-    <div class="quick-q" onclick="sendQ('ダブルボトムのエントリータイミングを教えて')">ダブルボトムのエントリーは？</div>
-    <div class="quick-q" onclick="sendQ('ヘッドアンドショルダーズのストップロスはどこに置く？')">H&Sのストップロスは？</div>
-    <div class="quick-q" onclick="sendQ('フラッグとペナントの違いは何？')">フラッグとペナントの違い</div>
-    <div class="quick-q" onclick="sendQ('初心者がまず覚えるべきチャートパターンは？')">初心者向けパターンは？</div>
-    <div class="quick-q" onclick="sendQ('チャートパターンの信頼度を上げるコツは？')">信頼度を上げるコツ</div>
+    <div class="quick-q" onclick="sendQ('When to enter on a Double Bottom?')">Entry for Double Bottom?</div>
+    <div class="quick-q" onclick="sendQ('Where to place stop-loss for H&S Top?')">H&S stop-loss placement?</div>
+    <div class="quick-q" onclick="sendQ('What is the difference between a Flag and Pennant?')">Flag vs Pennant?</div>
+    <div class="quick-q" onclick="sendQ('What chart patterns should beginners learn first?')">Best patterns for beginners?</div>
+    <div class="quick-q" onclick="sendQ('How to increase the reliability of chart patterns?')">How to increase reliability?</div>
   </div>
   <div class="ai-desc-box">
     <div class="ai-desc-icon">🤖</div>
     <div class="ai-desc-text">
-      <strong>チャートパターン専門AI</strong><br>
-      <span>ダブルボトムの見方、RCIの使い方、トレンド転換の読み方など<strong>チャート・テクニカル分析</strong>について何でも聞けます。<br>
-      ※ 投資判断・価格予想はお答えできません</span>
+      <strong>Chart Pattern AI Expert</strong><br>
+      <span>Ask anything about <strong>chart patterns & technical analysis</strong> — Double Bottom entries, trend reversals, and more.<br>
+      ※ Cannot answer investment advice or price predictions</span>
     </div>
   </div>
   <div class="ai-input-row">
-    <input class="ai-input" id="aiInput" placeholder="例：ダブルボトムとは何ですか？" onkeydown="if(event.key==='Enter'&&!event.isComposing){event.preventDefault();sendAI();}"/>
-    <button class="ai-send-btn" id="aiSendBtn" onclick="sendAI()">送信 ✈️</button>
+    <input class="ai-input" id="aiInput" placeholder="e.g. What is a Double Bottom?" onkeydown="if(event.key==='Enter'&&!event.isComposing){event.preventDefault();sendAI();}"/>
+    <button class="ai-send-btn" id="aiSendBtn" onclick="sendAI()">Send ✈️</button>
   </div>
   <div class="ai-result" id="aiResult">
-    <span style="color:var(--muted);font-size:13px;">👆 上のボタンをタップするか、質問を入力してね！</span>
+    <span style="color:var(--muted);font-size:13px;">👆 Tap a button above or type a question!</span>
   </div>
 </div>
 
@@ -689,7 +689,7 @@ header{
     </div>
 
     <div class="chart-wrap" id="chartWrap">
-      <div class="chart-cap" data-jp="チャートを識別しよう🔍" data-en="Identify the pattern 🔍" data-zh="识别图表形态🔍">チャートを識別しよう🔍</div>
+      <div class="chart-cap" data-jp="チャートを識別しよう🔍" data-en="Identify the pattern 🔍" data-zh="识别图表形态🔍">Identify the pattern 🔍</div>
       <svg class="csvg" id="cSvg" viewBox="0 0 520 180" preserveAspectRatio="xMidYMid meet"></svg>
     </div>
 
@@ -725,48 +725,48 @@ header{
     <div class="aff-icon" id="affIcon">📊</div>
     <div class="aff-text">
       <div class="aff-badge2" id="affBadge">PR</div>
-      <div class="aff-title" id="affTitle">チャートを実践で試そう！Bitgetで口座開設</div>
-      <div class="aff-sub" id="affSub">Bitget — コピートレードでプロの手法を丸コピー | 2,500万人が使う大手取引所</div>
+      <div class="aff-title" id="affTitle">Put your charts to work! Open a Bitget account</div>
+      <div class="aff-sub" id="affSub">Bitget — Copy pro traders | Trusted by 25M+ users worldwide</div>
     </div>
-    <a class="aff-cta" href="https://partner.bitget.com/bg/1NU2DJ" id="affCta" target="_blank" rel="nofollow sponsored noopener" onclick="trackAff('main')">無料で始める →</a>
+    <a class="aff-cta" href="https://partner.bitget.com/bg/1NU2DJ" id="affCta" target="_blank" rel="nofollow sponsored noopener" onclick="trackAff('main')">Start for free →</a>
   </div>
   <div class="weak-panel" id="weakPanel" style="display:none">
-    <div class="panel-title" data-jp="😅 苦手パターン" data-en="😅 Weak Areas" data-zh="😅 薄弱形态">😅 苦手パターン</div>
+    <div class="panel-title" data-jp="😅 苦手パターン" data-en="😅 Weak Areas" data-zh="😅 薄弱形态">😅 Weak Areas</div>
     <div class="weak-tags" id="weakTags"></div>
   </div>
 
   <!-- Heatmap -->
   <div class="history-panel">
-    <div class="panel-title" data-jp="🗺️ 習熟度マップ (全35パターン)" data-en="🗺️ Mastery Map (all 35 patterns)" data-zh="🗺️ 熟练度地图（共35种形态）">🗺️ 習熟度マップ (全35パターン)</div>
+    <div class="panel-title" data-jp="🗺️ 習熟度マップ (全35パターン)" data-en="🗺️ Mastery Map (all 35 patterns)" data-zh="🗺️ 熟练度地图（共35种形态）">🗺️ Mastery Map (all 35 patterns)</div>
     <div class="hmap" id="hmapGrid"></div>
     <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap;">
-      <span style="font-size:10px;color:var(--muted);">⬜未挑戦</span>
-      <span style="font-size:10px;color:#3b82f6;">🔵挑戦中</span>
-      <span style="font-size:10px;color:#16a34a;">🟢良好</span>
-      <span style="font-size:10px;color:#d97706;">🟡上達</span>
-      <span style="font-size:10px;color:var(--accent);">🟣マスター</span>
+      <span style="font-size:10px;color:var(--muted);">⬜Untried</span>
+      <span style="font-size:10px;color:#3b82f6;">🔵Trying</span>
+      <span style="font-size:10px;color:#16a34a;">🟢Good</span>
+      <span style="font-size:10px;color:#d97706;">🟡Improving</span>
+      <span style="font-size:10px;color:var(--accent);">🟣Mastered</span>
     </div>
   </div>
 
   <!-- REFERRAL -->
   <div style="background:linear-gradient(135deg,var(--s1),#0d1220);border:2px solid rgba(200,245,66,0.2);border-radius:var(--rl);padding:20px;margin-bottom:12px;position:relative;overflow:hidden;">
     <div style="position:absolute;top:-20px;right:-20px;width:100px;height:100px;border-radius:50%;background:radial-gradient(circle,rgba(200,245,66,0.15),transparent 70%);pointer-events:none;"></div>
-    <div id="refSectionTitle" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:800;margin-bottom:4px;">👥 友達を招待して特典をもらおう！</div>
-    <div id="refSectionDesc" style="font-size:12px;color:var(--muted);margin-bottom:14px;line-height:1.7;">友達があなたのコードでプレミアム登録すると、<strong style="color:var(--accent)">あなたのプランが1ヶ月50%OFF</strong>に！友達には初月<strong style="color:var(--accent)">30%OFF</strong>をプレゼント。</div>
+    <div id="refSectionTitle" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:800;margin-bottom:4px;">👥 Invite friends & earn rewards!</div>
+    <div id="refSectionDesc" style="font-size:12px;color:var(--muted);margin-bottom:14px;line-height:1.7;">When a friend signs up with your code, <strong style="color:var(--accent)">you get 50% off for one month</strong>! Your friend gets <strong style="color:var(--accent)">30% off their first month</strong>.</div>
     <div style="background:var(--s2);border:1px solid var(--border2);border-radius:10px;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px;">
       <span style="font-family:'Space Mono',monospace;font-size:16px;font-weight:700;color:var(--accent);letter-spacing:2px;" id="refCode">CHAPI-XXXX</span>
-      <button id="refCopyBtn" onclick="copyRef()" style="background:rgba(200,245,66,0.15);border:1px solid rgba(200,245,66,0.3);color:var(--accent);border-radius:8px;font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;font-weight:700;padding:7px 14px;cursor:pointer;transition:all .15s;">コピー</button>
+      <button id="refCopyBtn" onclick="copyRef()" style="background:rgba(200,245,66,0.15);border:1px solid rgba(200,245,66,0.3);color:var(--accent);border-radius:8px;font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;font-weight:700;padding:7px 14px;cursor:pointer;transition:all .15s;">Copy</button>
     </div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
       <div style="background:var(--s2);border:1px solid var(--border);border-radius:10px;padding:12px;text-align:center;">
         <div style="font-size:22px;margin-bottom:4px;">🎁</div>
-        <div id="refYouTitle" style="font-size:12px;font-weight:700;margin-bottom:2px;">あなたへ</div>
-        <div id="refYouSub" style="font-size:10px;color:var(--muted);">プレミアム<br>月額50%OFF</div>
+        <div id="refYouTitle" style="font-size:12px;font-weight:700;margin-bottom:2px;">For you</div>
+        <div id="refYouSub" style="font-size:10px;color:var(--muted);">Premium<br>50% off</div>
       </div>
       <div style="background:var(--s2);border:1px solid var(--border);border-radius:10px;padding:12px;text-align:center;">
         <div style="font-size:22px;margin-bottom:4px;">💌</div>
-        <div id="refFriendTitle" style="font-size:12px;font-weight:700;margin-bottom:2px;">友達へ</div>
-        <div id="refFriendSub" style="font-size:10px;color:var(--muted);">初月<br>30%OFF</div>
+        <div id="refFriendTitle" style="font-size:12px;font-weight:700;margin-bottom:2px;">For friend</div>
+        <div id="refFriendSub" style="font-size:10px;color:var(--muted);">First month<br>30% off</div>
       </div>
     </div>
   </div>
@@ -779,35 +779,35 @@ header{
     <div class="res-pct" id="resPct">0%</div>
     <div class="res-sub" id="resSub"></div>
     <div class="res-grid">
-      <div class="res-stat"><div class="res-stat-n" style="color:var(--green)" id="resC">0</div><div class="res-stat-l" data-jp="✅ 正解" data-en="✅ Correct" data-zh="✅ 正确">✅ 正解</div></div>
-      <div class="res-stat"><div class="res-stat-n" style="color:var(--yellow)" id="resSt">0</div><div class="res-stat-l" data-jp="⚡ 最大連続" data-en="⚡ Best streak" data-zh="⚡ 最高连续">⚡ 最大連続</div></div>
-      <div class="res-stat"><div class="res-stat-n" style="color:var(--blue)" id="resTime">—</div><div class="res-stat-l" data-jp="⏱️ 時間" data-en="⏱️ Time" data-zh="⏱️ 时间">⏱️ 時間</div></div>
+      <div class="res-stat"><div class="res-stat-n" style="color:var(--green)" id="resC">0</div><div class="res-stat-l" data-jp="✅ 正解" data-en="✅ Correct" data-zh="✅ 正确">✅ Correct</div></div>
+      <div class="res-stat"><div class="res-stat-n" style="color:var(--yellow)" id="resSt">0</div><div class="res-stat-l" data-jp="⚡ 最大連続" data-en="⚡ Best streak" data-zh="⚡ 最高连续">⚡ Best streak</div></div>
+      <div class="res-stat"><div class="res-stat-n" style="color:var(--blue)" id="resTime">—</div><div class="res-stat-l" data-jp="⏱️ 時間" data-en="⏱️ Time" data-zh="⏱️ 时间">⏱️ Time</div></div>
     </div>
     <div class="res-actions">
-      <button class="retry-btn" onclick="restartQuiz()" data-jp="🔁 もう一度" data-en="🔁 Retry" data-zh="🔁 再试一次">🔁 もう一度</button>
-      <button class="prem-btn" onclick="showModal()" data-jp="⭐ プレミアムで全機能解放" data-en="⭐ Unlock Premium" data-zh="⭐ 解锁高级版">⭐ プレミアムで全機能解放</button>
+      <button class="retry-btn" onclick="restartQuiz()" data-jp="🔁 もう一度" data-en="🔁 Retry" data-zh="🔁 再试一次">🔁 Retry</button>
+      <button class="prem-btn" onclick="showModal()" data-jp="⭐ プレミアムで全機能解放" data-en="⭐ Unlock Premium" data-zh="⭐ 解锁高级版">⭐ Unlock Premium</button>
     </div>
   </div>
   <div class="ex-section">
-    <div class="ex-section-title">📈 チャートを学んだら「実践」へ！おすすめの暗号資産取引所</div>
+    <div class="ex-section-title">📈 Ready to trade? Top recommended exchanges</div>
     <div class="ex-cards">
 
       <div class="ex-card">
         <div class="ex-card-header">
           <div class="ex-card-logo mexc-l">🚀</div>
           <div>
-            <div class="ex-card-name">MEXC<span style="font-size:11px;font-weight:500;color:var(--muted);margin-left:6px;">（暗号資産取引所）</span></div>
-            <div class="ex-card-badge">⚠️ Chapi限定 · 手数料永久20%OFF</div>
+            <div class="ex-card-name">MEXC<span style="font-size:11px;font-weight:500;color:var(--muted);margin-left:6px;"> (Crypto Exchange)</span></div>
+            <div class="ex-card-badge">⚠️ Chapi exclusive · 20% off fees forever</div>
           </div>
         </div>
                 <div class="ex-merits">
-          <div class="ex-merit"><div class="ex-merit-icon">🪙</div><div class="ex-merit-text"><strong>ミームコインの取り扱いが圧倒的！</strong>2,300種以上。DOGE・PEPE・Shibなど話題のコインをどこよりも早く買える</div></div>
-          <div class="ex-merit"><div class="ex-merit-icon">🥇</div><div class="ex-merit-text"><strong>ゴールド・シルバーに投資可能</strong>金・銀の先物も暗号資産と同じ画面で取引できる希有な取引所</div></div>
-          <div class="ex-merit"><div class="ex-merit-icon">💸</div><div class="ex-merit-text"><strong>Chapiリンク限定！手数料永久20%OFF</strong>このリンクから登録するだけで自動適用される期間限定特典</div></div>
-          <div class="ex-merit"><div class="ex-merit-icon">⚡</div><div class="ex-merit-text"><strong>新規上場が異常に速い！</strong>世界中で話題のコインをドこよりも早く初期値で買えるチャンス</div></div>
+          <div class="ex-merit"><div class="ex-merit-icon">🪙</div><div class="ex-merit-text"><strong>Unbeatable meme coin selection!</strong>2,300+ coins. Get DOGE, PEPE, Shib and trending coins faster than anywhere</div></div>
+          <div class="ex-merit"><div class="ex-merit-icon">🥇</div><div class="ex-merit-text"><strong>Invest in Gold & Silver too</strong>One of the rare exchanges where you can trade gold/silver futures alongside crypto</div></div>
+          <div class="ex-merit"><div class="ex-merit-icon">💸</div><div class="ex-merit-text"><strong>Chapi link exclusive! 20% off trading fees forever</strong>Auto-applied when you register via this link</div></div>
+          <div class="ex-merit"><div class="ex-merit-icon">⚡</div><div class="ex-merit-text"><strong>Blazing fast new listings!</strong>Be first to buy trending global coins at launch price</div></div>
         </div>>
         <div class="ex-cta-row">
-          <a class="ex-cta-btn" href="https://www.mexc.com/ja-JP/acquisition/custom-sign-up?shareCode=mexc-chapi" target="_blank" rel="nofollow sponsored noopener" onclick="trackAff('result_mexc')">🔥 今すぐ無料登録（手数料永久20%OFF）</a>
+          <a class="ex-cta-btn" href="https://www.mexc.com/ja-JP/acquisition/custom-sign-up?shareCode=mexc-chapi" target="_blank" rel="nofollow sponsored noopener" onclick="trackAff('result_mexc')">🔥 Register free now (20% off fees forever)</a>
         </div>
       </div>
 
@@ -815,18 +815,18 @@ header{
         <div class="ex-card-header">
           <div class="ex-card-logo bitget-l">📊</div>
           <div>
-            <div class="ex-card-name">Bitget<span style="font-size:11px;font-weight:500;color:var(--muted);margin-left:6px;">（暗号資産取引所）</span></div>
-            <div class="ex-card-badge">🔰 初心者でも安心 · コピートレード搭載</div>
+            <div class="ex-card-name">Bitget<span style="font-size:11px;font-weight:500;color:var(--muted);margin-left:6px;"> (Crypto Exchange)</span></div>
+            <div class="ex-card-badge">🔰 Beginner-friendly · Copy trading built-in</div>
           </div>
         </div>
         <div class="ex-merits">
-          <div class="ex-merit"><div class="ex-merit-icon">🤖</div><div class="ex-merit-text"><strong>コピートレードで自動売買</strong>プロの手法を丸コピー。自分で操作しなくても利益を狙える</div></div>
-          <div class="ex-merit"><div class="ex-merit-icon">👛</div><div class="ex-merit-text"><strong>Bitget WalletでJYPCに変換</strong>稼いだ暗号資産を日本円形のトークンへ</div></div>
-          <div class="ex-merit"><div class="ex-merit-icon">🛡️</div><div class="ex-merit-text"><strong>世界2,500万人超が利用</strong>資産保護ファンド完備の大手取引所</div></div>
-          <div class="ex-merit"><div class="ex-merit-icon">📱</div><div class="ex-merit-text"><strong>アプリが超使いやすい</strong>初心者向けUIでチャートも見やすく、今すぐ実践練習に最適</div></div>
+          <div class="ex-merit"><div class="ex-merit-icon">🤖</div><div class="ex-merit-text"><strong>Automated copy trading</strong>Copy pro strategies automatically — no manual trading needed</div></div>
+          <div class="ex-merit"><div class="ex-merit-icon">👛</div><div class="ex-merit-text"><strong>Convert crypto with Bitget Wallet</strong>Swap earned crypto into various tokens easily</div></div>
+          <div class="ex-merit"><div class="ex-merit-icon">🛡️</div><div class="ex-merit-text"><strong>Used by 25M+ users worldwide</strong>Major exchange with dedicated asset protection fund</div></div>
+          <div class="ex-merit"><div class="ex-merit-icon">📱</div><div class="ex-merit-text"><strong>Super user-friendly app</strong>Beginner-friendly UI with clear charts — perfect for practicing what you learned</div></div>
         </div>
         <div class="ex-cta-row">
-          <a class="ex-cta-btn bitget-btn" href="https://partner.bitget.com/bg/1NU2DJ" target="_blank" rel="nofollow sponsored noopener" onclick="trackAff('result_bitget')">📊 Bitgetで無料口座開設</a>
+          <a class="ex-cta-btn bitget-btn" href="https://partner.bitget.com/bg/1NU2DJ" target="_blank" rel="nofollow sponsored noopener" onclick="trackAff('result_bitget')">📊 Open a free Bitget account</a>
         </div>
       </div>
     </div>
@@ -842,31 +842,31 @@ header{
 <div class="modal-overlay" id="premModal" onclick="if(event.target===this)closeModal()">
   <div class="modal">
     <span class="modal-mascot">⭐✨⭐</span>
-    <h2 data-jp="チャピ プレミアム" data-en="ChartPi Premium" data-zh="Chapi 高级版">チャピ プレミアム</h2>
-    <div class="modal-sub" data-jp="全パターン解放 · AI無制限 · 広告なし" data-en="All patterns · Unlimited AI · Ad-free" data-zh="全形态解锁 · AI无限制 · 无广告">全パターン解放 · AI無制限 · 広告なし</div>
+    <h2 data-jp="チャピ プレミアム" data-en="ChartPi Premium" data-zh="Chapi 高级版">ChartPi Premium</h2>
+    <div class="modal-sub" data-jp="全パターン解放 · AI無制限 · 広告なし" data-en="All patterns · Unlimited AI · Ad-free" data-zh="全形态解锁 · AI无限制 · 无广告">All patterns · Unlimited AI · Ad-free</div>
     <div class="plan-card rec">
       <div class="rec-badge">🏆 BEST VALUE</div>
-      <div class="plan-name" data-jp="年間プラン" data-en="Annual" data-zh="年度计划">年間プラン</div>
-      <div class="plan-price">¥5,800<span data-jp=" / 年（月¥483〜）" data-en=" / yr (¥483/mo)" data-zh=" / 年（¥483/月起）"> / 年（月¥483〜）</span></div>
+      <div class="plan-name" data-jp="年間プラン" data-en="Annual" data-zh="年度计划">Annual</div>
+      <div class="plan-price">¥5,800<span data-jp=" / 年（月¥483〜）" data-en=" / yr (¥483/mo)" data-zh=" / 年（¥483/月起）"> / yr (¥483/mo)</span></div>
       <ul class="plan-features">
-        <li data-jp="全35種チャートパターン解放" data-en="All 35 chart patterns" data-zh="解锁全部35种图表形态">全35種チャートパターン解放</li>
-        <li data-jp="AI診断 無制限（月100回→無制限）" data-en="Unlimited AI diagnosis" data-zh="AI分析无限制（月100次→无限制）">AI診断 無制限（月100回→無制限）</li>
-        <li data-jp="広告完全非表示" data-en="Ad-free experience" data-zh="完全无广告">広告完全非表示</li>
-        <li data-jp="苦手パターン集中訓練モード" data-en="Weak-area drill mode" data-zh="薄弱形态专项训练模式">苦手パターン集中訓練モード</li>
-        <li data-jp="詳細成績ダッシュボード" data-en="Full analytics dashboard" data-zh="详细成绩仪表盘">詳細成績ダッシュボード</li>
-        <li data-jp="リアルチャート画像クイズ（β）" data-en="Real chart quiz (β)" data-zh="真实图表图片测验（β）">リアルチャート画像クイズ（β）</li>
+        <li data-jp="全35種チャートパターン解放" data-en="All 35 chart patterns" data-zh="解锁全部35种图表形态">All 35 chart patterns</li>
+        <li data-jp="AI診断 無制限（月100回→無制限）" data-en="Unlimited AI diagnosis" data-zh="AI分析无限制（月100次→无限制）">Unlimited AI diagnosis</li>
+        <li data-jp="広告完全非表示" data-en="Ad-free experience" data-zh="完全无广告">Ad-free experience</li>
+        <li data-jp="苦手パターン集中訓練モード" data-en="Weak-area drill mode" data-zh="薄弱形态专项训练模式">Weak-area drill mode</li>
+        <li data-jp="詳細成績ダッシュボード" data-en="Full analytics dashboard" data-zh="详细成绩仪表盘">Full analytics dashboard</li>
+        <li data-jp="リアルチャート画像クイズ（β）" data-en="Real chart quiz (β)" data-zh="真实图表图片测验（β）">Real chart quiz (β)</li>
       </ul>
     </div>
     <div class="plan-card">
-      <div class="plan-name" data-jp="月間プラン" data-en="Monthly" data-zh="月度计划">月間プラン</div>
-      <div class="plan-price">¥980<span data-jp=" / 月" data-en=" / mo" data-zh=" / 月"> / 月</span></div>
+      <div class="plan-name" data-jp="月間プラン" data-en="Monthly" data-zh="月度计划">Monthly</div>
+      <div class="plan-price">¥980<span data-jp=" / 月" data-en=" / mo" data-zh=" / 月"> / mo</span></div>
       <ul class="plan-features">
-        <li data-jp="全35種チャートパターン" data-en="All 35 patterns" data-zh="全35种图表形态">全35種チャートパターン</li>
-        <li data-jp="AI診断 月30回" data-en="30 AI diagnoses/mo" data-zh="AI分析每月30次">AI診断 月30回</li>
-        <li data-jp="広告非表示" data-en="No ads" data-zh="隐藏广告">広告非表示</li>
+        <li data-jp="全35種チャートパターン" data-en="All 35 patterns" data-zh="全35种图表形态">All 35 patterns</li>
+        <li data-jp="AI診断 月30回" data-en="30 AI diagnoses/mo" data-zh="AI分析每月30次">30 AI diagnoses/mo</li>
+        <li data-jp="広告非表示" data-en="No ads" data-zh="隐藏广告">No ads</li>
       </ul>
     </div>
-    <button class="modal-close" onclick="closeModal()" data-jp="無料版を続ける" data-en="Continue free" data-zh="继续免费版">無料版を続ける</button>
+    <button class="modal-close" onclick="closeModal()" data-jp="無料版を続ける" data-en="Continue free" data-zh="继续免费版">Continue free</button>
   </div>
 </div>
 
@@ -1391,7 +1391,7 @@ function setLang(l,btn){
   if(aiDescText){
     if(lang==='zh') aiDescText.innerHTML='<strong>图表形态专业AI</strong><br><span>关于双底的判断方法、趋势反转的解读等<strong>图表·技术分析</strong>的任何问题都可以提问。<br>※ 无法回答投资判断和价格预测</span>';
     else if(lang==='en') aiDescText.innerHTML='<strong>Chart Pattern AI Expert</strong><br><span>Ask anything about <strong>chart patterns & technical analysis</strong> — Double Bottom entries, trend reversals, and more.<br>※ Cannot answer investment advice or price predictions</span>';
-    else aiDescText.innerHTML='<strong>チャートパターン専門AI</strong><br><span>ダブルボトムの見方、RCIの使い方、トレンド転換の読み方など<strong>チャート・テクニカル分析</strong>について何でも聞けます。<br>※ 投資判断・価格予想はお答えできません</span>';
+    else aiDescText.innerHTML='<strong>Chart Pattern AI Expert</strong><br><span>ダブルボトムの見方、RCIの使い方、トレンド転換の読み方など<strong>チャート・テクニカル分析</strong>について何でも聞けます。<br>※ 投資判断・価格予想はお答えできません</span>';
   }
 
   // 習熟度マップの凡例
@@ -1451,7 +1451,7 @@ function setLang(l,btn){
   if(stickyAdText) stickyAdText.innerHTML=lang==='zh'
     ?'<strong style="color:var(--text);font-size:12px;">🚀 MEXC</strong> 注册账户 — 迎新奖励最高$30,000！<span style="display:block;font-size:10px;color:var(--muted2);margin-top:1px;">※广告·PR</span>'
     :lang==='en'?'<strong style="color:var(--text);font-size:12px;">🚀 MEXC</strong> — Open account &amp; earn up to $30,000 bonus!<span style="display:block;font-size:10px;color:var(--muted2);margin-top:1px;">*Sponsored</span>'
-    :'<strong style="color:var(--text);font-size:12px;">🚀 MEXC</strong> で口座開設 — ウェルカムボーナス最大$30,000！<span style="display:block;font-size:10px;color:var(--muted2);margin-top:1px;">※広告・PR</span>';
+    :'<strong style="color:var(--text);font-size:12px;">🚀 MEXC</strong> — Open account &amp; earn up to $30,000 bonus!<span style="display:block;font-size:10px;color:var(--muted2);margin-top:1px;">*Sponsored</span>';
   const stickyAdBtn=document.getElementById('stickyAdBtn');
   if(stickyAdBtn) stickyAdBtn.textContent=lang==='zh'?'免费开户':lang==='en'?'Sign up free':'無料開設';
 
@@ -1465,7 +1465,7 @@ function setLang(l,btn){
     chapiMsg.innerHTML=lang==='zh'
       ?'你好！让我们愉快地学习<strong>图表形态</strong>吧！先选择一个模式 📊'
       :lang==='en'?'Hi! Let\'s learn <strong>chart patterns</strong> together! Pick a mode to start 📊'
-      :'こんにちは！<strong>チャートパターン</strong>を楽しく学ぼう！まずはモードを選んでね 📊';
+      :'Hi! Let\'s learn <strong>chart patterns</strong> together! Pick a mode to start 📊';
   }
 
   if(mode!=='ai') showQ();
@@ -1597,6 +1597,11 @@ function rotSecAd(){}
 setChapiImg('neutral');
 initReferral();
 buildHM();
+// 初回ロード時に言語UIを確定させる（デフォルト: EN）
+(function(){
+  const activeLangBtn = document.querySelector('.lang-sw button.on');
+  if(activeLangBtn) setLang(lang, activeLangBtn);
+})();
 buildQ();
 
 // ── モーダルコンテンツ（多言語） ──
@@ -1714,23 +1719,23 @@ function openDisclaimer(){
     <!-- 広告表示義務（景品表示法・ASP規約対応） -->
     <div style="background:rgba(251,191,36,0.06);border:1px solid rgba(251,191,36,0.2);border-radius:12px;padding:12px 16px;margin-bottom:20px;">
       <p id="adDisclosureText" style="font-size:11px;color:rgba(251,191,36,0.8);line-height:1.7;margin:0;">
-        <strong style="color:var(--yellow);">【広告・PR表示】</strong>
-        本サービスには広告が含まれます。掲載している取引所・サービスの一部はアフィリエイトプログラムを利用しており、リンク経由でご登録いただいた場合に報酬を受け取ることがあります。掲載内容はユーザーの学習を目的としており、投資を勧誘するものではありません。
+        <strong style="color:var(--yellow);">【AD / PR Disclosure】</strong>
+        This service contains advertisements. Some exchange links use affiliate programs — we may earn a commission if you register via our links. All content is for educational purposes only and does not constitute investment advice.
       </p>
     </div>
 
     <!-- リンク -->
     <nav style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:16px;">
-      <a id="footerPrivacyLink" href="#privacy" onclick="openPrivacy();return false;" style="font-size:12px;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--border2);">プライバシーポリシー</a>
-      <a id="footerDisclLink" href="#disclaimer" onclick="openDisclaimer();return false;" style="font-size:12px;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--border2);">免責事項</a>
-      <a id="footerContactLink" href="mailto:support.chapi@gmail.com" style="font-size:12px;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--border2);">お問い合わせ</a>
+      <a id="footerPrivacyLink" href="#privacy" onclick="openPrivacy();return false;" style="font-size:12px;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--border2);">Privacy Policy</a>
+      <a id="footerDisclLink" href="#disclaimer" onclick="openDisclaimer();return false;" style="font-size:12px;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--border2);">Disclaimer</a>
+      <a id="footerContactLink" href="mailto:support.chapi@gmail.com" style="font-size:12px;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--border2);">Contact</a>
     </nav>
 
     <p id="footerDisclaimer" style="font-size:11px;color:var(--muted2);line-height:1.6;margin-bottom:8px;">
-      ※ 本サービスで提供する情報はチャートパターンの学習を目的としたものであり、投資助言・投資勧誘を行うものではありません。<br>
-      実際の投資判断はご自身の責任において行ってください。
+      ※ Information provided is for educational purposes only and does not constitute investment advice.<br>
+      All investment decisions are made at your own risk.
     </p>
-    <p id="footerCopy" style="font-size:11px;color:var(--muted2);">© 2025 Chapi（チャピ）. All rights reserved.</p>
+    <p id="footerCopy" style="font-size:11px;color:var(--muted2);">© 2025 Chapi. All rights reserved.</p>
   </div>
 </footer>
 
@@ -1759,8 +1764,8 @@ function openDisclaimer(){
 
 <!-- ── STICKY AD ── -->
 <div id="stickyAd" style="position:fixed;bottom:0;left:0;right:0;z-index:50;background:var(--s1);border-top:1px solid var(--border2);padding:10px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 -6px 24px rgba(0,0,0,.4);">
-  <div id="stickyAdText" style="flex:1;font-size:11px;color:var(--muted);line-height:1.4;"><strong style="color:var(--text);font-size:12px;">🚀 MEXC</strong> で口座開設 — ウェルカムボーナス最大$30,000！<span style="display:block;font-size:10px;color:var(--muted2);margin-top:1px;">※広告・PR</span></div>
-  <a id="stickyAdBtn" href="https://www.mexc.com/ja-JP/acquisition/custom-sign-up?shareCode=mexc-chapi" target="_blank" rel="nofollow sponsored noopener" onclick="trackAff('sticky')" style="background:linear-gradient(135deg,var(--accent),#7de82a);color:#0d0e14;border:none;border-radius:8px;font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;font-weight:800;padding:9px 14px;cursor:pointer;white-space:nowrap;text-decoration:none;display:inline-block;">無料開設</a>
+  <div id="stickyAdText" style="flex:1;font-size:11px;color:var(--muted);line-height:1.4;"><strong style="color:var(--text);font-size:12px;">🚀 MEXC</strong> — Open account &amp; earn up to $30,000 bonus!<span style="display:block;font-size:10px;color:var(--muted2);margin-top:1px;">*Sponsored</span></div>
+  <a id="stickyAdBtn" href="https://www.mexc.com/ja-JP/acquisition/custom-sign-up?shareCode=mexc-chapi" target="_blank" rel="nofollow sponsored noopener" onclick="trackAff('sticky')" style="background:linear-gradient(135deg,var(--accent),#7de82a);color:#0d0e14;border:none;border-radius:8px;font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;font-weight:800;padding:9px 14px;cursor:pointer;white-space:nowrap;text-decoration:none;display:inline-block;">Sign up free</a>
   <button onclick="document.getElementById('stickyAd').style.display='none'" style="background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;padding:0 4px;line-height:1;flex-shrink:0;">×</button>
 </div>
 </body>
