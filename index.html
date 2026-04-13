@@ -841,30 +841,42 @@ header{
 <div class="modal-overlay" id="premModal" onclick="if(event.target===this)closeModal()">
   <div class="modal">
     <span class="modal-mascot">⭐✨⭐</span>
-    <h2 data-jp="チャピ プレミアム" data-en="ChartPi Premium" data-zh="Chapi 高级版">ChartPi Premium</h2>
+    <h2 data-jp="チャピ プレミアム" data-en="Chapi Premium" data-zh="Chapi 高级版">Chapi Premium</h2>
     <div class="modal-sub" data-jp="全パターン解放 · AI無制限 · 広告なし" data-en="All patterns · Unlimited AI · Ad-free" data-zh="全形态解锁 · AI无限制 · 无广告">All patterns · Unlimited AI · Ad-free</div>
-    <div class="plan-card rec">
-      <div class="rec-badge">🏆 BEST VALUE</div>
+
+    <!-- Annual Plan -->
+    <div class="plan-card rec" onclick="startCheckout('annual')" style="cursor:pointer;">
+      <div class="rec-badge">🏆 BEST VALUE — Save 50%</div>
       <div class="plan-name" data-jp="年間プラン" data-en="Annual" data-zh="年度计划">Annual</div>
-      <div class="plan-price">¥5,800<span data-jp=" / 年（月¥483〜）" data-en=" / yr (¥483/mo)" data-zh=" / 年（¥483/月起）"> / yr (¥483/mo)</span></div>
+      <div class="plan-price">$29.99<span data-jp=" / 年（月$2.50〜）" data-en=" / yr ($2.50/mo)" data-zh=" / 年（$2.50/月起）"> / yr ($2.50/mo)</span></div>
       <ul class="plan-features">
         <li data-jp="全35種チャートパターン解放" data-en="All 35 chart patterns" data-zh="解锁全部35种图表形态">All 35 chart patterns</li>
-        <li data-jp="AI診断 無制限（月100回→無制限）" data-en="Unlimited AI diagnosis" data-zh="AI分析无限制（月100次→无限制）">Unlimited AI diagnosis</li>
+        <li data-jp="AI診断 無制限" data-en="Unlimited AI diagnosis" data-zh="AI分析无限制">Unlimited AI diagnosis</li>
         <li data-jp="広告完全非表示" data-en="Ad-free experience" data-zh="完全无广告">Ad-free experience</li>
         <li data-jp="苦手パターン集中訓練モード" data-en="Weak-area drill mode" data-zh="薄弱形态专项训练模式">Weak-area drill mode</li>
         <li data-jp="詳細成績ダッシュボード" data-en="Full analytics dashboard" data-zh="详细成绩仪表盘">Full analytics dashboard</li>
         <li data-jp="リアルチャート画像クイズ（β）" data-en="Real chart quiz (β)" data-zh="真实图表图片测验（β）">Real chart quiz (β)</li>
       </ul>
+      <button id="btnAnnual" style="width:100%;margin-top:12px;background:linear-gradient(135deg,var(--accent),#7de82a);color:#0d0e14;border:none;border-radius:10px;padding:13px;font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:900;cursor:pointer;">
+        🚀 Get Annual Plan — $29.99/yr
+      </button>
     </div>
-    <div class="plan-card">
+
+    <!-- Monthly Plan -->
+    <div class="plan-card" onclick="startCheckout('monthly')" style="cursor:pointer;">
       <div class="plan-name" data-jp="月間プラン" data-en="Monthly" data-zh="月度计划">Monthly</div>
-      <div class="plan-price">¥980<span data-jp=" / 月" data-en=" / mo" data-zh=" / 月"> / mo</span></div>
+      <div class="plan-price">$4.99<span data-jp=" / 月" data-en=" / mo" data-zh=" / 月"> / mo</span></div>
       <ul class="plan-features">
-        <li data-jp="全35種チャートパターン" data-en="All 35 patterns" data-zh="全35种图表形态">All 35 patterns</li>
-        <li data-jp="AI診断 月30回" data-en="30 AI diagnoses/mo" data-zh="AI分析每月30次">30 AI diagnoses/mo</li>
-        <li data-jp="広告非表示" data-en="No ads" data-zh="隐藏广告">No ads</li>
+        <li data-jp="全35種チャートパターン解放" data-en="All 35 chart patterns" data-zh="解锁全部35种图表形态">All 35 chart patterns</li>
+        <li data-jp="AI診断 無制限" data-en="Unlimited AI diagnosis" data-zh="AI分析无限制">Unlimited AI diagnosis</li>
+        <li data-jp="広告完全非表示" data-en="Ad-free experience" data-zh="完全无广告">Ad-free experience</li>
       </ul>
+      <button id="btnMonthly" style="width:100%;margin-top:12px;background:var(--s3);color:var(--text);border:1px solid var(--border2);border-radius:10px;padding:13px;font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:700;cursor:pointer;">
+        Get Monthly Plan — $4.99/mo
+      </button>
     </div>
+
+    <div id="checkoutError" style="display:none;color:var(--red);font-size:12px;text-align:center;margin:8px 0;"></div>
     <button class="modal-close" onclick="closeModal()" data-jp="無料版を続ける" data-en="Continue free" data-zh="继续免费版">Continue free</button>
   </div>
 </div>
@@ -1592,8 +1604,45 @@ function copyRef(){
 let secIdx=0;
 function rotSecAd(){}
 
+// ── STRIPE CHECKOUT ──
+const STRIPE_PRICES = {
+  monthly: 'price_1TLYY9AODvSiwpafpmiW91Jq',
+  annual:  'price_1TLYaAAODvSiwpafQsH6o2ED'
+};
+
+async function startCheckout(plan) {
+  const btn = plan === 'annual' ? document.getElementById('btnAnnual') : document.getElementById('btnMonthly');
+  const errEl = document.getElementById('checkoutError');
+  const origText = btn.textContent;
+
+  btn.textContent = 'Processing...';
+  btn.disabled = true;
+  errEl.style.display = 'none';
+
+  try {
+    const res = await fetch('/api/create-checkout', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ priceId: STRIPE_PRICES[plan] })
+    });
+
+    const data = await res.json();
+
+    if (data.url) {
+      window.location.href = data.url;
+    } else {
+      throw new Error(data.error || 'Unknown error');
+    }
+  } catch (err) {
+    console.error('Checkout error:', err);
+    errEl.textContent = 'Payment setup failed. Please try again.';
+    errEl.style.display = 'block';
+    btn.textContent = origText;
+    btn.disabled = false;
+  }
+}
+
 // Init
-setChapiImg('neutral');
 initReferral();
 buildHM();
 // 初回ロード時に言語UIを確定させる（デフォルト: EN）
